@@ -26,70 +26,120 @@ DATE  = datetime.now().strftime("%m%d")
 # ─────────────────────────────────────────────────────────────────────────────
 GAMES_META = [
     {
-        "id": "OKC_NYK",
-        "away": "OKC",
-        "home": "NYK",
+        "id": "DAL_ORL",
+        "away": "DAL",
+        "home": "ORL",
         "away_rec": "",
         "home_rec": "",
-        "time": "1st Qtr",
+        "time": "2026-03-06T00:00:00Z",
         "prob_away": 50,
         "prob_home": 50,
-        "status": "1ST QTR"
+        "status": "UPCOMING",
+        "ou": 228.5,
+        "spread": 8.5
     },
     {
-        "id": "CHA_BOS",
-        "away": "CHA",
-        "home": "BOS",
-        "away_rec": "",
-        "home_rec": "",
-        "time": "2026-03-05T00:30:00Z",
-        "prob_away": 50,
-        "prob_home": 50,
-        "status": "UPCOMING"
-    },
-    {
-        "id": "UTA_PHI",
+        "id": "UTA_WAS",
         "away": "UTA",
-        "home": "PHI",
+        "home": "WAS",
         "away_rec": "",
         "home_rec": "",
-        "time": "2026-03-05T00:30:00Z",
+        "time": "2026-03-06T00:00:00Z",
         "prob_away": 50,
         "prob_home": 50,
-        "status": "UPCOMING"
+        "status": "UPCOMING",
+        "ou": 243.5,
+        "spread": 3.5
     },
     {
-        "id": "POR_MEM",
-        "away": "POR",
-        "home": "MEM",
+        "id": "BKN_MIA",
+        "away": "BKN",
+        "home": "MIA",
         "away_rec": "",
         "home_rec": "",
-        "time": "2026-03-05T01:00:00Z",
+        "time": "2026-03-06T00:30:00Z",
         "prob_away": 50,
         "prob_home": 50,
-        "status": "UPCOMING"
+        "status": "UPCOMING",
+        "ou": 226.5,
+        "spread": 13.5
     },
     {
-        "id": "ATL_MIL",
-        "away": "ATL",
-        "home": "MIL",
+        "id": "GSW_HOU",
+        "away": "GSW",
+        "home": "HOU",
         "away_rec": "",
         "home_rec": "",
-        "time": "2026-03-05T02:30:00Z",
+        "time": "2026-03-06T00:30:00Z",
         "prob_away": 50,
         "prob_home": 50,
-        "status": "UPCOMING"
+        "status": "UPCOMING",
+        "ou": 213.5,
+        "spread": 8.5
     },
     {
-        "id": "IND_LAC",
-        "away": "IND",
-        "home": "LAC",
+        "id": "TOR_MIN",
+        "away": "TOR",
+        "home": "MIN",
         "away_rec": "",
         "home_rec": "",
-        "time": "2026-03-05T03:30:00Z",
+        "time": "2026-03-06T01:00:00Z",
         "prob_away": 50,
         "prob_home": 50,
-        "status": "UPCOMING"
+        "status": "UPCOMING",
+        "ou": 226.5,
+        "spread": 5.5
+    },
+    {
+        "id": "DET_SAS",
+        "away": "DET",
+        "home": "SAS",
+        "away_rec": "",
+        "home_rec": "",
+        "time": "2026-03-06T01:00:00Z",
+        "prob_away": 50,
+        "prob_home": 50,
+        "status": "UPCOMING",
+        "ou": 228.5,
+        "spread": 3.5
+    },
+    {
+        "id": "CHI_PHX",
+        "away": "CHI",
+        "home": "PHX",
+        "away_rec": "",
+        "home_rec": "",
+        "time": "2026-03-06T02:00:00Z",
+        "prob_away": 50,
+        "prob_home": 50,
+        "status": "UPCOMING",
+        "spread": 10.5
+    },
+    {
+        "id": "LAL_DEN",
+        "away": "LAL",
+        "home": "DEN",
+        "away_rec": "",
+        "home_rec": "",
+        "time": "2026-03-06T03:00:00Z",
+        "prob_away": 50,
+        "prob_home": 50,
+        "status": "UPCOMING",
+        "ou": 240.5,
+        "spread": 5.5
+    },
+    {
+        "id": "NOP_SAC",
+        "away": "NOP",
+        "home": "SAC",
+        "away_rec": "",
+        "home_rec": "",
+        "time": "2026-03-06T03:00:00Z",
+        "prob_away": 50,
+        "prob_home": 50,
+        "status": "UPCOMING",
+        "ou": 234.5,
+        "spread": 5.5
     }
 ]
 
@@ -104,38 +154,38 @@ DEF = {
         "pace": 112.0,
         "PG_pts": 1,
         "PG_reb": 18,
-        "PG_ast": 2,
+        "PG_ast": 4,
         "SG_pts": 11,
         "SG_reb": 27,
-        "SG_ast": 13,
+        "SG_ast": 11,
         "SF_pts": 2,
-        "SF_reb": 13,
-        "SF_ast": 6,
+        "SF_reb": 12,
+        "SF_ast": 5,
         "PF_pts": 8,
-        "PF_reb": 16,
-        "PF_ast": 16,
-        "C_pts": 3,
-        "C_reb": 21,
+        "PF_reb": 20,
+        "PF_ast": 17,
+        "C_pts": 4,
+        "C_reb": 23,
         "C_ast": 10,
         "pts": 5,
-        "reb": 19,
+        "reb": 20,
         "ast": 9
     },
     "BOS": {
         "pace": 112.0,
         "PG_pts": 2,
-        "PG_reb": 4,
+        "PG_reb": 5,
         "PG_ast": 19,
-        "SG_pts": 1,
-        "SG_reb": 12,
+        "SG_pts": 2,
+        "SG_reb": 13,
         "SG_ast": 6,
         "SF_pts": 3,
-        "SF_reb": 20,
+        "SF_reb": 19,
         "SF_ast": 1,
         "PF_pts": 16,
         "PF_reb": 6,
         "PF_ast": 5,
-        "C_pts": 8,
+        "C_pts": 7,
         "C_reb": 3,
         "C_ast": 3,
         "pts": 6,
@@ -147,19 +197,19 @@ DEF = {
         "PG_pts": 3,
         "PG_reb": 16,
         "PG_ast": 21,
-        "SG_pts": 13,
+        "SG_pts": 14,
         "SG_reb": 9,
         "SG_ast": 20,
         "SF_pts": 23,
-        "SF_reb": 15,
+        "SF_reb": 14,
         "SF_ast": 27,
         "PF_pts": 21,
-        "PF_reb": 21,
+        "PF_reb": 22,
         "PF_ast": 14,
         "C_pts": 22,
         "C_reb": 7,
-        "C_ast": 7,
-        "pts": 16,
+        "C_ast": 8,
+        "pts": 17,
         "reb": 14,
         "ast": 18
     },
@@ -167,12 +217,12 @@ DEF = {
         "pace": 112.0,
         "PG_pts": 4,
         "PG_reb": 3,
-        "PG_ast": 8,
-        "SG_pts": 2,
+        "PG_ast": 9,
+        "SG_pts": 1,
         "SG_reb": 6,
         "SG_ast": 2,
-        "SF_pts": 14,
-        "SF_reb": 4,
+        "SF_pts": 13,
+        "SF_reb": 5,
         "SF_ast": 8,
         "PF_pts": 6,
         "PF_reb": 1,
@@ -184,89 +234,89 @@ DEF = {
         "reb": 3,
         "ast": 9
     },
-    "PHI": {
-        "pace": 112.0,
-        "PG_pts": 5,
-        "PG_reb": 23,
-        "PG_ast": 10,
-        "SG_pts": 28,
-        "SG_reb": 22,
-        "SG_ast": 28,
-        "SF_pts": 20,
-        "SF_reb": 5,
-        "SF_ast": 29,
-        "PF_pts": 13,
-        "PF_reb": 29,
-        "PF_ast": 13,
-        "C_pts": 19,
-        "C_reb": 14,
-        "C_ast": 4,
-        "pts": 17,
-        "reb": 19,
-        "ast": 17
-    },
     "PHO": {
         "pace": 112.0,
-        "PG_pts": 6,
-        "PG_reb": 11,
-        "PG_ast": 3,
+        "PG_pts": 5,
+        "PG_reb": 10,
+        "PG_ast": 2,
         "SG_pts": 7,
-        "SG_reb": 13,
+        "SG_reb": 11,
         "SG_ast": 1,
-        "SF_pts": 15,
+        "SF_pts": 14,
         "SF_reb": 18,
-        "SF_ast": 22,
-        "PF_pts": 5,
-        "PF_reb": 19,
+        "SF_ast": 23,
+        "PF_pts": 4,
+        "PF_reb": 18,
         "PF_ast": 12,
         "C_pts": 16,
         "C_reb": 20,
-        "C_ast": 19,
-        "pts": 10,
-        "reb": 16,
-        "ast": 11
+        "C_ast": 20,
+        "pts": 9,
+        "reb": 15,
+        "ast": 12
+    },
+    "NYK": {
+        "pace": 112.0,
+        "PG_pts": 6,
+        "PG_reb": 1,
+        "PG_ast": 6,
+        "SG_pts": 15,
+        "SG_reb": 24,
+        "SG_ast": 25,
+        "SF_pts": 16,
+        "SF_reb": 20,
+        "SF_ast": 3,
+        "PF_pts": 5,
+        "PF_reb": 3,
+        "PF_ast": 7,
+        "C_pts": 3,
+        "C_reb": 9,
+        "C_ast": 2,
+        "pts": 9,
+        "reb": 11,
+        "ast": 9
     },
     "DET": {
         "pace": 112.0,
         "PG_pts": 7,
         "PG_reb": 14,
-        "PG_ast": 4,
+        "PG_ast": 3,
         "SG_pts": 8,
         "SG_reb": 1,
         "SG_ast": 3,
         "SF_pts": 11,
-        "SF_reb": 3,
+        "SF_reb": 4,
         "SF_ast": 2,
-        "PF_pts": 12,
+        "PF_pts": 11,
         "PF_reb": 8,
         "PF_ast": 6,
         "C_pts": 2,
         "C_reb": 8,
-        "C_ast": 5,
+        "C_ast": 4,
         "pts": 8,
         "reb": 7,
         "ast": 4
     },
-    "NYK": {
+    "PHI": {
         "pace": 112.0,
         "PG_pts": 8,
-        "PG_reb": 1,
-        "PG_ast": 6,
-        "SG_pts": 16,
-        "SG_reb": 24,
-        "SG_ast": 25,
-        "SF_pts": 18,
-        "SF_reb": 21,
-        "SF_ast": 3,
-        "PF_pts": 2,
-        "PF_reb": 3,
-        "PF_ast": 7,
-        "C_pts": 4,
-        "C_reb": 9,
-        "C_ast": 2,
-        "pts": 10,
-        "reb": 12,
-        "ast": 9
+        "PG_reb": 21,
+        "PG_ast": 10,
+        "SG_pts": 28,
+        "SG_reb": 22,
+        "SG_ast": 28,
+        "SF_pts": 17,
+        "SF_reb": 3,
+        "SF_ast": 29,
+        "PF_pts": 12,
+        "PF_reb": 29,
+        "PF_ast": 13,
+        "C_pts": 18,
+        "C_reb": 14,
+        "C_ast": 5,
+        "pts": 17,
+        "reb": 18,
+        "ast": 17
     },
     "CHI": {
         "pace": 112.0,
@@ -292,20 +342,20 @@ DEF = {
     "DEN": {
         "pace": 112.0,
         "PG_pts": 10,
-        "PG_reb": 9,
-        "PG_ast": 13,
-        "SG_pts": 17,
+        "PG_reb": 8,
+        "PG_ast": 12,
+        "SG_pts": 16,
         "SG_reb": 3,
         "SG_ast": 7,
         "SF_pts": 25,
-        "SF_reb": 14,
+        "SF_reb": 13,
         "SF_ast": 20,
         "PF_pts": 15,
         "PF_reb": 15,
         "PF_ast": 29,
-        "C_pts": 18,
+        "C_pts": 19,
         "C_reb": 6,
-        "C_ast": 8,
+        "C_ast": 9,
         "pts": 17,
         "reb": 9,
         "ast": 15
@@ -314,21 +364,21 @@ DEF = {
         "pace": 112.0,
         "PG_pts": 11,
         "PG_reb": 2,
-        "PG_ast": 9,
-        "SG_pts": 6,
+        "PG_ast": 8,
+        "SG_pts": 5,
         "SG_reb": 19,
         "SG_ast": 18,
-        "SF_pts": 4,
-        "SF_reb": 6,
+        "SF_pts": 5,
+        "SF_reb": 7,
         "SF_ast": 12,
-        "PF_pts": 27,
+        "PF_pts": 24,
         "PF_reb": 4,
-        "PF_ast": 26,
+        "PF_ast": 25,
         "C_pts": 9,
         "C_reb": 1,
-        "C_ast": 12,
+        "C_ast": 11,
         "pts": 11,
-        "reb": 6,
+        "reb": 7,
         "ast": 15
     },
     "WAS": {
@@ -341,34 +391,34 @@ DEF = {
         "SG_ast": 30,
         "SF_pts": 27,
         "SF_reb": 30,
-        "SF_ast": 25,
+        "SF_ast": 26,
         "PF_pts": 29,
         "PF_reb": 28,
         "PF_ast": 24,
         "C_pts": 29,
         "C_reb": 30,
-        "C_ast": 18,
+        "C_ast": 19,
         "pts": 25,
         "reb": 25,
-        "ast": 23
+        "ast": 24
     },
     "LAC": {
         "pace": 112.0,
         "PG_pts": 13,
         "PG_reb": 25,
         "PG_ast": 14,
-        "SG_pts": 25,
+        "SG_pts": 22,
         "SG_reb": 2,
-        "SG_ast": 11,
-        "SF_pts": 8,
+        "SG_ast": 12,
+        "SF_pts": 9,
         "SF_reb": 2,
-        "SF_ast": 10,
+        "SF_ast": 11,
         "PF_pts": 1,
         "PF_reb": 2,
         "PF_ast": 18,
-        "C_pts": 14,
+        "C_pts": 13,
         "C_reb": 12,
-        "C_ast": 9,
+        "C_ast": 7,
         "pts": 12,
         "reb": 9,
         "ast": 12
@@ -376,17 +426,17 @@ DEF = {
     "LAL": {
         "pace": 112.0,
         "PG_pts": 14,
-        "PG_reb": 5,
+        "PG_reb": 4,
         "PG_ast": 30,
         "SG_pts": 10,
         "SG_reb": 8,
         "SG_ast": 17,
         "SF_pts": 30,
-        "SF_reb": 7,
-        "SF_ast": 21,
+        "SF_reb": 6,
+        "SF_ast": 22,
         "PF_pts": 19,
         "PF_reb": 5,
-        "PF_ast": 9,
+        "PF_ast": 10,
         "C_pts": 1,
         "C_reb": 5,
         "C_ast": 17,
@@ -402,44 +452,44 @@ DEF = {
         "SG_pts": 19,
         "SG_reb": 10,
         "SG_ast": 9,
-        "SF_pts": 9,
+        "SF_pts": 8,
         "SF_reb": 9,
         "SF_ast": 7,
         "PF_pts": 23,
         "PF_reb": 24,
         "PF_ast": 28,
         "C_pts": 11,
-        "C_reb": 18,
-        "C_ast": 11,
+        "C_reb": 19,
+        "C_ast": 12,
         "pts": 15,
         "reb": 14,
-        "ast": 15
+        "ast": 16
     },
     "ATL": {
         "pace": 112.0,
         "PG_pts": 16,
-        "PG_reb": 21,
-        "PG_ast": 27,
+        "PG_reb": 24,
+        "PG_ast": 28,
         "SG_pts": 26,
         "SG_reb": 14,
         "SG_ast": 4,
         "SF_pts": 28,
         "SF_reb": 26,
         "SF_ast": 16,
-        "PF_pts": 11,
+        "PF_pts": 13,
         "PF_reb": 26,
-        "PF_ast": 27,
+        "PF_ast": 26,
         "C_pts": 20,
         "C_reb": 27,
-        "C_ast": 13,
-        "pts": 20,
+        "C_ast": 14,
+        "pts": 21,
         "reb": 23,
-        "ast": 17
+        "ast": 18
     },
     "SAS": {
         "pace": 112.0,
         "PG_pts": 17,
-        "PG_reb": 24,
+        "PG_reb": 23,
         "PG_ast": 1,
         "SG_pts": 3,
         "SG_reb": 20,
@@ -450,8 +500,8 @@ DEF = {
         "PF_pts": 9,
         "PF_reb": 7,
         "PF_ast": 15,
-        "C_pts": 15,
-        "C_reb": 17,
+        "C_pts": 14,
+        "C_reb": 18,
         "C_ast": 30,
         "pts": 10,
         "reb": 16,
@@ -466,14 +516,14 @@ DEF = {
         "SG_reb": 25,
         "SG_ast": 27,
         "SF_pts": 26,
-        "SF_reb": 24,
+        "SF_reb": 23,
         "SF_ast": 17,
-        "PF_pts": 4,
+        "PF_pts": 3,
         "PF_reb": 11,
         "PF_ast": 20,
         "C_pts": 23,
         "C_reb": 26,
-        "C_ast": 20,
+        "C_ast": 21,
         "pts": 20,
         "reb": 18,
         "ast": 22
@@ -483,13 +533,13 @@ DEF = {
         "PG_pts": 19,
         "PG_reb": 28,
         "PG_ast": 18,
-        "SG_pts": 18,
+        "SG_pts": 17,
         "SG_reb": 30,
         "SG_ast": 16,
-        "SF_pts": 21,
+        "SF_pts": 20,
         "SF_reb": 10,
         "SF_ast": 9,
-        "PF_pts": 24,
+        "PF_pts": 27,
         "PF_reb": 30,
         "PF_ast": 22,
         "C_pts": 12,
@@ -502,42 +552,42 @@ DEF = {
     "POR": {
         "pace": 112.0,
         "PG_pts": 20,
-        "PG_reb": 8,
-        "PG_ast": 12,
-        "SG_pts": 15,
-        "SG_reb": 11,
+        "PG_reb": 12,
+        "PG_ast": 13,
+        "SG_pts": 18,
+        "SG_reb": 12,
         "SG_ast": 14,
         "SF_pts": 22,
         "SF_reb": 27,
-        "SF_ast": 24,
+        "SF_ast": 21,
         "PF_pts": 14,
         "PF_reb": 9,
         "PF_ast": 21,
         "C_pts": 27,
         "C_reb": 13,
-        "C_ast": 21,
+        "C_ast": 18,
         "pts": 20,
-        "reb": 14,
-        "ast": 18
+        "reb": 15,
+        "ast": 17
     },
     "MEM": {
         "pace": 112.0,
         "PG_pts": 21,
         "PG_reb": 13,
         "PG_ast": 11,
-        "SG_pts": 23,
+        "SG_pts": 25,
         "SG_reb": 21,
-        "SG_ast": 21,
-        "SF_pts": 17,
+        "SG_ast": 23,
+        "SF_pts": 19,
         "SF_reb": 25,
-        "SF_ast": 26,
-        "PF_pts": 26,
-        "PF_reb": 22,
+        "SF_ast": 25,
+        "PF_pts": 25,
+        "PF_reb": 21,
         "PF_ast": 19,
-        "C_pts": 13,
+        "C_pts": 15,
         "C_reb": 24,
         "C_ast": 26,
-        "pts": 20,
+        "pts": 21,
         "reb": 21,
         "ast": 21
     },
@@ -546,120 +596,120 @@ DEF = {
         "PG_pts": 22,
         "PG_reb": 30,
         "PG_ast": 24,
-        "SG_pts": 5,
+        "SG_pts": 6,
         "SG_reb": 29,
         "SG_ast": 5,
         "SF_pts": 7,
-        "SF_reb": 22,
+        "SF_reb": 21,
         "SF_ast": 28,
         "PF_pts": 20,
         "PF_reb": 14,
         "PF_ast": 4,
         "C_pts": 28,
-        "C_reb": 23,
+        "C_reb": 22,
         "C_ast": 28,
-        "pts": 16,
-        "reb": 24,
+        "pts": 17,
+        "reb": 23,
         "ast": 18
+    },
+    "IND": {
+        "pace": 112.0,
+        "PG_pts": 23,
+        "PG_reb": 29,
+        "PG_ast": 16,
+        "SG_pts": 13,
+        "SG_reb": 28,
+        "SG_ast": 13,
+        "SF_pts": 21,
+        "SF_reb": 22,
+        "SF_ast": 6,
+        "PF_pts": 26,
+        "PF_reb": 27,
+        "PF_ast": 9,
+        "C_pts": 26,
+        "C_reb": 21,
+        "C_ast": 24,
+        "pts": 22,
+        "reb": 25,
+        "ast": 14
     },
     "MIL": {
         "pace": 112.0,
-        "PG_pts": 23,
+        "PG_pts": 24,
         "PG_reb": 27,
         "PG_ast": 29,
-        "SG_pts": 22,
+        "SG_pts": 23,
         "SG_reb": 23,
         "SG_ast": 10,
         "SF_pts": 12,
-        "SF_reb": 23,
+        "SF_reb": 24,
         "SF_ast": 19,
         "PF_pts": 18,
-        "PF_reb": 17,
-        "PF_ast": 25,
-        "C_pts": 7,
+        "PF_reb": 16,
+        "PF_ast": 27,
+        "C_pts": 8,
         "C_reb": 11,
         "C_ast": 6,
-        "pts": 16,
+        "pts": 17,
         "reb": 20,
         "ast": 18
     },
     "MIN": {
         "pace": 112.0,
-        "PG_pts": 24,
+        "PG_pts": 25,
         "PG_reb": 26,
-        "PG_ast": 16,
+        "PG_ast": 15,
         "SG_pts": 4,
         "SG_reb": 4,
         "SG_ast": 8,
-        "SF_pts": 16,
-        "SF_reb": 17,
+        "SF_pts": 15,
+        "SF_reb": 16,
         "SF_ast": 14,
         "PF_pts": 7,
-        "PF_reb": 18,
+        "PF_reb": 17,
         "PF_ast": 2,
         "C_pts": 21,
         "C_reb": 4,
         "C_ast": 25,
         "pts": 14,
-        "reb": 14,
-        "ast": 13
-    },
-    "IND": {
-        "pace": 112.0,
-        "PG_pts": 25,
-        "PG_reb": 29,
-        "PG_ast": 15,
-        "SG_pts": 14,
-        "SG_reb": 28,
-        "SG_ast": 12,
-        "SF_pts": 13,
-        "SF_reb": 19,
-        "SF_ast": 5,
-        "PF_pts": 25,
-        "PF_reb": 27,
-        "PF_ast": 11,
-        "C_pts": 26,
-        "C_reb": 22,
-        "C_ast": 24,
-        "pts": 21,
-        "reb": 25,
+        "reb": 13,
         "ast": 13
     },
     "TOR": {
         "pace": 112.0,
         "PG_pts": 26,
-        "PG_reb": 12,
+        "PG_reb": 11,
         "PG_ast": 5,
         "SG_pts": 12,
         "SG_reb": 7,
-        "SG_ast": 23,
-        "SF_pts": 5,
+        "SG_ast": 22,
+        "SF_pts": 4,
         "SF_reb": 8,
-        "SF_ast": 11,
+        "SF_ast": 10,
         "PF_pts": 10,
         "PF_reb": 13,
         "PF_ast": 8,
         "C_pts": 5,
         "C_reb": 16,
         "C_ast": 1,
-        "pts": 12,
+        "pts": 11,
         "reb": 11,
-        "ast": 10
+        "ast": 9
     },
     "GSW": {
         "pace": 112.0,
         "PG_pts": 27,
-        "PG_reb": 10,
+        "PG_reb": 9,
         "PG_ast": 7,
         "SG_pts": 20,
         "SG_reb": 16,
         "SG_ast": 19,
         "SF_pts": 1,
-        "SF_reb": 16,
-        "SF_ast": 23,
+        "SF_reb": 15,
+        "SF_ast": 24,
         "PF_pts": 17,
         "PF_reb": 25,
-        "PF_ast": 10,
+        "PF_ast": 11,
         "C_pts": 17,
         "C_reb": 29,
         "C_ast": 29,
@@ -671,16 +721,16 @@ DEF = {
         "pace": 112.0,
         "PG_pts": 28,
         "PG_reb": 22,
-        "PG_ast": 28,
+        "PG_ast": 27,
         "SG_pts": 21,
         "SG_reb": 18,
         "SG_ast": 26,
-        "SF_pts": 19,
+        "SF_pts": 18,
         "SF_reb": 1,
         "SF_ast": 13,
         "PF_pts": 22,
-        "PF_reb": 20,
-        "PF_ast": 17,
+        "PF_reb": 19,
+        "PF_ast": 16,
         "C_pts": 30,
         "C_reb": 28,
         "C_ast": 22,
@@ -695,11 +745,11 @@ DEF = {
         "PG_ast": 17,
         "SG_pts": 9,
         "SG_reb": 5,
-        "SG_ast": 22,
+        "SG_ast": 21,
         "SF_pts": 24,
         "SF_reb": 29,
         "SF_ast": 4,
-        "PF_pts": 3,
+        "PF_pts": 2,
         "PF_reb": 12,
         "PF_ast": 1,
         "C_pts": 6,
@@ -718,14 +768,14 @@ DEF = {
         "SG_reb": 26,
         "SG_ast": 29,
         "SF_pts": 29,
-        "SF_reb": 12,
+        "SF_reb": 17,
         "SF_ast": 30,
         "PF_pts": 28,
         "PF_reb": 10,
         "PF_ast": 30,
         "C_pts": 24,
-        "C_reb": 19,
-        "C_ast": 14,
+        "C_reb": 17,
+        "C_ast": 13,
         "pts": 28,
         "reb": 17,
         "ast": 25
@@ -765,2513 +815,1039 @@ DEF = {
 #   note          — one line of context shown on the card
 # ─────────────────────────────────────────────────────────────────────────────
 RAW_PLAYERS = {
-    "OKC_NYK": [
+    "DAL_ORL": [
         {
-            "name": "Shai Gilgeous-Alexander",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 42,
-                    "reb": 6,
-                    "ast": 6
-                },
-                {
-                    "pts": 26,
-                    "reb": 3,
-                    "ast": 9
-                },
-                {
-                    "pts": 22,
-                    "reb": 4,
-                    "ast": 8
-                },
-                {
-                    "pts": 33,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 27,
-                    "reb": 0,
-                    "ast": 12
-                },
-                {
-                    "pts": 33,
-                    "reb": 7,
-                    "ast": 8
-                },
-                {
-                    "pts": 37,
-                    "reb": 3,
-                    "ast": 6
-                },
-                {
-                    "pts": 32,
-                    "reb": 8,
-                    "ast": 5
-                },
-                {
-                    "pts": 26,
-                    "reb": 3,
-                    "ast": 8
-                },
-                {
-                    "pts": 30,
-                    "reb": 6,
-                    "ast": 9
-                }
-            ],
-            "min_avg": 34.2,
-            "min_l10": 32.9,
-            "edges": {
-                "pts": 0.2,
-                "reb": 0.0,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 29.5,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Cason Wallace",
-            "team": "OKC",
-            "opp": "NYK",
+            "name": "Max Christie",
+            "team": "DAL",
+            "opp": "ORL",
             "pos": "SG",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 11,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 13,
+                    "pts": 15,
                     "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 8
-                },
-                {
-                    "pts": 14,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 11,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 27.6,
-            "min_l10": 28.2,
-            "edges": {
-                "pts": 1.0,
-                "reb": 3.0,
-                "ast": 3.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 14.5,
-            "note": "NYK #24 vs SG reb | O/U 221.5"
-        },
-        {
-            "name": "Chet Holmgren",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 22,
-                    "reb": 10,
-                    "ast": 4
-                },
-                {
-                    "pts": 14,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 20,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 22,
-                    "reb": 11,
-                    "ast": 4
-                },
-                {
-                    "pts": 5,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 4,
-                    "reb": 9,
                     "ast": 2
                 },
                 {
                     "pts": 18,
-                    "reb": 10,
+                    "reb": 6,
                     "ast": 2
                 },
                 {
-                    "pts": 14,
-                    "reb": 5,
+                    "pts": 12,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 6,
                     "ast": 1
                 },
                 {
-                    "pts": 19,
-                    "reb": 7,
+                    "pts": 12,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
                     "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 1,
+                    "ast": 2
                 }
             ],
-            "min_avg": 27.4,
-            "min_l10": 27.9,
+            "min_avg": 28.2,
+            "min_l10": 27.2,
             "edges": {
-                "pts": 0.0,
+                "pts": 0.2,
                 "reb": 0.0,
-                "ast": 0.0
+                "ast": 2.2
             },
-            "fd_line_cat": "PR",
-            "fd_line": 21.0,
-            "note": "O/U 221.5"
+            "fd_line_cat": "P",
+            "fd_line": 10.5,
+            "note": "Usage boost +8% (Flagg OUT) | O/U 228.5"
         },
         {
-            "name": "Isaiah Hartenstein",
-            "team": "OKC",
-            "opp": "NYK",
+            "name": "Khris Middleton",
+            "team": "DAL",
+            "opp": "ORL",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 17,
+                    "reb": 8,
+                    "ast": 9
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 17,
+                    "reb": 3,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 22.9,
+            "min_l10": 21.3,
+            "edges": {
+                "pts": 3.0,
+                "reb": 3.8,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "Usage boost +8% (Flagg OUT) | Bounce-back (12 PRA last game vs 18 avg) | ORL #24 vs SF pts | O/U 228.5"
+        },
+        {
+            "name": "Daniel Gafford",
+            "team": "DAL",
+            "opp": "ORL",
             "pos": "C",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 8,
-                    "reb": 15,
-                    "ast": 4
-                },
-                {
-                    "pts": 8,
-                    "reb": 6,
-                    "ast": 0
-                },
-                {
-                    "pts": 16,
-                    "reb": 7,
-                    "ast": 4
-                },
-                {
-                    "pts": 5,
+                    "pts": 22,
                     "reb": 8,
-                    "ast": 6
+                    "ast": 1
                 },
                 {
-                    "pts": 14,
-                    "reb": 7,
-                    "ast": 2
+                    "pts": 13,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 6,
+                    "ast": 3
                 },
                 {
                     "pts": 4,
                     "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 18,
-                    "reb": 11,
-                    "ast": 4
-                },
-                {
-                    "pts": 4,
-                    "reb": 10,
-                    "ast": 5
-                },
-                {
-                    "pts": 14,
-                    "reb": 10,
-                    "ast": 6
+                    "ast": 0
                 },
                 {
                     "pts": 12,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 18,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 5,
                     "reb": 10,
-                    "ast": 4
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 16,
+                    "ast": 5
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 0
                 }
             ],
-            "min_avg": 27.9,
-            "min_l10": 25.8,
+            "min_avg": 21.6,
+            "min_l10": 21.5,
             "edges": {
                 "pts": 0.0,
                 "reb": 0.2,
-                "ast": 0.0
-            },
-            "fd_line_cat": "R",
-            "fd_line": 8.5,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Aaron Wiggins",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 28,
-                    "reb": 7,
-                    "ast": 7
-                },
-                {
-                    "pts": 35,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 17,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 3,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 8,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 19,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 11,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 26,
-                    "reb": 4,
-                    "ast": 6
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 23.0,
-            "min_l10": 25.8,
-            "edges": {
-                "pts": 1.5,
-                "reb": 2.2,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 15.5,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Isaiah Joe",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "SG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 17,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 32,
-                    "reb": 5,
-                    "ast": 9
-                },
-                {
-                    "pts": 5,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 31,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 19,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 14,
-                    "reb": 3,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 21.7,
-            "min_l10": 25.4,
-            "edges": {
-                "pts": 1.0,
-                "reb": 3.0,
-                "ast": 3.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 13.5,
-            "note": "Minutes trending up (21.7->25.4) | NYK #24 vs SG reb | O/U 221.5"
-        },
-        {
-            "name": "Alex Caruso",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 19,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 7,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 6
-                },
-                {
-                    "pts": 14,
-                    "reb": 6,
-                    "ast": 5
-                },
-                {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 19.6,
-            "min_l10": 19.6,
-            "edges": {
-                "pts": 1.5,
-                "reb": 2.2,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 15.5,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Jared McCain",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 11,
-                    "reb": 0,
-                    "ast": 4
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 24,
-                    "reb": 7,
-                    "ast": 3
-                },
-                {
-                    "pts": 17,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 7,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 15,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 18,
-                    "reb": 0,
-                    "ast": 4
-                },
-                {
-                    "pts": 30,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 20,
-                    "reb": 2,
-                    "ast": 5
-                }
-            ],
-            "min_avg": 29.1,
-            "min_l10": 31.7,
-            "edges": {
-                "pts": 0.2,
-                "reb": 0.0,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 15.0,
-            "note": "Bounce-back (9 PRA last game vs 21 avg) | O/U 221.5"
-        },
-        {
-            "name": "Jaylin Williams",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "PF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 15,
-                    "reb": 11,
-                    "ast": 10
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 8,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 14,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 19,
-                    "reb": 17,
-                    "ast": 11
-                },
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 8,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 17.0,
-            "min_l10": 19.5,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.0,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 18.0,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Kenrich Williams",
-            "team": "OKC",
-            "opp": "NYK",
-            "pos": "PF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 17,
-                    "reb": 12,
-                    "ast": 2
-                },
-                {
-                    "pts": 18,
-                    "reb": 7,
-                    "ast": 5
-                },
-                {
-                    "pts": 13,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 4,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 6,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 8,
-                    "ast": 5
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 16.8,
-            "min_l10": 21.4,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.0,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 15.0,
-            "note": "Minutes trending up (16.8->21.4) | O/U 221.5"
-        },
-        {
-            "name": "Jalen Brunson",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 27,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 5
-                },
-                {
-                    "pts": 27,
-                    "reb": 1,
-                    "ast": 10
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 6
-                },
-                {
-                    "pts": 39,
-                    "reb": 4,
-                    "ast": 10
-                },
-                {
-                    "pts": 25,
-                    "reb": 2,
-                    "ast": 7
-                },
-                {
-                    "pts": 31,
-                    "reb": 5,
-                    "ast": 6
-                },
-                {
-                    "pts": 23,
-                    "reb": 7,
-                    "ast": 6
-                },
-                {
-                    "pts": 34,
-                    "reb": 3,
-                    "ast": 7
-                },
-                {
-                    "pts": 22,
-                    "reb": 3,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 35.4,
-            "min_l10": 36.7,
-            "edges": {
-                "pts": 0.0,
-                "reb": 1.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 25.0,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Mikal Bridges",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "SF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 17,
-                    "reb": 2,
-                    "ast": 8
-                },
-                {
-                    "pts": 17,
-                    "reb": 2,
-                    "ast": 7
-                },
-                {
-                    "pts": 14,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 22,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 20,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 14,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 28,
-                    "reb": 2,
-                    "ast": 7
-                },
-                {
-                    "pts": 26,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 17,
-                    "reb": 4,
-                    "ast": 9
-                }
-            ],
-            "min_avg": 37.5,
-            "min_l10": 36.9,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 17.5,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Josh Hart",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "SG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 8,
-                    "reb": 11,
-                    "ast": 5
-                },
-                {
-                    "pts": 10,
-                    "reb": 11,
-                    "ast": 7
-                },
-                {
-                    "pts": 7,
-                    "reb": 10,
-                    "ast": 5
-                },
-                {
-                    "pts": 16,
-                    "reb": 9,
-                    "ast": 11
-                },
-                {
-                    "pts": 19,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 6
-                },
-                {
-                    "pts": 14,
-                    "reb": 8,
-                    "ast": 9
-                },
-                {
-                    "pts": 13,
-                    "reb": 14,
-                    "ast": 8
-                },
-                {
-                    "pts": 7,
-                    "reb": 5,
-                    "ast": 6
-                },
-                {
-                    "pts": 16,
-                    "reb": 12,
-                    "ast": 11
-                }
-            ],
-            "min_avg": 37.6,
-            "min_l10": 36.8,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.8,
-                "ast": 0.5
-            },
-            "fd_line_cat": "RA",
-            "fd_line": 15.5,
-            "note": "OKC #27 vs SG reb | O/U 221.5"
-        },
-        {
-            "name": "OG Anunoby",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 15,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 13,
-                    "reb": 8,
-                    "ast": 1
-                },
-                {
-                    "pts": 32,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 24,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 23,
-                    "reb": 6,
-                    "ast": 6
-                },
-                {
-                    "pts": 27,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 28,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 31,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 28,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 35,
-                    "reb": 5,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 36.6,
-            "min_l10": 36.2,
-            "edges": {
-                "pts": 0.2,
-                "reb": 1.0,
                 "ast": 1.0
             },
             "fd_line_cat": "P",
-            "fd_line": 24.5,
-            "note": "Bounce-back (23 PRA last game vs 33 avg) | O/U 221.5"
+            "fd_line": 10.5,
+            "note": "Usage boost +8% (Flagg OUT) | O/U 228.5"
         },
         {
-            "name": "Karl-Anthony Towns",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "C",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 25,
-                    "reb": 10,
-                    "ast": 5
-                },
-                {
-                    "pts": 34,
-                    "reb": 14,
-                    "ast": 2
-                },
-                {
-                    "pts": 19,
-                    "reb": 13,
-                    "ast": 1
-                },
-                {
-                    "pts": 30,
-                    "reb": 11,
-                    "ast": 3
-                },
-                {
-                    "pts": 25,
-                    "reb": 13,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 11,
-                    "ast": 2
-                },
-                {
-                    "pts": 14,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 34,
-                    "reb": 14,
-                    "ast": 4
-                },
-                {
-                    "pts": 26,
-                    "reb": 12,
-                    "ast": 11
-                },
-                {
-                    "pts": 31,
-                    "reb": 11,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 35.0,
-            "min_l10": 34.9,
-            "edges": {
-                "pts": 0.0,
-                "reb": 2.2,
-                "ast": 0.2
-            },
-            "fd_line_cat": "R",
-            "fd_line": 11.5,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Landry Shamet",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "SG",
+            "name": "Naji Marshall",
+            "team": "DAL",
+            "opp": "ORL",
+            "pos": "SF",
             "role": "bench",
-            "inj": None,
+            "inj": "GTD",
             "last10_games": [
-                {
-                    "pts": 29,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 15,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 3,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 20,
-                    "reb": 2,
-                    "ast": 1
-                },
                 {
                     "pts": 11,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 13,
-                    "reb": 0,
+                    "reb": 3,
                     "ast": 2
-                }
-            ],
-            "min_avg": 15.8,
-            "min_l10": 22.6,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.8,
-                "ast": 0.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 11.5,
-            "note": "Minutes trending up (15.8->22.6) | OKC #27 vs SG reb | O/U 221.5"
-        },
-        {
-            "name": "Jose Alvarado",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 14,
-                    "reb": 3,
-                    "ast": 4
                 },
                 {
-                    "pts": 14,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 16,
-                    "reb": 1,
-                    "ast": 4
-                },
-                {
-                    "pts": 27,
-                    "reb": 4,
+                    "pts": 7,
+                    "reb": 2,
                     "ast": 5
                 },
                 {
-                    "pts": 17,
-                    "reb": 2,
-                    "ast": 10
-                },
-                {
-                    "pts": 12,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 6
-                },
-                {
-                    "pts": 10,
+                    "pts": 24,
                     "reb": 4,
                     "ast": 8
                 },
                 {
                     "pts": 9,
-                    "reb": 1,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 24.4,
-            "min_l10": 26.6,
-            "edges": {
-                "pts": 0.0,
-                "reb": 1.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 13.0,
-            "note": "O/U 221.5"
-        },
-        {
-            "name": "Jordan Clarkson",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "SG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 14,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 14,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 19,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 0,
-                    "ast": 6
-                },
-                {
-                    "pts": 19,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 21,
-                    "reb": 9,
-                    "ast": 7
-                },
-                {
-                    "pts": 16,
-                    "reb": 1,
-                    "ast": 4
-                },
-                {
-                    "pts": 24,
-                    "reb": 3,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 26.7,
-            "min_l10": 26.5,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.8,
-                "ast": 0.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 14.5,
-            "note": "Bounce-back (15 PRA last game vs 22 avg) | OKC #27 vs SG reb | O/U 221.5"
-        },
-        {
-            "name": "Jeremy Sochan",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 2,
                     "reb": 2,
                     "ast": 1
                 },
                 {
-                    "pts": 18,
+                    "pts": 23,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 8
+                },
+                {
+                    "pts": 8,
                     "reb": 8,
                     "ast": 3
                 },
                 {
-                    "pts": 13,
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 40,
+                    "reb": 7,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 27.8,
+            "min_l10": 32.9,
+            "edges": {
+                "pts": 3.0,
+                "reb": 3.8,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 14.5,
+            "note": "Usage boost +4% (Flagg OUT) | Bounce-back (16 PRA last game vs 23 avg) | Minutes trending up (27.8->32.9) | ORL #24 vs SF pts | O/U 228.5"
+        },
+        {
+            "name": "Caleb Martin",
+            "team": "DAL",
+            "opp": "ORL",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
                     "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 6,
                     "ast": 2
                 },
                 {
                     "pts": 2,
-                    "reb": 4,
+                    "reb": 2,
                     "ast": 0
                 },
                 {
-                    "pts": 9,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 23,
-                    "reb": 9,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 15,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 14,
+                    "pts": 5,
                     "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
                     "ast": 2
                 }
             ],
-            "min_avg": 25.3,
-            "min_l10": 25.3,
+            "min_avg": 27.1,
+            "min_l10": 20.3,
             "edges": {
                 "pts": 0.0,
                 "reb": 0.5,
                 "ast": 0.0
             },
-            "fd_line_cat": "P",
-            "fd_line": 11.5,
-            "note": "Bounce-back (5 PRA last game vs 19 avg) | O/U 221.5"
-        },
-        {
-            "name": "Tyler Kolek",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 1,
-                    "reb": 0,
-                    "ast": 3
-                },
-                {
-                    "pts": 7,
-                    "reb": 4,
-                    "ast": 7
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 5
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 7
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 9
-                },
-                {
-                    "pts": 4,
-                    "reb": 1,
-                    "ast": 8
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 12.3,
-            "min_l10": 15.3,
-            "edges": {
-                "pts": 0.0,
-                "reb": 1.5,
-                "ast": 0.0
-            },
             "fd_line_cat": "PRA",
-            "fd_line": 8.5,
-            "note": "Minutes trending up (12.3->15.3) | O/U 221.5"
+            "fd_line": 10.5,
+            "note": "Usage boost +4% (Flagg OUT) | O/U 228.5"
         },
         {
-            "name": "Trey Jemison",
-            "team": "NYK",
-            "opp": "OKC",
-            "pos": "C",
+            "name": "Klay Thompson",
+            "team": "DAL",
+            "opp": "ORL",
+            "pos": "SG",
             "role": "bench",
-            "inj": None,
+            "inj": "GTD",
             "last10_games": [
                 {
-                    "pts": 3,
-                    "reb": 8,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 4,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
                     "pts": 7,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 4,
-                    "reb": 5,
+                    "reb": 1,
                     "ast": 2
                 },
                 {
-                    "pts": 3,
+                    "pts": 6,
                     "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 15,
+                    "reb": 1,
                     "ast": 0
                 },
                 {
-                    "pts": 5,
-                    "reb": 6,
+                    "pts": 2,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 18,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 21,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 4,
                     "ast": 0
                 },
                 {
                     "pts": 6,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 27.4,
+            "min_l10": 24.5,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.5,
+            "note": "Usage boost +4% (Flagg OUT) | Bounce-back (10 PRA last game vs 15 avg) | O/U 228.5"
+        },
+        {
+            "name": "AJ Johnson",
+            "team": "DAL",
+            "opp": "ORL",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 1,
+                    "ast": 8
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
                     "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 12,
+                    "reb": 0,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 20,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 21,
+                    "reb": 1,
+                    "ast": 4
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
                     "ast": 0
                 }
             ],
-            "min_avg": 14.0,
-            "min_l10": 15.4,
+            "min_avg": 28.2,
+            "min_l10": 34.9,
             "edges": {
-                "pts": 0.0,
-                "reb": 2.2,
-                "ast": 0.2
+                "pts": 3.8,
+                "reb": 1.5,
+                "ast": 1.0
             },
-            "fd_line_cat": "PRA",
-            "fd_line": 7.0,
-            "note": "O/U 221.5"
-        }
-    ],
-    "CHA_BOS": [
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "Usage boost +4% (Flagg OUT) | Minutes trending up (28.2->34.9) | ORL #29 vs PG pts | O/U 228.5"
+        },
         {
-            "name": "LaMelo Ball",
-            "team": "CHA",
-            "opp": "BOS",
+            "name": "Anthony Black",
+            "team": "ORL",
+            "opp": "DAL",
             "pos": "PG",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 20,
+                    "reb": 10,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 6,
+                    "ast": 7
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 24.1,
+            "min_l10": 26.5,
+            "edges": {
+                "pts": 2.2,
+                "reb": 3.8,
+                "ast": 3.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "DAL #30 vs PG reb | O/U 228.5"
+        },
+        {
+            "name": "Desmond Bane",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "SG",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 25,
-                    "reb": 1,
-                    "ast": 9
-                },
-                {
-                    "pts": 18,
-                    "reb": 3,
-                    "ast": 11
-                },
-                {
-                    "pts": 25,
-                    "reb": 5,
-                    "ast": 8
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 5
-                },
-                {
-                    "pts": 27,
-                    "reb": 3,
-                    "ast": 15
-                },
-                {
-                    "pts": 25,
-                    "reb": 2,
-                    "ast": 9
-                },
-                {
-                    "pts": 15,
+                    "pts": 24,
                     "reb": 6,
-                    "ast": 10
-                },
-                {
-                    "pts": 13,
-                    "reb": 1,
-                    "ast": 7
+                    "ast": 1
                 },
                 {
                     "pts": 28,
-                    "reb": 10,
+                    "reb": 6,
+                    "ast": 9
+                },
+                {
+                    "pts": 19,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 38,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 9,
                     "ast": 6
                 },
                 {
-                    "pts": 25,
-                    "reb": 9,
-                    "ast": 7
+                    "pts": 19,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 29,
+                    "reb": 4,
+                    "ast": 6
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 21,
+                    "reb": 4,
+                    "ast": 6
                 }
             ],
-            "min_avg": 32.0,
-            "min_l10": 31.0,
+            "min_avg": 31.9,
+            "min_l10": 33.3,
             "edges": {
                 "pts": 0.0,
-                "reb": 0.0,
-                "ast": 1.5
+                "reb": 3.8,
+                "ast": 0.0
             },
-            "fd_line_cat": "PA",
-            "fd_line": 29.0,
-            "note": "PG vs BOS"
+            "fd_line_cat": "P",
+            "fd_line": 20.0,
+            "note": "DAL #29 vs SG reb | O/U 228.5"
         },
         {
-            "name": "Brandon Miller",
-            "team": "CHA",
-            "opp": "BOS",
+            "name": "Tristan da Silva",
+            "team": "ORL",
+            "opp": "DAL",
             "pos": "SF",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 20,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 19,
-                    "reb": 4,
+                    "pts": 14,
+                    "reb": 7,
                     "ast": 6
                 },
                 {
-                    "pts": 13,
+                    "pts": 14,
                     "reb": 3,
                     "ast": 2
                 },
                 {
-                    "pts": 24,
+                    "pts": 5,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
                     "reb": 2,
                     "ast": 2
                 },
                 {
-                    "pts": 18,
-                    "reb": 3,
-                    "ast": 9
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 0
                 },
                 {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 4
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 0
                 },
                 {
-                    "pts": 21,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 26,
-                    "reb": 6,
-                    "ast": 5
-                },
-                {
-                    "pts": 25,
-                    "reb": 4,
+                    "pts": 9,
+                    "reb": 5,
                     "ast": 1
                 },
                 {
-                    "pts": 26,
-                    "reb": 6,
-                    "ast": 3
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 0
                 }
             ],
-            "min_avg": 34.3,
-            "min_l10": 34.0,
+            "min_avg": 22.9,
+            "min_l10": 17.4,
             "edges": {
                 "pts": 0.0,
-                "reb": 1.5,
-                "ast": 0.0
+                "reb": 2.2,
+                "ast": 3.8
             },
-            "fd_line_cat": "P",
-            "fd_line": 19.5,
-            "note": "SF vs BOS"
+            "fd_line_cat": "PRA",
+            "fd_line": 9.5,
+            "note": "DAL #28 vs SF ast | O/U 228.5"
         },
         {
-            "name": "Miles Bridges",
-            "team": "CHA",
-            "opp": "BOS",
+            "name": "Paolo Banchero",
+            "team": "ORL",
+            "opp": "DAL",
             "pos": "PF",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 14,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 8,
+                    "pts": 15,
                     "reb": 4,
-                    "ast": 2
+                    "ast": 6
                 },
                 {
-                    "pts": 22,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 18,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 26,
+                    "pts": 33,
                     "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 33,
+                    "reb": 18,
                     "ast": 8
-                },
-                {
-                    "pts": 20,
-                    "reb": 6,
-                    "ast": 2
-                },
-                {
-                    "pts": 11,
-                    "reb": 4,
-                    "ast": 6
-                },
-                {
-                    "pts": 11,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 17,
-                    "reb": 13,
-                    "ast": 4
-                },
-                {
-                    "pts": 20,
-                    "reb": 3,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 31.7,
-            "min_l10": 28.2,
-            "edges": {
-                "pts": 1.0,
-                "reb": 0.0,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 16.0,
-            "note": "PF vs BOS"
-        },
-        {
-            "name": "Coby White",
-            "team": "CHA",
-            "opp": "BOS",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 2,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 16,
-                    "reb": 9,
-                    "ast": 4
-                },
-                {
-                    "pts": 18,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 37,
-                    "reb": 2,
-                    "ast": 5
-                },
-                {
-                    "pts": 31,
-                    "reb": 5,
-                    "ast": 7
-                },
-                {
-                    "pts": 28,
-                    "reb": 3,
-                    "ast": 6
-                },
-                {
-                    "pts": 7,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 25,
-                    "reb": 11,
-                    "ast": 2
-                },
-                {
-                    "pts": 26,
-                    "reb": 3,
-                    "ast": 9
-                },
-                {
-                    "pts": 37,
-                    "reb": 3,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 33.1,
-            "min_l10": 32.3,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.0,
-                "ast": 1.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 22.0,
-            "note": "Bounce-back (10 PRA last game vs 32 avg)"
-        },
-        {
-            "name": "Josh Green",
-            "team": "CHA",
-            "opp": "BOS",
-            "pos": "SG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 13,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 20,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 27.8,
-            "min_l10": 22.9,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.0,
-            "note": "Bounce-back (5 PRA last game vs 11 avg)"
-        },
-        {
-            "name": "Tre Mann",
-            "team": "CHA",
-            "opp": "BOS",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 19,
-                    "reb": 3,
-                    "ast": 6
-                },
-                {
-                    "pts": 11,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 14,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 4,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 6
-                },
-                {
-                    "pts": 10,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 23,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 27,
-                    "reb": 1,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 24.5,
-            "min_l10": 23.3,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.0,
-                "ast": 1.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 12.5,
-            "note": "Bounce-back (7 PRA last game vs 18 avg)"
-        },
-        {
-            "name": "Pat Connaughton",
-            "team": "CHA",
-            "opp": "BOS",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 43,
-                    "reb": 11,
-                    "ast": 5
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 9,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 6,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 8,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 2,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 0,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 15.4,
-            "min_l10": 15.5,
-            "edges": {
-                "pts": 0.0,
-                "reb": 1.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 13.0,
-            "note": "SF vs BOS"
-        },
-        {
-            "name": "Antonio Reeves",
-            "team": "CHA",
-            "opp": "BOS",
-            "pos": "SG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 20,
-                    "reb": 6,
-                    "ast": 0
-                },
-                {
-                    "pts": 19,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 16,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 17,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 23,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 11,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 16,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 17,
-                    "reb": 2,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 19.0,
-            "min_l10": 30.4,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 15.0,
-            "note": "Minutes trending up (19.0->30.4)"
-        },
-        {
-            "name": "Derrick White",
-            "team": "BOS",
-            "opp": "CHA",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 19,
-                    "reb": 3,
-                    "ast": 7
-                },
-                {
-                    "pts": 14,
-                    "reb": 8,
-                    "ast": 9
-                },
-                {
-                    "pts": 19,
-                    "reb": 1,
-                    "ast": 4
-                },
-                {
-                    "pts": 12,
-                    "reb": 9,
-                    "ast": 7
-                },
-                {
-                    "pts": 16,
-                    "reb": 4,
-                    "ast": 6
-                },
-                {
-                    "pts": 14,
-                    "reb": 8,
-                    "ast": 10
-                },
-                {
-                    "pts": 13,
-                    "reb": 8,
-                    "ast": 6
-                },
-                {
-                    "pts": 16,
-                    "reb": 4,
-                    "ast": 7
-                },
-                {
-                    "pts": 12,
-                    "reb": 5,
-                    "ast": 8
-                },
-                {
-                    "pts": 17,
-                    "reb": 3,
-                    "ast": 8
-                }
-            ],
-            "min_avg": 33.8,
-            "min_l10": 34.4,
-            "edges": {
-                "pts": 0.2,
-                "reb": 0.0,
-                "ast": 0.2
-            },
-            "fd_line_cat": "A",
-            "fd_line": 7.0,
-            "note": "PG vs CHA"
-        },
-        {
-            "name": "Jaylen Brown",
-            "team": "BOS",
-            "opp": "CHA",
-            "pos": "SG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 5
-                },
-                {
-                    "pts": 31,
-                    "reb": 5,
-                    "ast": 3
                 },
                 {
                     "pts": 24,
-                    "reb": 9,
+                    "reb": 10,
                     "ast": 4
                 },
                 {
-                    "pts": 14,
-                    "reb": 2,
+                    "pts": 26,
+                    "reb": 6,
                     "ast": 4
                 },
                 {
                     "pts": 24,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 9,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 26,
-                    "reb": 8,
-                    "ast": 7
-                }
-            ],
-            "min_avg": 34.3,
-            "min_l10": 28.5,
-            "edges": {
-                "pts": 0.0,
-                "reb": 1.5,
-                "ast": 1.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 16.0,
-            "note": "Bounce-back (12 PRA last game vs 25 avg)"
-        },
-        {
-            "name": "Baylor Scheierman",
-            "team": "BOS",
-            "opp": "CHA",
-            "pos": "SG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 7,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 3,
-                    "reb": 0,
-                    "ast": 4
-                },
-                {
-                    "pts": 9,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 14.3,
-            "min_l10": 21.1,
-            "edges": {
-                "pts": 0.0,
-                "reb": 1.5,
-                "ast": 1.5
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.0,
-            "note": "Minutes trending up (14.3->21.1)"
-        },
-        {
-            "name": "Sam Hauser",
-            "team": "BOS",
-            "opp": "CHA",
-            "pos": "SF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 20,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 18,
-                    "reb": 8,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 11,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 11,
-                    "reb": 3,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 21.7,
-            "min_l10": 24.3,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.0,
-                "ast": 0.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 10.5,
-            "note": "SF vs CHA"
-        },
-        {
-            "name": "Neemias Queta",
-            "team": "BOS",
-            "opp": "CHA",
-            "pos": "C",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 2,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 7,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 11,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 6,
-                    "reb": 0,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 4,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 6,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 8,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 8,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 16.3,
-            "min_l10": 15.7,
-            "edges": {
-                "pts": 0.2,
-                "reb": 0.0,
-                "ast": 0.5
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 10.5,
-            "note": "C vs CHA"
-        },
-        {
-            "name": "Payton Pritchard",
-            "team": "BOS",
-            "opp": "CHA",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 34,
-                    "reb": 7,
-                    "ast": 7
-                },
-                {
-                    "pts": 22,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 15,
-                    "reb": 4,
-                    "ast": 10
-                },
-                {
-                    "pts": 8,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 20,
-                    "reb": 6,
-                    "ast": 7
-                },
-                {
-                    "pts": 10,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 22,
-                    "reb": 5,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 28.4,
-            "min_l10": 29.5,
-            "edges": {
-                "pts": 0.2,
-                "reb": 0.0,
-                "ast": 0.2
-            },
-            "fd_line_cat": "P",
-            "fd_line": 14.5,
-            "note": "PG vs CHA"
-        }
-    ],
-    "UTA_PHI": [
-        {
-            "name": "Keyonte George",
-            "team": "UTA",
-            "opp": "PHI",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 14,
-                    "reb": 5,
-                    "ast": 7
-                },
-                {
-                    "pts": 12,
-                    "reb": 1,
-                    "ast": 8
-                },
-                {
-                    "pts": 18,
                     "reb": 6,
                     "ast": 6
                 },
                 {
                     "pts": 35,
+                    "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 32,
+                    "reb": 7,
+                    "ast": 6
+                },
+                {
+                    "pts": 30,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 30,
+                    "reb": 8,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 34.4,
+            "min_l10": 34.8,
+            "edges": {
+                "pts": 1.5,
+                "reb": 0.5,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 27.0,
+            "note": "Bounce-back (25 PRA last game vs 42 avg) | O/U 228.5"
+        },
+        {
+            "name": "Wendell Carter Jr.",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "C",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 17,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
                     "reb": 4,
                     "ast": 1
                 },
                 {
-                    "pts": 15,
-                    "reb": 8,
-                    "ast": 5
-                },
-                {
-                    "pts": 14,
-                    "reb": 1,
+                    "pts": 12,
+                    "reb": 4,
                     "ast": 0
                 },
                 {
-                    "pts": 20,
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 8,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 25.9,
+            "min_l10": 25.8,
+            "edges": {
+                "pts": 3.8,
+                "reb": 2.2,
+                "ast": 3.8
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 16.0,
+            "note": "Bounce-back (9 PRA last game vs 17 avg) | DAL #28 vs C pts | O/U 228.5"
+        },
+        {
+            "name": "Jalen Suggs",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 24,
                     "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 27,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 29,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 16,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 5,
                     "ast": 4
                 },
                 {
-                    "pts": 18,
+                    "pts": 9,
+                    "reb": 5,
+                    "ast": 8
+                },
+                {
+                    "pts": 32,
+                    "reb": 9,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 28.7,
+            "min_l10": 25.0,
+            "edges": {
+                "pts": 2.2,
+                "reb": 3.8,
+                "ast": 3.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 16.0,
+            "note": "Bounce-back (13 PRA last game vs 24 avg) | DAL #30 vs PG reb | O/U 228.5"
+        },
+        {
+            "name": "Jevon Carter",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 5,
                     "reb": 4,
-                    "ast": 4
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 1,
+                    "ast": 3
                 },
                 {
                     "pts": 17,
-                    "reb": 3,
-                    "ast": 8
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 10,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 2,
+                    "reb": 0,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 13.9,
+            "min_l10": 16.4,
+            "edges": {
+                "pts": 2.2,
+                "reb": 3.8,
+                "ast": 3.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 10.5,
+            "note": "Minutes trending up (13.9->16.4) | DAL #30 vs PG reb | O/U 228.5"
+        },
+        {
+            "name": "Jett Howard",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 16,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 17,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 1,
+                    "ast": 0
                 },
                 {
                     "pts": 6,
@@ -3279,21 +1855,233 @@ RAW_PLAYERS = {
                     "ast": 1
                 }
             ],
-            "min_avg": 31.4,
-            "min_l10": 32.4,
+            "min_avg": 13.0,
+            "min_l10": 15.0,
+            "edges": {
+                "pts": 0.0,
+                "reb": 3.8,
+                "ast": 0.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 6.5,
+            "note": "Minutes trending up (13.0->15.0) | DAL #29 vs SG reb | O/U 228.5"
+        },
+        {
+            "name": "Goga Bitadze",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 10,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 3,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 0,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 20.8,
+            "min_l10": 16.9,
+            "edges": {
+                "pts": 3.8,
+                "reb": 2.2,
+                "ast": 3.8
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 12.0,
+            "note": "DAL #28 vs C pts | O/U 228.5"
+        },
+        {
+            "name": "Jamal Cain",
+            "team": "ORL",
+            "opp": "DAL",
+            "pos": "SF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 18,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 25,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 20,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 11,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 5,
+                    "reb": 3,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 16.6,
+            "min_l10": 20.8,
             "edges": {
                 "pts": 0.0,
                 "reb": 2.2,
-                "ast": 0.2
+                "ast": 3.8
             },
             "fd_line_cat": "P",
-            "fd_line": 16.0,
-            "note": "High O/U 238.5 \u2014 shootout potential"
+            "fd_line": 11.0,
+            "note": "Minutes trending up (16.6->20.8) | DAL #28 vs SF ast | O/U 228.5"
+        }
+    ],
+    "UTA_WAS": [
+        {
+            "name": "Isaiah Collier",
+            "team": "UTA",
+            "opp": "WAS",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 17,
+                    "reb": 3,
+                    "ast": 12
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 22,
+                    "reb": 5,
+                    "ast": 10
+                },
+                {
+                    "pts": 17,
+                    "reb": 2,
+                    "ast": 7
+                },
+                {
+                    "pts": 3,
+                    "reb": 3,
+                    "ast": 7
+                },
+                {
+                    "pts": 16,
+                    "reb": 1,
+                    "ast": 5
+                },
+                {
+                    "pts": 21,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 7,
+                    "reb": 7,
+                    "ast": 6
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 16,
+                    "reb": 3,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 26.2,
+            "min_l10": 30.7,
+            "edges": {
+                "pts": 0.5,
+                "reb": 1.5,
+                "ast": 1.5
+            },
+            "fd_line_cat": "A",
+            "fd_line": 6.5,
+            "note": "Minutes trending up (26.2->30.7) | High O/U 243.5 \u2014 shootout potential"
         },
         {
             "name": "Cody Williams",
             "team": "UTA",
-            "opp": "PHI",
+            "opp": "WAS",
             "pos": "SG",
             "role": "starter",
             "inj": None,
@@ -3353,17 +2141,17 @@ RAW_PLAYERS = {
             "min_l10": 24.2,
             "edges": {
                 "pts": 3.8,
-                "reb": 2.2,
+                "reb": 1.0,
                 "ast": 3.8
             },
             "fd_line_cat": "PRA",
             "fd_line": 6.5,
-            "note": "Bounce-back (5 PRA last game vs 7 avg) | PHI #28 vs SG pts | High O/U 238.5 \u2014 shootout potential"
+            "note": "Bounce-back (5 PRA last game vs 7 avg) | WAS #29 vs SG pts | High O/U 243.5 \u2014 shootout potential"
         },
         {
             "name": "Kyle Filipowski",
             "team": "UTA",
-            "opp": "PHI",
+            "opp": "WAS",
             "pos": "PF",
             "role": "starter",
             "inj": None,
@@ -3422,88 +2210,18 @@ RAW_PLAYERS = {
             "min_avg": 21.6,
             "min_l10": 29.7,
             "edges": {
-                "pts": 0.5,
+                "pts": 3.8,
                 "reb": 3.8,
-                "ast": 0.5
+                "ast": 3.0
             },
             "fd_line_cat": "R",
             "fd_line": 9.5,
-            "note": "Minutes trending up (21.6->29.7) | PHI #29 vs PF reb | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Isaiah Collier",
-            "team": "UTA",
-            "opp": "PHI",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 17,
-                    "reb": 3,
-                    "ast": 12
-                },
-                {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 5
-                },
-                {
-                    "pts": 22,
-                    "reb": 5,
-                    "ast": 10
-                },
-                {
-                    "pts": 17,
-                    "reb": 2,
-                    "ast": 7
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 7
-                },
-                {
-                    "pts": 16,
-                    "reb": 1,
-                    "ast": 5
-                },
-                {
-                    "pts": 21,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 7,
-                    "reb": 7,
-                    "ast": 6
-                },
-                {
-                    "pts": 5,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 16,
-                    "reb": 3,
-                    "ast": 6
-                }
-            ],
-            "min_avg": 26.2,
-            "min_l10": 30.7,
-            "edges": {
-                "pts": 0.0,
-                "reb": 2.2,
-                "ast": 0.2
-            },
-            "fd_line_cat": "A",
-            "fd_line": 6.5,
-            "note": "Minutes trending up (26.2->30.7) | High O/U 238.5 \u2014 shootout potential"
+            "note": "Minutes trending up (21.6->29.7) | WAS #29 vs PF pts | High O/U 243.5 \u2014 shootout potential"
         },
         {
             "name": "Brice Sensabaugh",
             "team": "UTA",
-            "opp": "PHI",
+            "opp": "WAS",
             "pos": "SG",
             "role": "bench",
             "inj": None,
@@ -3563,17 +2281,17 @@ RAW_PLAYERS = {
             "min_l10": 28.7,
             "edges": {
                 "pts": 3.8,
-                "reb": 2.2,
+                "reb": 1.0,
                 "ast": 3.8
             },
             "fd_line_cat": "P",
             "fd_line": 15.5,
-            "note": "Minutes trending up (20.5->28.7) | PHI #28 vs SG pts | High O/U 238.5 \u2014 shootout potential"
+            "note": "Minutes trending up (20.5->28.7) | WAS #29 vs SG pts | High O/U 243.5 \u2014 shootout potential"
         },
         {
             "name": "Oscar Tshiebwe",
             "team": "UTA",
-            "opp": "PHI",
+            "opp": "WAS",
             "pos": "C",
             "role": "bench",
             "inj": None,
@@ -3632,18 +2350,18 @@ RAW_PLAYERS = {
             "min_avg": 18.1,
             "min_l10": 20.0,
             "edges": {
-                "pts": 1.5,
-                "reb": 0.5,
-                "ast": 0.0
+                "pts": 3.8,
+                "reb": 3.8,
+                "ast": 1.5
             },
             "fd_line_cat": "R",
             "fd_line": 9.5,
-            "note": "High O/U 238.5 \u2014 shootout potential"
+            "note": "WAS #29 vs C pts | High O/U 243.5 \u2014 shootout potential"
         },
         {
             "name": "Svi Mykhailiuk",
             "team": "UTA",
-            "opp": "PHI",
+            "opp": "WAS",
             "pos": "SG",
             "role": "bench",
             "inj": None,
@@ -3703,50 +2421,3671 @@ RAW_PLAYERS = {
             "min_l10": 19.6,
             "edges": {
                 "pts": 3.8,
-                "reb": 2.2,
+                "reb": 1.0,
                 "ast": 3.8
             },
             "fd_line_cat": "PRA",
             "fd_line": 11.0,
-            "note": "PHI #28 vs SG pts | High O/U 238.5 \u2014 shootout potential"
+            "note": "WAS #29 vs SG pts | High O/U 243.5 \u2014 shootout potential"
         },
         {
-            "name": "Tyrese Maxey",
-            "team": "PHI",
+            "name": "Trae Young",
+            "team": "WAS",
             "opp": "UTA",
             "pos": "PG",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 6
-                },
-                {
-                    "pts": 5,
+                    "pts": 36,
                     "reb": 3,
                     "ast": 11
                 },
                 {
-                    "pts": 30,
+                    "pts": 24,
+                    "reb": 1,
+                    "ast": 12
+                },
+                {
+                    "pts": 28,
+                    "reb": 1,
+                    "ast": 10
+                },
+                {
+                    "pts": 23,
+                    "reb": 5,
+                    "ast": 15
+                },
+                {
+                    "pts": 16,
+                    "reb": 1,
+                    "ast": 9
+                },
+                {
+                    "pts": 25,
                     "reb": 4,
+                    "ast": 12
+                },
+                {
+                    "pts": 29,
+                    "reb": 4,
+                    "ast": 15
+                },
+                {
+                    "pts": 19,
+                    "reb": 3,
+                    "ast": 19
+                },
+                {
+                    "pts": 29,
+                    "reb": 2,
+                    "ast": 12
+                },
+                {
+                    "pts": 19,
+                    "reb": 2,
+                    "ast": 12
+                }
+            ],
+            "min_avg": 36.0,
+            "min_l10": 36.1,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PA",
+            "fd_line": 36.0,
+            "note": "High O/U 243.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Bilal Coulibaly",
+            "team": "WAS",
+            "opp": "UTA",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 18,
+                    "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 17,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 16,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 7,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 3,
+                    "reb": 5,
+                    "ast": 8
+                }
+            ],
+            "min_avg": 33.0,
+            "min_l10": 31.2,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.5,
+            "note": "Bounce-back (7 PRA last game vs 19 avg) | High O/U 243.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Justin Champagnie",
+            "team": "WAS",
+            "opp": "UTA",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 27,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 22,
+                    "reb": 14,
+                    "ast": 1
+                },
+                {
+                    "pts": 14,
+                    "reb": 12,
+                    "ast": 1
+                },
+                {
+                    "pts": 20,
+                    "reb": 13,
+                    "ast": 0
+                },
+                {
+                    "pts": 15,
+                    "reb": 13,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 11,
+                    "ast": 3
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 9,
+                    "ast": 1
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 24.0,
+            "min_l10": 31.9,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "R",
+            "fd_line": 8.5,
+            "note": "Minutes trending up (24.0->31.9) | High O/U 243.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Jaden Hardy",
+            "team": "WAS",
+            "opp": "UTA",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 3,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 16,
+                    "reb": 5,
                     "ast": 5
                 },
                 {
                     "pts": 13,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 22,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 15,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
                     "reb": 0,
                     "ast": 2
                 },
                 {
-                    "pts": 31,
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 17.5,
+            "min_l10": 18.7,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "High O/U 243.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Anthony Gill",
+            "team": "WAS",
+            "opp": "UTA",
+            "pos": "C",
+            "role": "bench",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 0,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
                     "reb": 2,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 12.5,
+            "min_l10": 18.2,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 9.5,
+            "note": "Bounce-back (4 PRA last game vs 10 avg) | Minutes trending up (12.5->18.2) | High O/U 243.5 \u2014 shootout potential"
+        }
+    ],
+    "BKN_MIA": [
+        {
+            "name": "Terance Mann",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 19,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 4
+                },
+                {
+                    "pts": 14,
+                    "reb": 1,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 21.1,
+            "min_l10": 22.9,
+            "edges": {
+                "pts": 1.5,
+                "reb": 3.8,
+                "ast": 1.5
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.0,
+            "note": "MIA #28 vs PG reb | O/U 226.5"
+        },
+        {
+            "name": "Michael Porter Jr.",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 19,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 12,
+                    "ast": 0
+                },
+                {
+                    "pts": 21,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 23,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 20,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 23,
+                    "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 17,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 17,
+                    "reb": 5,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 33.7,
+            "min_l10": 33.5,
+            "edges": {
+                "pts": 1.5,
+                "reb": 0.2,
+                "ast": 0.2
+            },
+            "fd_line_cat": "PR",
+            "fd_line": 24.0,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Noah Clowney",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 1,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 1,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 22.7,
+            "min_l10": 20.2,
+            "edges": {
+                "pts": 3.8,
+                "reb": 3.8,
+                "ast": 2.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 12.0,
+            "note": "MIA #27 vs PF pts | O/U 226.5"
+        },
+        {
+            "name": "Nic Claxton",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "C",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 6,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 22,
+                    "reb": 11,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 6,
+                    "reb": 14,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 26.9,
+            "min_l10": 24.8,
+            "edges": {
+                "pts": 0.5,
+                "reb": 3.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.5,
+            "note": "Bounce-back (14 PRA last game vs 21 avg) | MIA #25 vs C reb | O/U 226.5"
+        },
+        {
+            "name": "Day'Ron Sharpe",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 10,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 16,
+                    "ast": 5
+                },
+                {
+                    "pts": 7,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 18.1,
+            "min_l10": 20.1,
+            "edges": {
+                "pts": 0.5,
+                "reb": 3.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 16.0,
+            "note": "MIA #25 vs C reb | O/U 226.5"
+        },
+        {
+            "name": "Ziaire Williams",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 22,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 15,
+                    "reb": 4,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 24.5,
+            "min_l10": 23.6,
+            "edges": {
+                "pts": 1.0,
+                "reb": 3.8,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "Bounce-back (10 PRA last game vs 14 avg) | MIA #30 vs SG reb | O/U 226.5"
+        },
+        {
+            "name": "Jalen Wilson",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 18,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 14,
+                    "reb": 9,
+                    "ast": 3
+                },
+                {
+                    "pts": 20,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 12,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 25.7,
+            "min_l10": 26.6,
+            "edges": {
+                "pts": 3.8,
+                "reb": 3.8,
+                "ast": 2.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 12.5,
+            "note": "MIA #27 vs PF pts | O/U 226.5"
+        },
+        {
+            "name": "Ochai Agbaji",
+            "team": "BKN",
+            "opp": "MIA",
+            "pos": "SF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 14,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 24,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 2,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 3,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 27.7,
+            "min_l10": 28.3,
+            "edges": {
+                "pts": 1.5,
+                "reb": 0.2,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 12.5,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Davion Mitchell",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 3,
+                    "ast": 8
+                },
+                {
+                    "pts": 12,
+                    "reb": 4,
+                    "ast": 9
+                },
+                {
+                    "pts": 20,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 13,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 6,
+                    "reb": 1,
+                    "ast": 8
+                },
+                {
+                    "pts": 16,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 7
+                }
+            ],
+            "min_avg": 27.8,
+            "min_l10": 32.3,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "A",
+            "fd_line": 6.5,
+            "note": "Bounce-back (16 PRA last game vs 22 avg) | Minutes trending up (27.8->32.3) | O/U 226.5"
+        },
+        {
+            "name": "Tyler Herro",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 22,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 30,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 35,
+                    "reb": 9,
+                    "ast": 4
+                },
+                {
+                    "pts": 25,
+                    "reb": 6,
+                    "ast": 9
+                },
+                {
+                    "pts": 27,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 30,
+                    "reb": 3,
+                    "ast": 7
+                },
+                {
+                    "pts": 36,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 3,
+                    "ast": 7
+                },
+                {
+                    "pts": 29,
+                    "reb": 6,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 35.4,
+            "min_l10": 34.7,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 26.5,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Pelle Larsson",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 12,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 3,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 16,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 5
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 3,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 0,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 17.5,
+            "min_l10": 22.9,
+            "edges": {
+                "pts": 0.5,
+                "reb": 0.2,
+                "ast": 1.5
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 12.5,
+            "note": "Minutes trending up (17.5->22.9) | O/U 226.5"
+        },
+        {
+            "name": "Andrew Wiggins",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
                     "ast": 5
                 },
                 {
                     "pts": 16,
                     "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 42,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 30,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 23,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 22,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 19,
+                    "reb": 7,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 30.7,
+            "min_l10": 30.6,
+            "edges": {
+                "pts": 2.2,
+                "reb": 2.2,
+                "ast": 0.5
+            },
+            "fd_line_cat": "P",
+            "fd_line": 18.5,
+            "note": "Bounce-back (18 PRA last game vs 27 avg) | O/U 226.5"
+        },
+        {
+            "name": "Bam Adebayo",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "C",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 23,
+                    "reb": 12,
+                    "ast": 4
+                },
+                {
+                    "pts": 18,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 31,
+                    "reb": 12,
+                    "ast": 5
+                },
+                {
+                    "pts": 26,
+                    "reb": 7,
+                    "ast": 5
+                },
+                {
+                    "pts": 21,
+                    "reb": 5,
+                    "ast": 6
+                },
+                {
+                    "pts": 28,
+                    "reb": 12,
+                    "ast": 5
+                },
+                {
+                    "pts": 16,
+                    "reb": 7,
+                    "ast": 5
+                },
+                {
+                    "pts": 12,
+                    "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 27,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 34.3,
+            "min_l10": 32.8,
+            "edges": {
+                "pts": 2.2,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 20.5,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Jaime Jaquez",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "SF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 41,
+                    "reb": 10,
                     "ast": 7
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 11,
+                    "ast": 7
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 21.7,
+            "min_l10": 23.1,
+            "edges": {
+                "pts": 2.2,
+                "reb": 0.5,
+                "ast": 3.8
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "BKN #27 vs SF ast | O/U 226.5"
+        },
+        {
+            "name": "Kel'el Ware",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 13,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 17,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 15,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 11,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 14,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 12,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 23.5,
+            "min_l10": 26.6,
+            "edges": {
+                "pts": 2.2,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "R",
+            "fd_line": 10.0,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Dru Smith",
+            "team": "MIA",
+            "opp": "BKN",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 0,
+                    "ast": 4
+                },
+                {
+                    "pts": 7,
+                    "reb": 0,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 6,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 21.9,
+            "min_l10": 24.1,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 13.0,
+            "note": "Bounce-back (2 PRA last game vs 13 avg) | O/U 226.5"
+        }
+    ],
+    "GSW_HOU": [
+        {
+            "name": "Brandin Podziemski",
+            "team": "GSW",
+            "opp": "HOU",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 21,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 8,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 24,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 21,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 28,
+                    "reb": 9,
+                    "ast": 6
+                },
+                {
+                    "pts": 30,
+                    "reb": 9,
+                    "ast": 6
+                },
+                {
+                    "pts": 9,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 29,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 11,
+                    "reb": 6,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 27.3,
+            "min_l10": 31.7,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 18.0,
+            "note": "Usage boost +8% (Cryer OUT) | Minutes trending up (27.3->31.7)"
+        },
+        {
+            "name": "De'Anthony Melton",
+            "team": "GSW",
+            "opp": "HOU",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 21,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 4
+                }
+            ],
+            "min_avg": 20.2,
+            "min_l10": 20.2,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "Usage boost +8% (Cryer OUT)"
+        },
+        {
+            "name": "Draymond Green",
+            "team": "GSW",
+            "opp": "HOU",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 3,
+                    "reb": 8,
+                    "ast": 5
+                },
+                {
+                    "pts": 14,
+                    "reb": 10,
+                    "ast": 9
+                },
+                {
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 12,
+                    "ast": 5
+                },
+                {
+                    "pts": 14,
+                    "reb": 11,
+                    "ast": 13
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 29.5,
+            "min_l10": 29.1,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "RA",
+            "fd_line": 11.5,
+            "note": "Usage boost +8% (Cryer OUT)"
+        },
+        {
+            "name": "Al Horford",
+            "team": "GSW",
+            "opp": "HOU",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 14,
+                    "reb": 12,
+                    "ast": 0
+                },
+                {
+                    "pts": 12,
+                    "reb": 11,
+                    "ast": 4
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 28,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 17,
+                    "reb": 11,
+                    "ast": 5
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 10,
+                    "ast": 2
+                },
+                {
+                    "pts": 4,
+                    "reb": 5,
+                    "ast": 6
+                },
+                {
+                    "pts": 10,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 19,
+                    "reb": 11,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 27.7,
+            "min_l10": 29.9,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "R",
+            "fd_line": 8.5,
+            "note": "Usage boost +8% (Cryer OUT)"
+        },
+        {
+            "name": "Quinten Post",
+            "team": "GSW",
+            "opp": "HOU",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 0,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 16,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 3,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 16.7,
+            "min_l10": 15.9,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 10.0,
+            "note": "Usage boost +4% (Cryer OUT) | Bounce-back (3 PRA last game vs 10 avg)"
+        },
+        {
+            "name": "Amen Thompson",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "PG",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 16,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 17,
+                    "reb": 9,
+                    "ast": 6
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 22,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 13,
+                    "reb": 11,
+                    "ast": 10
+                },
+                {
+                    "pts": 16,
+                    "reb": 11,
+                    "ast": 5
+                },
+                {
+                    "pts": 12,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 16,
+                    "reb": 10,
+                    "ast": 12
+                }
+            ],
+            "min_avg": 32.2,
+            "min_l10": 30.7,
+            "edges": {
+                "pts": 3.8,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 15.0,
+            "note": "Usage boost +8% (Smith OUT) | GSW #27 vs PG pts"
+        },
+        {
+            "name": "Tari Eason",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 16,
+                    "reb": 10,
+                    "ast": 3
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 16,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 15,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 8,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 24.9,
+            "min_l10": 22.6,
+            "edges": {
+                "pts": 1.5,
+                "reb": 1.0,
+                "ast": 1.5
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "Usage boost +6% (Smith OUT)"
+        },
+        {
+            "name": "Kevin Durant",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 12,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 24,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 32,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 40,
+                    "reb": 8,
+                    "ast": 5
+                },
+                {
+                    "pts": 45,
+                    "reb": 6,
+                    "ast": 8
+                },
+                {
+                    "pts": 28,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 22,
+                    "reb": 10,
+                    "ast": 2
+                },
+                {
+                    "pts": 23,
+                    "reb": 4,
+                    "ast": 6
+                },
+                {
+                    "pts": 20,
+                    "reb": 7,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 36.6,
+            "min_l10": 33.5,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 3.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 25.0,
+            "note": "Usage boost +6% (Smith OUT) | Bounce-back (20 PRA last game vs 36 avg) | GSW #24 vs SF ast"
+        },
+        {
+            "name": "Alperen Sengun",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "C",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 15,
+                    "ast": 4
+                },
+                {
+                    "pts": 33,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 15,
+                    "ast": 10
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 6
+                },
+                {
+                    "pts": 17,
+                    "reb": 10,
+                    "ast": 3
+                },
+                {
+                    "pts": 35,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 19,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 18,
+                    "reb": 15,
+                    "ast": 11
+                },
+                {
+                    "pts": 8,
+                    "reb": 11,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 31.9,
+            "min_l10": 32.5,
+            "edges": {
+                "pts": 1.0,
+                "reb": 3.8,
+                "ast": 3.8
+            },
+            "fd_line_cat": "R",
+            "fd_line": 9.5,
+            "note": "Usage boost +6% (Smith OUT) | Bounce-back (24 PRA last game vs 35 avg) | GSW #29 vs C reb"
+        },
+        {
+            "name": "Reed Sheppard",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 7
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 25,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 0,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 13.4,
+            "min_l10": 18.8,
+            "edges": {
+                "pts": 3.8,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.0,
+            "note": "Usage boost +0% (Smith OUT) | Bounce-back (8 PRA last game vs 14 avg) | Minutes trending up (13.4->18.8) | GSW #27 vs PG pts"
+        },
+        {
+            "name": "Dorian Finney-Smith",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "SF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 18,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 20,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 3,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 28.9,
+            "min_l10": 31.4,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 3.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 9.5,
+            "note": "Usage boost +0% (Smith OUT) | GSW #24 vs SF ast"
+        },
+        {
+            "name": "Clint Capela",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 9,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 9,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 11,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 4,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 21.5,
+            "min_l10": 16.7,
+            "edges": {
+                "pts": 1.0,
+                "reb": 3.8,
+                "ast": 3.8
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 13.0,
+            "note": "Usage boost +0% (Smith OUT) | GSW #29 vs C reb"
+        },
+        {
+            "name": "Josh Okogie",
+            "team": "HOU",
+            "opp": "GSW",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 14,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 5,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 2,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 17.5,
+            "min_l10": 16.7,
+            "edges": {
+                "pts": 1.5,
+                "reb": 1.0,
+                "ast": 1.5
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 11.0,
+            "note": "Usage boost +0% (Smith OUT)"
+        }
+    ],
+    "TOR_MIN": [
+        {
+            "name": "Immanuel Quickley",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 14,
+                    "reb": 8,
+                    "ast": 8
+                },
+                {
+                    "pts": 17,
+                    "reb": 1,
+                    "ast": 9
+                },
+                {
+                    "pts": 19,
+                    "reb": 1,
+                    "ast": 9
+                },
+                {
+                    "pts": 21,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 21,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 7
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 34,
+                    "reb": 5,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 27.7,
+            "min_l10": 26.3,
+            "edges": {
+                "pts": 3.0,
+                "reb": 3.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 17.5,
+            "note": "Bounce-back (11 PRA last game vs 29 avg) | MIN #25 vs PG pts | O/U 226.5"
+        },
+        {
+            "name": "RJ Barrett",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 31,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 18,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 17,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 14,
+                    "reb": 10,
+                    "ast": 8
+                },
+                {
+                    "pts": 23,
+                    "reb": 9,
+                    "ast": 3
+                },
+                {
+                    "pts": 21,
+                    "reb": 8,
+                    "ast": 9
+                }
+            ],
+            "min_avg": 32.2,
+            "min_l10": 26.8,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 0.5
+            },
+            "fd_line_cat": "P",
+            "fd_line": 17.5,
+            "note": "Bounce-back (13 PRA last game vs 28 avg) | O/U 226.5"
+        },
+        {
+            "name": "Brandon Ingram",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "SG",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 5,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 29,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
+                    "reb": 3,
+                    "ast": 7
+                },
+                {
+                    "pts": 17,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 32,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 29,
+                    "reb": 9,
+                    "ast": 7
+                },
+                {
+                    "pts": 18,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 24,
+                    "reb": 5,
+                    "ast": 9
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 33.0,
+            "min_l10": 33.5,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 19.5,
+            "note": "Bounce-back (9 PRA last game vs 31 avg) | O/U 226.5"
+        },
+        {
+            "name": "Scottie Barnes",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 35,
+                    "reb": 11,
+                    "ast": 8
+                },
+                {
+                    "pts": 26,
+                    "reb": 9,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 11,
+                    "ast": 5
+                },
+                {
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 9,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 18,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 5
+                },
+                {
+                    "pts": 13,
+                    "reb": 10,
+                    "ast": 8
+                },
+                {
+                    "pts": 22,
+                    "reb": 6,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 32.9,
+            "min_l10": 28.0,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 16.0,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Jakob Poeltl",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "C",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 10,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 24,
+                    "reb": 12,
+                    "ast": 3
+                },
+                {
+                    "pts": 21,
+                    "reb": 11,
+                    "ast": 1
+                },
+                {
+                    "pts": 18,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 19,
+                    "reb": 8,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 17,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 16,
+                    "reb": 11,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 29.6,
+            "min_l10": 25.1,
+            "edges": {
+                "pts": 2.2,
+                "reb": 0.0,
+                "ast": 3.0
+            },
+            "fd_line_cat": "R",
+            "fd_line": 8.0,
+            "note": "MIN #25 vs C ast | O/U 226.5"
+        },
+        {
+            "name": "Jamal Shead",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 9
+                },
+                {
+                    "pts": 9,
+                    "reb": 0,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 12
+                },
+                {
+                    "pts": 14,
+                    "reb": 1,
+                    "ast": 9
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 0,
+                    "ast": 5
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 9
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 7,
+                    "reb": 5,
+                    "ast": 8
+                },
+                {
+                    "pts": 14,
+                    "reb": 2,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 19.7,
+            "min_l10": 26.3,
+            "edges": {
+                "pts": 3.0,
+                "reb": 3.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "A",
+            "fd_line": 6.5,
+            "note": "Minutes trending up (19.7->26.3) | MIN #25 vs PG pts | O/U 226.5"
+        },
+        {
+            "name": "Ja'Kobe Walter",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 22,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 17,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 14,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 17,
+                    "reb": 3,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 21.6,
+            "min_l10": 27.2,
+            "edges": {
+                "pts": 3.0,
+                "reb": 3.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 13.0,
+            "note": "Bounce-back (15 PRA last game vs 20 avg) | Minutes trending up (21.6->27.2) | MIN #25 vs PG pts | O/U 226.5"
+        },
+        {
+            "name": "Sandro Mamukelashvili",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 12,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 19,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 2
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 16,
+                    "reb": 10,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 14,
+                    "reb": 11,
+                    "ast": 4
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 13.0,
+            "min_l10": 19.9,
+            "edges": {
+                "pts": 2.2,
+                "reb": 0.0,
+                "ast": 3.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 15.0,
+            "note": "Minutes trending up (13.0->19.9) | MIN #25 vs C ast | O/U 226.5"
+        },
+        {
+            "name": "Jamison Battle",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "SF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 25,
+                    "reb": 9,
+                    "ast": 3
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 10,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 19.3,
+            "min_l10": 28.4,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 0.5
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.5,
+            "note": "Minutes trending up (19.3->28.4) | O/U 226.5"
+        },
+        {
+            "name": "Gradey Dick",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 9,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 10,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 17,
+                    "reb": 7,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 29.5,
+            "min_l10": 27.1,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.5,
+            "note": "Bounce-back (3 PRA last game vs 15 avg) | O/U 226.5"
+        },
+        {
+            "name": "Garrett Temple",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 8
+                },
+                {
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 13.7,
+            "min_l10": 16.1,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.0,
+                "ast": 0.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 7.5,
+            "note": "Minutes trending up (13.7->16.1) | O/U 226.5"
+        },
+        {
+            "name": "Jonathan Mogbo",
+            "team": "TOR",
+            "opp": "MIN",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 9,
+                    "reb": 14,
+                    "ast": 10
+                },
+                {
+                    "pts": 8,
+                    "reb": 8,
+                    "ast": 8
+                },
+                {
+                    "pts": 17,
+                    "reb": 10,
+                    "ast": 11
+                },
+                {
+                    "pts": 17,
+                    "reb": 11,
+                    "ast": 7
+                },
+                {
+                    "pts": 6,
+                    "reb": 8,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 6,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 16,
+                    "reb": 7,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 20.7,
+            "min_l10": 30.3,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "RA",
+            "fd_line": 12.5,
+            "note": "Minutes trending up (20.7->30.3) | O/U 226.5"
+        },
+        {
+            "name": "Donte DiVincenzo",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 16,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 9,
+                    "reb": 0,
+                    "ast": 4
+                },
+                {
+                    "pts": 24,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 13,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 9,
+                    "ast": 4
+                },
+                {
+                    "pts": 13,
+                    "reb": 1,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 25.9,
+            "min_l10": 22.4,
+            "edges": {
+                "pts": 3.0,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "TOR #26 vs PG pts | O/U 226.5"
+        },
+        {
+            "name": "Anthony Edwards",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "SG",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 43,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 44,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 25,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 37,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 28,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 34,
+                    "reb": 10,
+                    "ast": 8
+                },
+                {
+                    "pts": 25,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 17,
+                    "reb": 2,
+                    "ast": 4
+                }
+            ],
+            "min_avg": 36.3,
+            "min_l10": 36.6,
+            "edges": {
+                "pts": 0.5,
+                "reb": 0.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 27.0,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Jaden McDaniels",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 11,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 9,
+                    "ast": 3
+                },
+                {
+                    "pts": 16,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 1,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 31.9,
+            "min_l10": 29.9,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.2,
+                "ast": 0.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 13.5,
+            "note": "Bounce-back (10 PRA last game vs 14 avg) | O/U 226.5"
+        },
+        {
+            "name": "Julius Randle",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 10,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 21,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 31,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 7,
+                    "ast": 6
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 26,
+                    "reb": 9,
+                    "ast": 7
+                },
+                {
+                    "pts": 26,
+                    "reb": 8,
+                    "ast": 5
+                },
+                {
+                    "pts": 25,
+                    "reb": 6,
+                    "ast": 8
+                },
+                {
+                    "pts": 9,
+                    "reb": 6,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 32.3,
+            "min_l10": 33.1,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.5,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 17.5,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Rudy Gobert",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "C",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 19,
+                    "reb": 18,
+                    "ast": 0
+                },
+                {
+                    "pts": 35,
+                    "reb": 11,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 6,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 23,
+                    "reb": 19,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 18,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 12,
+                    "ast": 1
+                },
+                {
+                    "pts": 19,
+                    "reb": 25,
+                    "ast": 0
+                },
+                {
+                    "pts": 17,
+                    "reb": 13,
+                    "ast": 1
+                },
+                {
+                    "pts": 16,
+                    "reb": 16,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 33.2,
+            "min_l10": 36.4,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "R",
+            "fd_line": 14.5,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Naz Reid",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 13,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 27.6,
+            "min_l10": 24.0,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.5,
+                "ast": 0.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Ayo Dosunmu",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 2
                 },
                 {
                     "pts": 5,
@@ -3754,23 +6093,1942 @@ RAW_PLAYERS = {
                     "ast": 3
                 },
                 {
-                    "pts": 39,
+                    "pts": 23,
+                    "reb": 3,
+                    "ast": 6
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 1,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 0,
+                    "ast": 4
+                },
+                {
+                    "pts": 21,
+                    "reb": 2,
+                    "ast": 9
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 6,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 12,
+                    "reb": 4,
+                    "ast": 4
+                }
+            ],
+            "min_avg": 30.3,
+            "min_l10": 30.0,
+            "edges": {
+                "pts": 0.5,
+                "reb": 0.0,
+                "ast": 2.2
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.5,
+            "note": "O/U 226.5"
+        },
+        {
+            "name": "Kyle Anderson",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 6,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 6
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 8,
+                    "ast": 6
+                },
+                {
+                    "pts": 12,
+                    "reb": 14,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 19,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 2,
+                    "ast": 4
+                }
+            ],
+            "min_avg": 17.5,
+            "min_l10": 23.6,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.5,
+                "ast": 0.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 16.5,
+            "note": "Minutes trending up (17.5->23.6) | O/U 226.5"
+        },
+        {
+            "name": "Mike Conley",
+            "team": "MIN",
+            "opp": "TOR",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 8,
+                    "reb": 2,
+                    "ast": 9
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 6,
+                    "reb": 1,
+                    "ast": 6
+                },
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 8
+                },
+                {
+                    "pts": 17,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 13,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 7,
+                    "reb": 4,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 24.7,
+            "min_l10": 25.1,
+            "edges": {
+                "pts": 3.0,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.5,
+            "note": "Bounce-back (4 PRA last game vs 15 avg) | TOR #26 vs PG pts | O/U 226.5"
+        }
+    ],
+    "DET_SAS": [
+        {
+            "name": "Cade Cunningham",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 36,
+                    "reb": 6,
+                    "ast": 12
+                },
+                {
+                    "pts": 36,
+                    "reb": 2,
+                    "ast": 8
+                },
+                {
+                    "pts": 35,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 25,
+                    "reb": 9,
+                    "ast": 4
+                },
+                {
+                    "pts": 35,
+                    "reb": 7,
+                    "ast": 6
+                },
+                {
+                    "pts": 25,
+                    "reb": 12,
+                    "ast": 11
+                },
+                {
+                    "pts": 24,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 11,
+                    "reb": 7,
+                    "ast": 9
+                },
+                {
+                    "pts": 38,
+                    "reb": 3,
+                    "ast": 10
+                },
+                {
+                    "pts": 27,
+                    "reb": 8,
+                    "ast": 10
+                }
+            ],
+            "min_avg": 35.0,
+            "min_l10": 33.5,
+            "edges": {
+                "pts": 1.0,
+                "reb": 2.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 28.0,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Duncan Robinson",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 16,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 4,
+                    "reb": 0,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 22,
+                    "reb": 2,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 24.1,
+            "min_l10": 22.0,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.5,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "Bounce-back (10 PRA last game vs 15 avg) | O/U 228.5"
+        },
+        {
+            "name": "Ausar Thompson",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 15,
                     "reb": 4,
                     "ast": 5
                 },
                 {
+                    "pts": 18,
+                    "reb": 11,
+                    "ast": 5
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 13,
+                    "reb": 8,
+                    "ast": 3
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 18,
+                    "reb": 10,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 5,
+                    "reb": 1,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 22.5,
+            "min_l10": 27.2,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.2,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PR",
+            "fd_line": 18.0,
+            "note": "Minutes trending up (22.5->27.2) | O/U 228.5"
+        },
+        {
+            "name": "Tobias Harris",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 9,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 18,
+                    "reb": 7,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 31.6,
+            "min_l10": 27.8,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 12.0,
+            "note": "Bounce-back (8 PRA last game vs 20 avg) | O/U 228.5"
+        },
+        {
+            "name": "Jalen Duren",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "C",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 16,
+                    "ast": 5
+                },
+                {
+                    "pts": 18,
+                    "reb": 13,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 9,
+                    "ast": 6
+                },
+                {
+                    "pts": 21,
+                    "reb": 18,
+                    "ast": 6
+                },
+                {
+                    "pts": 13,
+                    "reb": 13,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 11,
+                    "ast": 3
+                },
+                {
+                    "pts": 16,
+                    "reb": 13,
+                    "ast": 0
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 22,
+                    "reb": 12,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 26.1,
+            "min_l10": 26.9,
+            "edges": {
+                "pts": 0.5,
+                "reb": 1.5,
+                "ast": 3.8
+            },
+            "fd_line_cat": "R",
+            "fd_line": 10.5,
+            "note": "Bounce-back (7 PRA last game vs 28 avg) | SAS #30 vs C ast | O/U 228.5"
+        },
+        {
+            "name": "Isaiah Stewart",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 10,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 0,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 19.9,
+            "min_l10": 20.7,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.0,
+            "note": "Bounce-back (2 PRA last game vs 14 avg) | O/U 228.5"
+        },
+        {
+            "name": "Ronald Holland II",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 5,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 26,
+                    "reb": 5,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 15.7,
+            "min_l10": 17.6,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 12.0,
+            "note": "Bounce-back (6 PRA last game vs 12 avg) | O/U 228.5"
+        },
+        {
+            "name": "Caris LeVert",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 31,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 21,
+                    "reb": 5,
+                    "ast": 6
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 10,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 17,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 5,
+                    "reb": 1,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 24.9,
+            "min_l10": 24.9,
+            "edges": {
+                "pts": 1.0,
+                "reb": 2.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 13.0,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Kevin Huerter",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 18,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 4,
+                    "ast": 6
+                },
+                {
+                    "pts": 22,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 13,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 9,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 16,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 6
+                },
+                {
+                    "pts": 21,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 6
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 24.3,
+            "min_l10": 32.2,
+            "edges": {
+                "pts": 0.0,
+                "reb": 1.5,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 13.0,
+            "note": "Minutes trending up (24.3->32.2) | O/U 228.5"
+        },
+        {
+            "name": "Marcus Sasser",
+            "team": "DET",
+            "opp": "SAS",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 18,
+                    "reb": 1,
+                    "ast": 10
+                },
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 7,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 4
+                },
+                {
                     "pts": 27,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 20,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 0,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 16.1,
+            "min_l10": 18.0,
+            "edges": {
+                "pts": 1.0,
+                "reb": 2.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "De'Aaron Fox",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 32,
+                    "reb": 9,
+                    "ast": 11
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 22,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 16,
+                    "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 15,
                     "reb": 3,
                     "ast": 7
                 },
                 {
+                    "pts": 20,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 3,
+                    "ast": 7
+                },
+                {
+                    "pts": 7,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 9
+                },
+                {
+                    "pts": 13,
+                    "reb": 7,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 36.2,
+            "min_l10": 33.1,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.5,
+                "ast": 0.0
+            },
+            "fd_line_cat": "A",
+            "fd_line": 6.0,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Stephon Castle",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 20,
+                    "reb": 8,
+                    "ast": 6
+                },
+                {
+                    "pts": 16,
+                    "reb": 4,
+                    "ast": 10
+                },
+                {
+                    "pts": 21,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 19,
+                    "reb": 1,
+                    "ast": 8
+                },
+                {
+                    "pts": 22,
+                    "reb": 7,
+                    "ast": 5
+                },
+                {
+                    "pts": 22,
+                    "reb": 9,
+                    "ast": 11
+                },
+                {
+                    "pts": 15,
+                    "reb": 15,
+                    "ast": 9
+                },
+                {
+                    "pts": 16,
+                    "reb": 8,
+                    "ast": 6
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 22,
+                    "reb": 2,
+                    "ast": 8
+                }
+            ],
+            "min_avg": 26.7,
+            "min_l10": 31.9,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 17.5,
+            "note": "Minutes trending up (26.7->31.9) | O/U 228.5"
+        },
+        {
+            "name": "Devin Vassell",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 7,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 24,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 12,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 14,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 22,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 26,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 25,
+                    "reb": 6,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 31.0,
+            "min_l10": 31.1,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 16.5,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Julian Champagnie",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "SF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 23,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 15,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 14,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 19,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 0,
+                    "reb": 1,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 23.6,
+            "min_l10": 27.0,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 12.0,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Victor Wembanyama",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "C",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 17,
+                    "reb": 13,
+                    "ast": 4
+                },
+                {
                     "pts": 31,
+                    "reb": 15,
+                    "ast": 4
+                },
+                {
+                    "pts": 18,
+                    "reb": 9,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 11,
+                    "ast": 3
+                },
+                {
+                    "pts": 24,
+                    "reb": 12,
+                    "ast": 2
+                },
+                {
+                    "pts": 27,
+                    "reb": 10,
+                    "ast": 5
+                },
+                {
+                    "pts": 30,
+                    "reb": 14,
+                    "ast": 1
+                },
+                {
+                    "pts": 23,
+                    "reb": 12,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 12,
+                    "ast": 2
+                },
+                {
+                    "pts": 30,
+                    "reb": 11,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 33.2,
+            "min_l10": 33.5,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "R",
+            "fd_line": 11.5,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Keldon Johnson",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 23,
+                    "reb": 9,
+                    "ast": 0
+                },
+                {
+                    "pts": 21,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 7,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 19,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 23,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 10,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 23.8,
+            "min_l10": 24.7,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.0,
+                "ast": 0.0
+            },
+            "fd_line_cat": "PR",
+            "fd_line": 19.5,
+            "note": "O/U 228.5"
+        },
+        {
+            "name": "Luke Kornet",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 14,
+                    "ast": 3
+                },
+                {
+                    "pts": 12,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 16,
+                    "ast": 4
+                },
+                {
+                    "pts": 2,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 8,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 19.2,
+            "min_l10": 22.9,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "Minutes trending up (19.2->22.9) | O/U 228.5"
+        },
+        {
+            "name": "Kelly Olynyk",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 12,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 11,
+                    "ast": 7
+                },
+                {
+                    "pts": 10,
+                    "reb": 5,
+                    "ast": 8
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 13,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 20.3,
+            "min_l10": 25.0,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.5,
+            "note": "Bounce-back (12 PRA last game vs 19 avg) | Minutes trending up (20.3->25.0) | O/U 228.5"
+        },
+        {
+            "name": "Bismack Biyombo",
+            "team": "SAS",
+            "opp": "DET",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 2,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 8,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 10,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 7,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 19.5,
+            "min_l10": 21.2,
+            "edges": {
+                "pts": 0.0,
+                "reb": 0.2,
+                "ast": 0.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 12.0,
+            "note": "Bounce-back (9 PRA last game vs 13 avg) | O/U 228.5"
+        }
+    ],
+    "CHI_PHX": [
+        {
+            "name": "Josh Giddey",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "PG",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 28,
+                    "reb": 16,
+                    "ast": 11
+                },
+                {
+                    "pts": 23,
+                    "reb": 10,
+                    "ast": 8
+                },
+                {
+                    "pts": 15,
+                    "reb": 19,
+                    "ast": 12
+                },
+                {
+                    "pts": 17,
+                    "reb": 7,
+                    "ast": 12
+                },
+                {
+                    "pts": 15,
+                    "reb": 8,
+                    "ast": 10
+                },
+                {
+                    "pts": 8,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 25,
+                    "reb": 14,
+                    "ast": 11
+                },
+                {
+                    "pts": 26,
+                    "reb": 7,
+                    "ast": 9
+                },
+                {
+                    "pts": 15,
+                    "reb": 10,
+                    "ast": 17
+                },
+                {
+                    "pts": 22,
+                    "reb": 7,
+                    "ast": 7
+                }
+            ],
+            "min_avg": 30.2,
+            "min_l10": 33.6,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 18.5,
+            "note": "O/U 224.5"
+        },
+        {
+            "name": "Tre Jones",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 12,
+                    "reb": 6,
+                    "ast": 9
+                },
+                {
+                    "pts": 18,
+                    "reb": 4,
+                    "ast": 12
+                },
+                {
+                    "pts": 19,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 18,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 8
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 20,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 9,
+                    "reb": 8,
+                    "ast": 7
+                },
+                {
+                    "pts": 11,
+                    "reb": 0,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 19.7,
+            "min_l10": 32.6,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "A",
+            "fd_line": 6.5,
+            "note": "Minutes trending up (19.7->32.6) | O/U 224.5"
+        },
+        {
+            "name": "Isaac Okoro",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 11,
+                    "reb": 6,
+                    "ast": 2
+                },
+                {
+                    "pts": 11,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 4,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 19.2,
+            "min_l10": 21.1,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 12.5,
+            "note": "O/U 224.5"
+        },
+        {
+            "name": "Matas Buzelis",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "PF",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 7,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 20,
+                    "reb": 6,
+                    "ast": 4
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 19,
+                    "reb": 5,
+                    "ast": 5
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 12,
+                    "ast": 1
+                },
+                {
+                    "pts": 9,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 14,
+                    "reb": 7,
+                    "ast": 1
+                },
+                {
+                    "pts": 28,
+                    "reb": 9,
+                    "ast": 6
+                },
+                {
+                    "pts": 12,
+                    "reb": 7,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 20.4,
+            "min_l10": 28.8,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PR",
+            "fd_line": 20.0,
+            "note": "Bounce-back (11 PRA last game vs 23 avg) | Minutes trending up (20.4->28.8) | O/U 224.5"
+        },
+        {
+            "name": "Guerschon Yabusele",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "PF",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 19,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 22,
+                    "reb": 6,
+                    "ast": 3
+                },
+                {
+                    "pts": 1,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 21,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 11,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 23,
+                    "reb": 9,
+                    "ast": 5
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 14,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 15,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 27.0,
+            "min_l10": 30.9,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PR",
+            "fd_line": 20.0,
+            "note": "O/U 224.5"
+        },
+        {
+            "name": "Collin Sexton",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 15,
+                    "reb": 0,
+                    "ast": 5
+                },
+                {
+                    "pts": 27,
+                    "reb": 5,
+                    "ast": 6
+                },
+                {
+                    "pts": 27,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
+                    "reb": 0,
+                    "ast": 4
+                },
+                {
+                    "pts": 20,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 21,
+                    "reb": 1,
+                    "ast": 5
+                },
+                {
+                    "pts": 15,
+                    "reb": 3,
+                    "ast": 5
+                },
+                {
+                    "pts": 10,
+                    "reb": 0,
+                    "ast": 2
+                },
+                {
+                    "pts": 30,
+                    "reb": 2,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
                     "reb": 3,
                     "ast": 5
                 }
             ],
-            "min_avg": 37.8,
-            "min_l10": 36.4,
+            "min_avg": 28.4,
+            "min_l10": 26.8,
             "edges": {
                 "pts": 1.0,
                 "reb": 1.0,
@@ -3778,1442 +8036,862 @@ RAW_PLAYERS = {
             },
             "fd_line_cat": "P",
             "fd_line": 19.5,
-            "note": "Bounce-back (11 PRA last game vs 29 avg) | High O/U 238.5 \u2014 shootout potential"
+            "note": "Bounce-back (20 PRA last game vs 26 avg) | O/U 224.5"
         },
         {
-            "name": "Quentin Grimes",
-            "team": "PHI",
-            "opp": "UTA",
+            "name": "Nick Richards",
+            "team": "CHI",
+            "opp": "PHX",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 4,
+                    "reb": 9,
+                    "ast": 0
+                },
+                {
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 11,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 3,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 10,
+                    "ast": 1
+                },
+                {
+                    "pts": 18,
+                    "reb": 9,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 22.0,
+            "min_l10": 21.9,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.5,
+            "note": "O/U 224.5"
+        }
+    ],
+    "LAL_DEN": [
+        {
+            "name": "Austin Reaves",
+            "team": "LAL",
+            "opp": "DEN",
             "pos": "PG",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 8,
+                    "pts": 23,
                     "reb": 7,
-                    "ast": 4
-                },
-                {
-                    "pts": 17,
-                    "reb": 11,
-                    "ast": 7
-                },
-                {
-                    "pts": 29,
-                    "reb": 8,
                     "ast": 6
                 },
                 {
-                    "pts": 28,
-                    "reb": 3,
-                    "ast": 2
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 4
                 },
                 {
                     "pts": 24,
-                    "reb": 3,
-                    "ast": 10
-                },
-                {
-                    "pts": 26,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 15,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 22,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 26,
                     "reb": 5,
-                    "ast": 6
-                },
-                {
-                    "pts": 25,
-                    "reb": 2,
-                    "ast": 10
-                }
-            ],
-            "min_avg": 26.9,
-            "min_l10": 34.6,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 21.0,
-            "note": "Bounce-back (19 PRA last game vs 33 avg) | Minutes trending up (26.9->34.6) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Trendon Watford",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 20,
-                    "reb": 7,
-                    "ast": 4
-                },
-                {
-                    "pts": 15,
-                    "reb": 8,
-                    "ast": 4
-                },
-                {
-                    "pts": 8,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 22,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 13,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 11,
-                    "reb": 5,
-                    "ast": 5
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 5
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 21.2,
-            "min_l10": 25.1,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 11.0,
-            "note": "Minutes trending up (21.2->25.1) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Dominick Barlow",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 8,
-                    "reb": 8,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 13,
-                    "reb": 10,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 12,
-                    "reb": 6,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 13.6,
-            "min_l10": 16.8,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.5,
-            "note": "Minutes trending up (13.6->16.8) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Andre Drummond",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "C",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 4,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 10,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
-                    "reb": 7,
-                    "ast": 3
-                },
-                {
-                    "pts": 25,
-                    "reb": 18,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 14,
-                    "ast": 2
-                },
-                {
-                    "pts": 7,
-                    "reb": 9,
-                    "ast": 5
-                },
-                {
-                    "pts": 10,
-                    "reb": 8,
-                    "ast": 0
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 7,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 19.5,
-            "min_l10": 19.0,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "R",
-            "fd_line": 8.0,
-            "note": "Bounce-back (11 PRA last game vs 19 avg) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Justin Edwards",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 8,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 7,
-                    "ast": 4
-                },
-                {
-                    "pts": 17,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 19,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 19,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 22,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 25,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 19,
-                    "reb": 2,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 26.7,
-            "min_l10": 31.5,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "P",
-            "fd_line": 14.5,
-            "note": "Bounce-back (6 PRA last game vs 22 avg) | Minutes trending up (26.7->31.5) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Adem Bona",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "C",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 16,
-                    "reb": 9,
-                    "ast": 0
-                },
-                {
-                    "pts": 18,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 17,
-                    "reb": 9,
-                    "ast": 0
-                },
-                {
-                    "pts": 16,
-                    "reb": 11,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 10,
-                    "ast": 2
-                },
-                {
-                    "pts": 28,
-                    "reb": 6,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 8,
-                    "ast": 2
-                },
-                {
-                    "pts": 14,
-                    "reb": 8,
-                    "ast": 0
-                },
-                {
-                    "pts": 16,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 6,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 18.9,
-            "min_l10": 30.1,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "R",
-            "fd_line": 8.0,
-            "note": "Minutes trending up (18.9->30.1) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Cameron Payne",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 21,
-                    "reb": 2,
-                    "ast": 7
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 7,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 6
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 13,
-                    "reb": 4,
-                    "ast": 7
-                },
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 15.1,
-            "min_l10": 20.4,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 12.5,
-            "note": "Minutes trending up (15.1->20.4) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Jabari Walker",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 10,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 19,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 7,
-                    "ast": 0
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 2,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 6,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 2,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 14.8,
-            "min_l10": 17.7,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 13.0,
-            "note": "Minutes trending up (14.8->17.7) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Tyrese Martin",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 20,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 5
-                },
-                {
-                    "pts": 11,
-                    "reb": 6,
                     "ast": 5
                 },
                 {
                     "pts": 20,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 6,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 4,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 22.9,
-            "min_l10": 24.5,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 16.0,
-            "note": "High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Dalen Terry",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 13,
-                    "reb": 4,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 14.7,
-            "min_l10": 20.0,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.0,
-            "note": "Minutes trending up (14.7->20.0) | High O/U 238.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Kyle Lowry",
-            "team": "PHI",
-            "opp": "UTA",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
                     "reb": 2,
                     "ast": 3
-                },
-                {
-                    "pts": 3,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 4
-                },
-                {
-                    "pts": 13,
-                    "reb": 5,
-                    "ast": 8
-                },
-                {
-                    "pts": 0,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 18.9,
-            "min_l10": 16.3,
-            "edges": {
-                "pts": 1.0,
-                "reb": 1.0,
-                "ast": 1.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 8.0,
-            "note": "High O/U 238.5 \u2014 shootout potential"
-        }
-    ],
-    "POR_MEM": [
-        {
-            "name": "Jrue Holiday",
-            "team": "POR",
-            "opp": "MEM",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 16,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 13,
-                    "reb": 7,
-                    "ast": 5
-                },
-                {
-                    "pts": 4,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 18,
-                    "reb": 7,
-                    "ast": 7
-                },
-                {
-                    "pts": 21,
-                    "reb": 6,
-                    "ast": 6
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 12,
-                    "reb": 6,
-                    "ast": 8
-                }
-            ],
-            "min_avg": 30.7,
-            "min_l10": 30.9,
-            "edges": {
-                "pts": 2.2,
-                "reb": 0.5,
-                "ast": 0.2
-            },
-            "fd_line_cat": "P",
-            "fd_line": 11.0,
-            "note": "Bounce-back (8 PRA last game vs 20 avg) | High O/U 231.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Scoot Henderson",
-            "team": "POR",
-            "opp": "MEM",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 6,
-                    "reb": 0,
-                    "ast": 6
-                },
-                {
-                    "pts": 18,
-                    "reb": 6,
-                    "ast": 6
-                },
-                {
-                    "pts": 9,
-                    "reb": 0,
-                    "ast": 6
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 11,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 5,
-                    "ast": 5
                 },
                 {
                     "pts": 30,
                     "reb": 3,
-                    "ast": 2
+                    "ast": 7
+                },
+                {
+                    "pts": 31,
+                    "reb": 6,
+                    "ast": 3
                 },
                 {
                     "pts": 12,
-                    "reb": 2,
-                    "ast": 4
+                    "reb": 8,
+                    "ast": 3
                 },
                 {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 2
+                    "pts": 31,
+                    "reb": 7,
+                    "ast": 8
+                },
+                {
+                    "pts": 30,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 24,
+                    "reb": 4,
+                    "ast": 5
                 }
             ],
-            "min_avg": 26.7,
-            "min_l10": 27.7,
+            "min_avg": 34.9,
+            "min_l10": 36.8,
             "edges": {
-                "pts": 2.2,
-                "reb": 0.5,
-                "ast": 0.2
+                "pts": 0.2,
+                "reb": 0.2,
+                "ast": 0.5
             },
             "fd_line_cat": "P",
-            "fd_line": 12.0,
-            "note": "Bounce-back (12 PRA last game vs 20 avg) | High O/U 231.5 \u2014 shootout potential"
+            "fd_line": 22.5,
+            "note": "High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Toumani Camara",
-            "team": "POR",
-            "opp": "MEM",
+            "name": "Marcus Smart",
+            "team": "LAL",
+            "opp": "DEN",
             "pos": "SG",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 14,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 16,
-                    "reb": 6,
-                    "ast": 2
-                },
-                {
-                    "pts": 23,
-                    "reb": 10,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
+                    "pts": 12,
                     "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
                     "ast": 2
                 },
                 {
-                    "pts": 18,
+                    "pts": 3,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
                     "reb": 2,
                     "ast": 1
                 },
                 {
-                    "pts": 16,
-                    "reb": 8,
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
                     "ast": 4
                 },
                 {
-                    "pts": 6,
+                    "pts": 15,
                     "reb": 4,
-                    "ast": 1
+                    "ast": 7
+                },
+                {
+                    "pts": 16,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 1,
+                    "ast": 4
                 },
                 {
                     "pts": 13,
                     "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 19,
-                    "reb": 7,
-                    "ast": 3
+                    "ast": 5
                 }
             ],
-            "min_avg": 32.7,
-            "min_l10": 31.7,
+            "min_avg": 20.0,
+            "min_l10": 18.3,
             "edges": {
-                "pts": 2.2,
-                "reb": 2.2,
-                "ast": 2.2
+                "pts": 1.0,
+                "reb": 0.0,
+                "ast": 0.0
             },
-            "fd_line_cat": "P",
-            "fd_line": 13.5,
-            "note": "High O/U 231.5 \u2014 shootout potential"
+            "fd_line_cat": "PRA",
+            "fd_line": 14.0,
+            "note": "High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Jerami Grant",
-            "team": "POR",
-            "opp": "MEM",
+            "name": "LeBron James",
+            "team": "LAL",
+            "opp": "DEN",
             "pos": "PF",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 25,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 15,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 20,
+                    "pts": 14,
                     "reb": 4,
+                    "ast": 8
+                },
+                {
+                    "pts": 27,
+                    "reb": 7,
                     "ast": 3
                 },
                 {
-                    "pts": 8,
-                    "reb": 9,
-                    "ast": 4
+                    "pts": 28,
+                    "reb": 7,
+                    "ast": 3
                 },
                 {
-                    "pts": 3,
-                    "reb": 2,
-                    "ast": 2
+                    "pts": 19,
+                    "reb": 3,
+                    "ast": 7
                 },
                 {
-                    "pts": 14,
-                    "reb": 2,
-                    "ast": 1
+                    "pts": 27,
+                    "reb": 0,
+                    "ast": 8
                 },
                 {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 20,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
+                    "pts": 33,
                     "reb": 5,
+                    "ast": 9
+                },
+                {
+                    "pts": 16,
+                    "reb": 8,
                     "ast": 4
+                },
+                {
+                    "pts": 25,
+                    "reb": 6,
+                    "ast": 8
+                },
+                {
+                    "pts": 17,
+                    "reb": 5,
+                    "ast": 12
+                },
+                {
+                    "pts": 13,
+                    "reb": 13,
+                    "ast": 7
                 }
             ],
-            "min_avg": 32.4,
-            "min_l10": 34.2,
+            "min_avg": 35.0,
+            "min_l10": 35.2,
             "edges": {
-                "pts": 3.0,
-                "reb": 2.2,
-                "ast": 1.5
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 3.8
             },
             "fd_line_cat": "P",
-            "fd_line": 13.0,
-            "note": "MEM #26 vs PF pts | High O/U 231.5 \u2014 shootout potential"
+            "fd_line": 21.0,
+            "note": "Bounce-back (26 PRA last game vs 35 avg) | DEN #29 vs PF ast | High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Donovan Clingan",
-            "team": "POR",
-            "opp": "MEM",
+            "name": "Deandre Ayton",
+            "team": "LAL",
+            "opp": "DEN",
             "pos": "C",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 12,
-                    "reb": 12,
-                    "ast": 3
-                },
-                {
-                    "pts": 14,
-                    "reb": 15,
-                    "ast": 1
-                },
-                {
                     "pts": 10,
-                    "reb": 9,
-                    "ast": 4
-                },
-                {
-                    "pts": 10,
-                    "reb": 8,
+                    "reb": 0,
                     "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 18,
-                    "ast": 1
-                },
-                {
-                    "pts": 8,
-                    "reb": 13,
-                    "ast": 3
-                },
-                {
-                    "pts": 11,
-                    "reb": 7,
-                    "ast": 5
-                },
-                {
-                    "pts": 2,
-                    "reb": 10,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 18,
-                    "reb": 12,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 19.8,
-            "min_l10": 27.9,
-            "edges": {
-                "pts": 0.5,
-                "reb": 3.0,
-                "ast": 3.0
-            },
-            "fd_line_cat": "R",
-            "fd_line": 10.5,
-            "note": "Minutes trending up (19.8->27.9) | MEM #24 vs C reb | High O/U 231.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Blake Wesley",
-            "team": "POR",
-            "opp": "MEM",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 4
-                },
-                {
-                    "pts": 7,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 4,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 7
-                },
-                {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 15.3,
-            "min_l10": 20.1,
-            "edges": {
-                "pts": 2.2,
-                "reb": 0.5,
-                "ast": 0.2
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 10.0,
-            "note": "Minutes trending up (15.3->20.1) | High O/U 231.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Robert Williams III",
-            "team": "POR",
-            "opp": "MEM",
-            "pos": "C",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 8,
-                    "reb": 6,
-                    "ast": 1
                 },
                 {
                     "pts": 6,
-                    "reb": 4,
-                    "ast": 0
+                    "reb": 14,
+                    "ast": 2
                 },
                 {
-                    "pts": 4,
-                    "reb": 11,
-                    "ast": 3
-                },
-                {
-                    "pts": 1,
-                    "reb": 10,
-                    "ast": 0
+                    "pts": 18,
+                    "reb": 8,
+                    "ast": 4
                 },
                 {
                     "pts": 8,
-                    "reb": 12,
-                    "ast": 0
+                    "reb": 9,
+                    "ast": 2
                 },
                 {
-                    "pts": 2,
-                    "reb": 4,
-                    "ast": 0
+                    "pts": 25,
+                    "reb": 20,
+                    "ast": 2
                 },
                 {
-                    "pts": 4,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 4,
+                    "pts": 24,
                     "reb": 7,
                     "ast": 2
                 },
                 {
-                    "pts": 4,
-                    "reb": 6,
-                    "ast": 0
+                    "pts": 22,
+                    "reb": 8,
+                    "ast": 3
                 },
                 {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
+                    "pts": 21,
+                    "reb": 14,
+                    "ast": 2
+                },
+                {
+                    "pts": 22,
+                    "reb": 15,
+                    "ast": 2
+                },
+                {
+                    "pts": 15,
+                    "reb": 13,
+                    "ast": 2
                 }
             ],
-            "min_avg": 17.6,
-            "min_l10": 18.1,
+            "min_avg": 30.2,
+            "min_l10": 31.9,
             "edges": {
-                "pts": 0.5,
-                "reb": 3.0,
-                "ast": 3.0
+                "pts": 1.5,
+                "reb": 0.0,
+                "ast": 0.2
             },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.0,
-            "note": "MEM #24 vs C reb | High O/U 231.5 \u2014 shootout potential"
+            "fd_line_cat": "R",
+            "fd_line": 10.5,
+            "note": "Bounce-back (10 PRA last game vs 30 avg) | High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Matisse Thybulle",
-            "team": "POR",
-            "opp": "MEM",
+            "name": "Rui Hachimura",
+            "team": "LAL",
+            "opp": "DEN",
             "pos": "SF",
             "role": "bench",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 15,
+                    "pts": 16,
                     "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 15,
+                    "reb": 2,
                     "ast": 2
                 },
                 {
                     "pts": 11,
-                    "reb": 4,
-                    "ast": 0
+                    "reb": 7,
+                    "ast": 1
                 },
                 {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 6
-                },
-                {
-                    "pts": 6,
-                    "reb": 4,
-                    "ast": 2
+                    "pts": 24,
+                    "reb": 6,
+                    "ast": 3
                 },
                 {
                     "pts": 7,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 14,
                     "reb": 4,
-                    "ast": 2
+                    "ast": 1
                 },
                 {
                     "pts": 5,
                     "reb": 3,
-                    "ast": 1
+                    "ast": 0
                 },
                 {
-                    "pts": 8,
-                    "reb": 4,
-                    "ast": 5
+                    "pts": 5,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 5,
+                    "reb": 3,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 31.6,
+            "min_l10": 28.3,
+            "edges": {
+                "pts": 3.0,
+                "reb": 0.5,
+                "ast": 1.5
+            },
+            "fd_line_cat": "P",
+            "fd_line": 11.0,
+            "note": "DEN #25 vs SF pts | High O/U 240.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Luke Kennard",
+            "team": "LAL",
+            "opp": "DEN",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 12,
+                    "reb": 6,
+                    "ast": 4
                 },
                 {
                     "pts": 0,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 4,
+                    "reb": 7,
+                    "ast": 2
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 1,
+                    "ast": 5
+                },
+                {
+                    "pts": 1,
                     "reb": 1,
                     "ast": 0
                 },
                 {
-                    "pts": 6,
-                    "reb": 2,
-                    "ast": 4
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 2
+                },
+                {
+                    "pts": 9,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 3,
+                    "ast": 6
                 },
                 {
                     "pts": 15,
+                    "reb": 2,
+                    "ast": 4
+                }
+            ],
+            "min_avg": 22.6,
+            "min_l10": 22.4,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.2,
+                "ast": 0.5
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 10.5,
+            "note": "High O/U 240.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Jake LaRavia",
+            "team": "LAL",
+            "opp": "DEN",
+            "pos": "SG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 1,
+                    "ast": 0
+                },
+                {
+                    "pts": 10,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
                     "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 8,
+                    "ast": 3
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
                     "ast": 1
                 }
             ],
             "min_avg": 20.7,
-            "min_l10": 23.6,
+            "min_l10": 23.0,
             "edges": {
                 "pts": 1.0,
-                "reb": 3.0,
-                "ast": 3.0
+                "reb": 0.0,
+                "ast": 0.0
             },
             "fd_line_cat": "PRA",
-            "fd_line": 13.5,
-            "note": "MEM #25 vs SF reb | High O/U 231.5 \u2014 shootout potential"
+            "fd_line": 13.0,
+            "note": "High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Jaylen Wells",
-            "team": "MEM",
-            "opp": "POR",
+            "name": "Maxi Kleber",
+            "team": "LAL",
+            "opp": "DEN",
+            "pos": "PF",
+            "role": "bench",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 1,
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 10,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 7,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 5,
+                    "reb": 3,
+                    "ast": 5
+                }
+            ],
+            "min_avg": 18.7,
+            "min_l10": 17.3,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 3.8
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 8.0,
+            "note": "Bounce-back (3 PRA last game vs 8 avg) | DEN #29 vs PF ast | High O/U 240.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Jarred Vanderbilt",
+            "team": "LAL",
+            "opp": "DEN",
+            "pos": "PF",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 4,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 12,
+                    "ast": 1
+                },
+                {
+                    "pts": 3,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 7,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 6,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 6,
+                    "ast": 3
+                }
+            ],
+            "min_avg": 16.1,
+            "min_l10": 15.1,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 3.8
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 10.0,
+            "note": "DEN #29 vs PF ast | High O/U 240.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Jamal Murray",
+            "team": "DEN",
+            "opp": "LAL",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 16,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 15,
+                    "reb": 5,
+                    "ast": 7
+                },
+                {
+                    "pts": 17,
+                    "reb": 4,
+                    "ast": 6
+                },
+                {
+                    "pts": 28,
+                    "reb": 5,
+                    "ast": 7
+                },
+                {
+                    "pts": 39,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 10,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 24,
+                    "reb": 6,
+                    "ast": 7
+                },
+                {
+                    "pts": 26,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 8
+                },
+                {
+                    "pts": 34,
+                    "reb": 4,
+                    "ast": 6
+                }
+            ],
+            "min_avg": 36.1,
+            "min_l10": 35.0,
+            "edges": {
+                "pts": 0.5,
+                "reb": 0.0,
+                "ast": 3.8
+            },
+            "fd_line_cat": "P",
+            "fd_line": 21.0,
+            "note": "LAL #30 vs PG ast | High O/U 240.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Christian Braun",
+            "team": "DEN",
+            "opp": "LAL",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 11,
+                    "reb": 7,
+                    "ast": 6
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 5
+                },
+                {
+                    "pts": 25,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 30,
+                    "reb": 8,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 7,
+                    "ast": 4
+                },
+                {
+                    "pts": 18,
+                    "reb": 12,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 19,
+                    "reb": 10,
+                    "ast": 6
+                },
+                {
+                    "pts": 18,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 11,
+                    "reb": 4,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 33.9,
+            "min_l10": 37.1,
+            "edges": {
+                "pts": 0.2,
+                "reb": 0.2,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PR",
+            "fd_line": 23.0,
+            "note": "High O/U 240.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Julian Strawther",
+            "team": "DEN",
+            "opp": "LAL",
             "pos": "SF",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 3,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 7,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 13,
-                    "reb": 7,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 11,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 13,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 10,
-                    "reb": 6,
-                    "ast": 5
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 25.9,
-            "min_l10": 24.8,
-            "edges": {
-                "pts": 2.2,
-                "reb": 3.8,
-                "ast": 3.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 13.0,
-            "note": "Bounce-back (10 PRA last game vs 14 avg) | POR #27 vs SF reb | High O/U 231.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Olivier-Maxence Prosper",
-            "team": "MEM",
-            "opp": "POR",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
                     "pts": 9,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 4,
+                    "reb": 0,
                     "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 1,
-                    "ast": 0
                 },
                 {
                     "pts": 1,
@@ -5221,1241 +8899,99 @@ RAW_PLAYERS = {
                     "ast": 1
                 },
                 {
-                    "pts": 10,
+                    "pts": 6,
                     "reb": 3,
                     "ast": 0
                 },
                 {
+                    "pts": 4,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
                     "pts": 6,
-                    "reb": 3,
-                    "ast": 6
+                    "reb": 1,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 0,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 2,
+                    "reb": 0,
+                    "ast": 2
                 },
                 {
                     "pts": 16,
                     "reb": 4,
-                    "ast": 1
+                    "ast": 2
                 },
                 {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 2
+                    "pts": 11,
+                    "reb": 5,
+                    "ast": 1
                 }
             ],
-            "min_avg": 14.4,
-            "min_l10": 19.0,
+            "min_avg": 21.6,
+            "min_l10": 16.6,
             "edges": {
-                "pts": 0.5,
-                "reb": 0.2,
+                "pts": 3.8,
+                "reb": 0.0,
                 "ast": 2.2
             },
             "fd_line_cat": "PRA",
-            "fd_line": 9.5,
-            "note": "Minutes trending up (14.4->19.0) | High O/U 231.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Rayan Rupert",
-            "team": "MEM",
-            "opp": "POR",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 13,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 19,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 7,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 7,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 14.0,
-            "min_l10": 17.7,
-            "edges": {
-                "pts": 2.2,
-                "reb": 3.8,
-                "ast": 3.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.0,
-            "note": "Minutes trending up (14.0->17.7) | POR #27 vs SF reb | High O/U 231.5 \u2014 shootout potential"
-        }
-    ],
-    "ATL_MIL": [
-        {
-            "name": "CJ McCollum",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 40,
-                    "reb": 5,
-                    "ast": 7
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 18,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 3,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 26,
-                    "reb": 7,
-                    "ast": 9
-                },
-                {
-                    "pts": 9,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 23,
-                    "reb": 3,
-                    "ast": 7
-                },
-                {
-                    "pts": 17,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 13,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 5
-                }
-            ],
-            "min_avg": 32.8,
-            "min_l10": 30.3,
-            "edges": {
-                "pts": 2.2,
-                "reb": 3.8,
-                "ast": 3.8
-            },
-            "fd_line_cat": "P",
-            "fd_line": 16.5,
-            "note": "MIL #27 vs PG reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Dyson Daniels",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "SG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 8,
-                    "reb": 10,
-                    "ast": 8
-                },
-                {
-                    "pts": 10,
-                    "reb": 9,
-                    "ast": 9
-                },
-                {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 19,
-                    "reb": 6,
-                    "ast": 6
-                },
-                {
-                    "pts": 12,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 17,
-                    "reb": 6,
-                    "ast": 5
-                },
-                {
-                    "pts": 22,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 22,
-                    "reb": 9,
-                    "ast": 6
-                },
-                {
-                    "pts": 9,
-                    "reb": 8,
-                    "ast": 3
-                },
-                {
-                    "pts": 19,
-                    "reb": 8,
-                    "ast": 10
-                }
-            ],
-            "min_avg": 33.9,
-            "min_l10": 33.7,
-            "edges": {
-                "pts": 2.2,
-                "reb": 2.2,
-                "ast": 0.2
-            },
-            "fd_line_cat": "P",
-            "fd_line": 14.5,
-            "note": "High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Nickeil Alexander-Walker",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 9,
-                    "reb": 5,
-                    "ast": 7
-                },
-                {
-                    "pts": 10,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 5
-                },
-                {
-                    "pts": 13,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 26,
-                    "reb": 8,
-                    "ast": 8
-                },
-                {
-                    "pts": 11,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 8,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 2,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 25.3,
-            "min_l10": 26.8,
-            "edges": {
-                "pts": 2.2,
-                "reb": 3.8,
-                "ast": 3.8
-            },
-            "fd_line_cat": "P",
             "fd_line": 10.0,
-            "note": "MIL #27 vs PG reb | High O/U 232.5 \u2014 shootout potential"
+            "note": "LAL #30 vs SF pts | High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Jalen Johnson",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 17,
-                    "reb": 9,
-                    "ast": 4
-                },
-                {
-                    "pts": 11,
-                    "reb": 12,
-                    "ast": 4
-                },
-                {
-                    "pts": 14,
-                    "reb": 13,
-                    "ast": 3
-                },
-                {
-                    "pts": 19,
-                    "reb": 8,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 28,
-                    "reb": 13,
-                    "ast": 5
-                },
-                {
-                    "pts": 30,
-                    "reb": 15,
-                    "ast": 4
-                },
-                {
-                    "pts": 17,
-                    "reb": 11,
-                    "ast": 7
-                },
-                {
-                    "pts": 13,
-                    "reb": 11,
-                    "ast": 8
-                }
-            ],
-            "min_avg": 35.7,
-            "min_l10": 33.0,
-            "edges": {
-                "pts": 1.5,
-                "reb": 1.0,
-                "ast": 3.0
-            },
-            "fd_line_cat": "R",
-            "fd_line": 9.5,
-            "note": "Bounce-back (5 PRA last game vs 30 avg) | MIL #25 vs PF ast | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Onyeka Okongwu",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "C",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 4,
-                    "reb": 8,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 15,
-                    "ast": 2
-                },
-                {
-                    "pts": 30,
-                    "reb": 14,
-                    "ast": 4
-                },
-                {
-                    "pts": 27,
-                    "reb": 12,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 20,
-                    "reb": 14,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 13,
-                    "reb": 10,
-                    "ast": 3
-                },
-                {
-                    "pts": 15,
-                    "reb": 9,
-                    "ast": 0
-                },
-                {
-                    "pts": 14,
-                    "reb": 15,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 27.8,
-            "min_l10": 34.2,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.2,
-                "ast": 0.0
-            },
-            "fd_line_cat": "R",
-            "fd_line": 10.5,
-            "note": "Bounce-back (13 PRA last game vs 29 avg) | Minutes trending up (27.8->34.2) | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Jonathan Kuminga",
-            "team": "ATL",
-            "opp": "MIL",
+            "name": "Cameron Johnson",
+            "team": "DEN",
+            "opp": "LAL",
             "pos": "SF",
-            "role": "bench",
+            "role": "starter",
             "inj": "GTD",
             "last10_games": [
                 {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 9,
-                    "reb": 7,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
                     "pts": 18,
                     "reb": 9,
-                    "ast": 4
+                    "ast": 7
                 },
                 {
-                    "pts": 4,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 16,
-                    "reb": 8,
-                    "ast": 3
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 24.3,
-            "min_l10": 19.5,
-            "edges": {
-                "pts": 0.5,
-                "reb": 2.2,
-                "ast": 1.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 11.0,
-            "note": "High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Zaccharie Risacher",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 6,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 38,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 36,
-                    "reb": 6,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
+                    "pts": 11,
                     "reb": 0,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 24.6,
-            "min_l10": 24.6,
-            "edges": {
-                "pts": 0.5,
-                "reb": 2.2,
-                "ast": 1.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 14.5,
-            "note": "Bounce-back (8 PRA last game vs 19 avg) | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Corey Kispert",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "SG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 4,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 6,
-                    "ast": 3
-                },
-                {
-                    "pts": 13,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 13,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 20,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 3,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 26.2,
-            "min_l10": 23.5,
-            "edges": {
-                "pts": 2.2,
-                "reb": 2.2,
-                "ast": 0.2
-            },
-            "fd_line_cat": "P",
-            "fd_line": 10.0,
-            "note": "Bounce-back (7 PRA last game vs 15 avg) | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Jock Landale",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "C",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 11,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 11,
-                    "reb": 9,
-                    "ast": 5
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 11,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 13.1,
-            "min_l10": 16.2,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.2,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.5,
-            "note": "Minutes trending up (13.1->16.2) | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Gabe Vincent",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 3,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 20,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 6,
-                    "reb": 1,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 21.2,
-            "min_l10": 20.7,
-            "edges": {
-                "pts": 2.2,
-                "reb": 3.8,
-                "ast": 3.8
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 10.0,
-            "note": "Bounce-back (2 PRA last game vs 10 avg) | MIL #27 vs PG reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Mouhamed Gueye",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "PF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 3,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 10,
-                    "reb": 18,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 12,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 8,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 11,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 9,
-                    "ast": 1
-                },
-                {
-                    "pts": 4,
-                    "reb": 4,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 16.5,
-            "min_l10": 16.1,
-            "edges": {
-                "pts": 1.5,
-                "reb": 1.0,
-                "ast": 3.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 13.0,
-            "note": "Bounce-back (7 PRA last game vs 14 avg) | MIL #25 vs PF ast | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Keaton Wallace",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 15,
-                    "reb": 11,
-                    "ast": 15
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
                     "ast": 6
                 },
                 {
-                    "pts": 3,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 2,
-                    "reb": 0,
-                    "ast": 4
-                },
-                {
-                    "pts": 4,
+                    "pts": 17,
                     "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 0,
-                    "ast": 3
-                },
-                {
-                    "pts": 7,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 13,
-                    "reb": 3,
-                    "ast": 7
-                }
-            ],
-            "min_avg": 20.2,
-            "min_l10": 20.5,
-            "edges": {
-                "pts": 2.2,
-                "reb": 3.8,
-                "ast": 3.8
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 12.0,
-            "note": "MIL #27 vs PG reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Buddy Hield",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "SG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 16,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 4,
-                    "ast": 1
+                    "ast": 8
                 },
                 {
                     "pts": 20,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 19,
-                    "reb": 5,
-                    "ast": 4
+                    "reb": 9,
+                    "ast": 5
                 },
                 {
                     "pts": 11,
-                    "reb": 3,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 22.8,
-            "min_l10": 20.9,
-            "edges": {
-                "pts": 2.2,
-                "reb": 2.2,
-                "ast": 0.2
-            },
-            "fd_line_cat": "P",
-            "fd_line": 10.0,
-            "note": "Bounce-back (9 PRA last game vs 15 avg) | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Caleb Houstan",
-            "team": "ATL",
-            "opp": "MIL",
-            "pos": "SF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 13,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 2,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 18,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 0,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 15.4,
-            "min_l10": 22.4,
-            "edges": {
-                "pts": 0.5,
-                "reb": 2.2,
-                "ast": 1.5
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.5,
-            "note": "Minutes trending up (15.4->22.4) | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Ryan Rollins",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 7,
                     "reb": 2,
                     "ast": 4
                 },
                 {
-                    "pts": 12,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 5,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 14,
-                    "reb": 7,
-                    "ast": 10
-                },
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 2,
-                    "ast": 1
+                    "pts": 28,
+                    "reb": 4,
+                    "ast": 7
                 },
                 {
                     "pts": 23,
-                    "reb": 5,
-                    "ast": 5
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 20,
-                    "reb": 5,
-                    "ast": 4
-                },
-                {
-                    "pts": 17,
-                    "reb": 1,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 18.3,
-            "min_l10": 24.1,
-            "edges": {
-                "pts": 1.0,
-                "reb": 2.2,
-                "ast": 3.8
-            },
-            "fd_line_cat": "P",
-            "fd_line": 12.0,
-            "note": "Bounce-back (13 PRA last game vs 19 avg) | Minutes trending up (18.3->24.1) | ATL #27 vs PG ast | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "AJ Green",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "SG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 4
-                },
-                {
-                    "pts": 9,
-                    "reb": 6,
-                    "ast": 0
-                },
-                {
-                    "pts": 3,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 15,
-                    "reb": 5,
-                    "ast": 5
-                },
-                {
-                    "pts": 2,
-                    "reb": 2,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 23.3,
-            "min_l10": 24.5,
-            "edges": {
-                "pts": 3.0,
-                "reb": 0.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 12.5,
-            "note": "ATL #26 vs SG pts | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Ousmane Dieng",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "SF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 0
+                    "reb": 10,
+                    "ast": 6
                 },
                 {
                     "pts": 16,
@@ -6463,1388 +8999,1078 @@ RAW_PLAYERS = {
                     "ast": 1
                 },
                 {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 5,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 21,
-                    "reb": 8,
+                    "pts": 17,
+                    "reb": 5,
                     "ast": 5
                 },
                 {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 3
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 5,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
+                    "pts": 18,
+                    "reb": 7,
+                    "ast": 5
                 }
             ],
-            "min_avg": 13.3,
-            "min_l10": 15.9,
+            "min_avg": 31.6,
+            "min_l10": 30.7,
             "edges": {
                 "pts": 3.8,
-                "reb": 3.0,
-                "ast": 1.0
+                "reb": 0.0,
+                "ast": 2.2
             },
-            "fd_line_cat": "PRA",
-            "fd_line": 9.5,
-            "note": "Bounce-back (3 PRA last game vs 10 avg) | Minutes trending up (13.3->15.9) | ATL #28 vs SF pts | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Giannis Antetokounmpo",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "PF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 32,
-                    "reb": 11,
-                    "ast": 15
-                },
-                {
-                    "pts": 28,
-                    "reb": 11,
-                    "ast": 5
-                },
-                {
-                    "pts": 23,
-                    "reb": 13,
-                    "ast": 10
-                },
-                {
-                    "pts": 36,
-                    "reb": 15,
-                    "ast": 10
-                },
-                {
-                    "pts": 35,
-                    "reb": 17,
-                    "ast": 20
-                },
-                {
-                    "pts": 37,
-                    "reb": 5,
-                    "ast": 11
-                },
-                {
-                    "pts": 31,
-                    "reb": 9,
-                    "ast": 5
-                },
-                {
-                    "pts": 30,
-                    "reb": 9,
-                    "ast": 7
-                },
-                {
-                    "pts": 31,
-                    "reb": 10,
-                    "ast": 5
-                },
-                {
-                    "pts": 32,
-                    "reb": 17,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 34.2,
-            "min_l10": 35.7,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.0,
-                "ast": 3.8
-            },
-            "fd_line_cat": "P",
-            "fd_line": 30.0,
-            "note": "ATL #26 vs PF reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Myles Turner",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "C",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 9,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 13,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 11,
-                    "ast": 1
-                },
-                {
-                    "pts": 24,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 26,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 15,
-                    "reb": 9,
-                    "ast": 2
-                },
-                {
-                    "pts": 11,
-                    "reb": 5,
-                    "ast": 1
-                },
-                {
-                    "pts": 17,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 16,
-                    "reb": 12,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
-                    "reb": 9,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 30.2,
-            "min_l10": 27.1,
-            "edges": {
-                "pts": 1.5,
-                "reb": 3.8,
-                "ast": 0.5
-            },
-            "fd_line_cat": "PR",
-            "fd_line": 21.0,
-            "note": "Bounce-back (11 PRA last game vs 23 avg) | ATL #27 vs C reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Bobby Portis",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "PF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 17,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 14,
-                    "reb": 8,
-                    "ast": 0
-                },
-                {
-                    "pts": 18,
-                    "reb": 10,
-                    "ast": 1
-                },
-                {
-                    "pts": 8,
-                    "reb": 6,
-                    "ast": 4
-                },
-                {
-                    "pts": 7,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 18,
-                    "reb": 13,
-                    "ast": 5
-                },
-                {
-                    "pts": 26,
-                    "reb": 15,
-                    "ast": 6
-                },
-                {
-                    "pts": 23,
-                    "reb": 17,
-                    "ast": 5
-                },
-                {
-                    "pts": 16,
-                    "reb": 8,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 8,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 25.4,
-            "min_l10": 27.4,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.0,
-                "ast": 3.8
-            },
-            "fd_line_cat": "R",
-            "fd_line": 10.0,
-            "note": "ATL #26 vs PF reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Cam Thomas",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "PG",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 24,
-                    "reb": 6,
-                    "ast": 10
-                },
-                {
-                    "pts": 27,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 23,
-                    "reb": 3,
-                    "ast": 7
-                },
-                {
-                    "pts": 24,
-                    "reb": 1,
-                    "ast": 6
-                },
-                {
-                    "pts": 16,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 24,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 25,
-                    "reb": 6,
-                    "ast": 5
-                },
-                {
-                    "pts": 23,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 34,
-                    "reb": 2,
-                    "ast": 6
-                }
-            ],
-            "min_avg": 31.3,
-            "min_l10": 27.3,
-            "edges": {
-                "pts": 1.0,
-                "reb": 2.2,
-                "ast": 3.8
-            },
-            "fd_line_cat": "P",
+            "fd_line_cat": "PA",
             "fd_line": 22.5,
-            "note": "ATL #27 vs PG ast | High O/U 232.5 \u2014 shootout potential"
+            "note": "LAL #30 vs SF pts | High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "Kyle Kuzma",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "PF",
+            "name": "Bruce Brown",
+            "team": "DEN",
+            "opp": "LAL",
+            "pos": "PG",
             "role": "bench",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 22,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 17,
+                    "pts": 9,
                     "reb": 3,
                     "ast": 1
                 },
                 {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 0
-                },
-                {
-                    "pts": 17,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 9,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
                     "pts": 16,
                     "reb": 4,
-                    "ast": 3
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 5
-                },
-                {
-                    "pts": 25,
-                    "reb": 6,
-                    "ast": 1
-                },
-                {
-                    "pts": 20,
-                    "reb": 5,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 29.8,
-            "min_l10": 28.6,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.0,
-                "ast": 3.8
-            },
-            "fd_line_cat": "P",
-            "fd_line": 15.0,
-            "note": "ATL #26 vs PF reb | High O/U 232.5 \u2014 shootout potential"
-        },
-        {
-            "name": "Pete Nance",
-            "team": "MIL",
-            "opp": "ATL",
-            "pos": "PF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 19,
-                    "reb": 6,
-                    "ast": 5
-                },
-                {
-                    "pts": 2,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 2,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 8,
-                    "reb": 6,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
-                    "reb": 0,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 1
-                }
-            ],
-            "min_avg": 16.0,
-            "min_l10": 16.0,
-            "edges": {
-                "pts": 0.2,
-                "reb": 3.0,
-                "ast": 3.8
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 6.5,
-            "note": "ATL #26 vs PF reb | High O/U 232.5 \u2014 shootout potential"
-        }
-    ],
-    "IND_LAC": [
-        {
-            "name": "Andrew Nembhard",
-            "team": "IND",
-            "opp": "LAC",
-            "pos": "PG",
-            "role": "starter",
-            "inj": "GTD",
-            "last10_games": [
-                {
-                    "pts": 3,
-                    "reb": 0,
-                    "ast": 5
-                },
-                {
-                    "pts": 2,
-                    "reb": 1,
-                    "ast": 8
-                },
-                {
-                    "pts": 5,
-                    "reb": 8,
-                    "ast": 5
-                },
-                {
-                    "pts": 22,
-                    "reb": 5,
-                    "ast": 7
-                },
-                {
-                    "pts": 13,
-                    "reb": 7,
-                    "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 6,
-                    "reb": 8,
-                    "ast": 2
-                },
-                {
-                    "pts": 19,
-                    "reb": 6,
-                    "ast": 8
-                },
-                {
-                    "pts": 8,
-                    "reb": 5,
                     "ast": 9
                 },
                 {
-                    "pts": 19,
-                    "reb": 8,
-                    "ast": 3
-                }
-            ],
-            "min_avg": 29.0,
-            "min_l10": 28.2,
-            "edges": {
-                "pts": 0.5,
-                "reb": 3.0,
-                "ast": 0.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 10.5,
-            "note": "Usage boost +16% (Nesmith OUT, Siakam OUT) | Bounce-back (8 PRA last game vs 21 avg) | LAC #25 vs PG reb | O/U 227.5"
-        },
-        {
-            "name": "Jarace Walker",
-            "team": "IND",
-            "opp": "LAC",
-            "pos": "SF",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 13,
-                    "reb": 9,
-                    "ast": 6
-                },
-                {
-                    "pts": 17,
-                    "reb": 9,
-                    "ast": 3
-                },
-                {
-                    "pts": 17,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
-                    "ast": 0
-                },
-                {
-                    "pts": 13,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 8,
-                    "ast": 3
-                },
-                {
-                    "pts": 11,
-                    "reb": 7,
-                    "ast": 2
-                },
-                {
-                    "pts": 17,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 11,
-                    "reb": 5,
-                    "ast": 5
-                },
-                {
-                    "pts": 18,
+                    "pts": 1,
                     "reb": 6,
-                    "ast": 6
-                }
-            ],
-            "min_avg": 17.4,
-            "min_l10": 21.6,
-            "edges": {
-                "pts": 0.2,
-                "reb": 0.0,
-                "ast": 0.2
-            },
-            "fd_line_cat": "P",
-            "fd_line": 12.0,
-            "note": "Usage boost +14% (Nesmith OUT, Siakam OUT) | Minutes trending up (17.4->21.6) | O/U 227.5"
-        },
-        {
-            "name": "Obi Toppin",
-            "team": "IND",
-            "opp": "LAC",
-            "pos": "PF",
-            "role": "bench",
-            "inj": "GTD",
-            "last10_games": [
-                {
-                    "pts": 7,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 4,
-                    "reb": 5,
-                    "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 12,
-                    "reb": 7,
-                    "ast": 3
-                },
-                {
-                    "pts": 22,
-                    "reb": 4,
                     "ast": 1
                 },
                 {
-                    "pts": 6,
-                    "reb": 4,
-                    "ast": 4
-                },
-                {
-                    "pts": 8,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 19,
-                    "reb": 7,
-                    "ast": 0
-                },
-                {
-                    "pts": 12,
-                    "reb": 3,
-                    "ast": 5
-                },
-                {
-                    "pts": 15,
-                    "reb": 2,
-                    "ast": 4
-                }
-            ],
-            "min_avg": 19.6,
-            "min_l10": 19.5,
-            "edges": {
-                "pts": 0.0,
-                "reb": 0.0,
-                "ast": 1.5
-            },
-            "fd_line_cat": "P",
-            "fd_line": 11.0,
-            "note": "Usage boost +2% (Nesmith OUT, Siakam OUT) | Bounce-back (10 PRA last game vs 18 avg) | O/U 227.5"
-        },
-        {
-            "name": "Micah Potter",
-            "team": "IND",
-            "opp": "LAC",
-            "pos": "PF",
-            "role": "bench",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 7,
+                    "pts": 16,
                     "reb": 5,
-                    "ast": 4
+                    "ast": 1
                 },
                 {
                     "pts": 3,
-                    "reb": 10,
-                    "ast": 0
+                    "reb": 12,
+                    "ast": 2
                 },
                 {
-                    "pts": 4,
-                    "reb": 3,
-                    "ast": 0
-                },
-                {
-                    "pts": 0,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
+                    "pts": 18,
                     "reb": 7,
                     "ast": 1
                 },
                 {
-                    "pts": 7,
-                    "reb": 5,
-                    "ast": 1
+                    "pts": 12,
+                    "reb": 1,
+                    "ast": 2
                 },
                 {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 2,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 9,
+                    "pts": 14,
                     "reb": 2,
-                    "ast": 0
+                    "ast": 1
+                },
+                {
+                    "pts": 15,
+                    "reb": 7,
+                    "ast": 6
                 },
                 {
                     "pts": 2,
-                    "reb": 4,
+                    "reb": 1,
                     "ast": 0
                 }
             ],
-            "min_avg": 18.5,
-            "min_l10": 21.2,
+            "min_avg": 22.4,
+            "min_l10": 26.8,
             "edges": {
-                "pts": 0.0,
+                "pts": 0.5,
                 "reb": 0.0,
-                "ast": 1.5
+                "ast": 3.8
             },
-            "fd_line_cat": "PRA",
-            "fd_line": 9.5,
-            "note": "Usage boost +2% (Nesmith OUT, Siakam OUT) | O/U 227.5"
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "Bounce-back (13 PRA last game vs 18 avg) | Minutes trending up (22.4->26.8) | LAL #30 vs PG ast | High O/U 240.5 \u2014 shootout potential"
         },
         {
-            "name": "T.J. McConnell",
-            "team": "IND",
-            "opp": "LAC",
+            "name": "Jalen Pickett",
+            "team": "DEN",
+            "opp": "LAL",
             "pos": "PG",
             "role": "bench",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 8,
-                    "reb": 0,
+                    "pts": 0,
+                    "reb": 1,
                     "ast": 1
                 },
                 {
-                    "pts": 12,
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 18,
+                    "reb": 1,
+                    "ast": 4
+                },
+                {
+                    "pts": 4,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 8,
                     "reb": 1,
                     "ast": 3
                 },
                 {
-                    "pts": 6,
-                    "reb": 3,
+                    "pts": 17,
+                    "reb": 11,
+                    "ast": 10
+                },
+                {
+                    "pts": 9,
+                    "reb": 4,
+                    "ast": 5
+                },
+                {
+                    "pts": 0,
+                    "reb": 4,
                     "ast": 4
+                },
+                {
+                    "pts": 4,
+                    "reb": 0,
+                    "ast": 0
                 },
                 {
                     "pts": 2,
                     "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 12,
-                    "reb": 3,
-                    "ast": 6
-                },
-                {
-                    "pts": 12,
-                    "reb": 4,
-                    "ast": 7
-                },
-                {
-                    "pts": 8,
-                    "reb": 4,
-                    "ast": 7
-                },
-                {
-                    "pts": 8,
-                    "reb": 2,
-                    "ast": 4
-                },
-                {
-                    "pts": 8,
-                    "reb": 1,
                     "ast": 3
-                },
-                {
-                    "pts": 10,
-                    "reb": 9,
-                    "ast": 8
                 }
             ],
-            "min_avg": 18.2,
-            "min_l10": 18.1,
+            "min_avg": 17.8,
+            "min_l10": 22.2,
             "edges": {
                 "pts": 0.5,
-                "reb": 3.0,
-                "ast": 0.5
+                "reb": 0.0,
+                "ast": 3.8
             },
             "fd_line_cat": "PRA",
-            "fd_line": 15.5,
-            "note": "Usage boost +2% (Nesmith OUT, Siakam OUT) | Bounce-back (9 PRA last game vs 16 avg) | LAC #25 vs PG reb | O/U 227.5"
-        },
+            "fd_line": 12.0,
+            "note": "Bounce-back (2 PRA last game vs 12 avg) | Minutes trending up (17.8->22.2) | LAL #30 vs PG ast | High O/U 240.5 \u2014 shootout potential"
+        }
+    ],
+    "NOP_SAC": [
         {
-            "name": "Ben Sheppard",
-            "team": "IND",
-            "opp": "LAC",
-            "pos": "SG",
+            "name": "Jaxson Hayes",
+            "team": "SAC",
+            "opp": "NOP",
+            "pos": "C",
             "role": "bench",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 3,
-                    "reb": 4,
-                    "ast": 2
+                    "pts": 7,
+                    "reb": 1,
+                    "ast": 0
                 },
                 {
                     "pts": 3,
-                    "reb": 0,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 7,
+                    "reb": 6,
                     "ast": 2
                 },
                 {
-                    "pts": 0,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 2
+                    "pts": 7,
+                    "reb": 5,
+                    "ast": 0
                 },
                 {
                     "pts": 6,
-                    "reb": 2,
-                    "ast": 2
-                },
-                {
-                    "pts": 0,
-                    "reb": 0,
+                    "reb": 12,
                     "ast": 0
                 },
                 {
                     "pts": 2,
                     "reb": 3,
-                    "ast": 1
-                },
-                {
-                    "pts": 0,
-                    "reb": 1,
                     "ast": 0
                 },
                 {
-                    "pts": 0,
-                    "reb": 8,
-                    "ast": 2
+                    "pts": 3,
+                    "reb": 3,
+                    "ast": 1
                 },
                 {
-                    "pts": 5,
-                    "reb": 6,
+                    "pts": 2,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 19,
+                    "reb": 8,
+                    "ast": 1
+                },
+                {
+                    "pts": 13,
+                    "reb": 2,
                     "ast": 1
                 }
             ],
             "min_avg": 19.5,
-            "min_l10": 16.1,
+            "min_l10": 18.6,
             "edges": {
-                "pts": 3.0,
-                "reb": 0.0,
-                "ast": 0.2
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 7.5,
-            "note": "Usage boost +2% (Nesmith OUT, Siakam OUT) | LAC #25 vs SG pts | O/U 227.5"
-        },
-        {
-            "name": "Kris Dunn",
-            "team": "LAC",
-            "opp": "IND",
-            "pos": "PG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 11,
-                    "reb": 1,
-                    "ast": 6
-                },
-                {
-                    "pts": 4,
-                    "reb": 2,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 2,
-                    "ast": 3
-                },
-                {
-                    "pts": 6,
-                    "reb": 1,
-                    "ast": 3
-                },
-                {
-                    "pts": 3,
-                    "reb": 0,
-                    "ast": 2
-                },
-                {
-                    "pts": 9,
-                    "reb": 6,
-                    "ast": 0
-                },
-                {
-                    "pts": 11,
-                    "reb": 7,
-                    "ast": 1
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 13,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 9,
-                    "reb": 4,
-                    "ast": 2
-                }
-            ],
-            "min_avg": 24.1,
-            "min_l10": 25.6,
-            "edges": {
-                "pts": 3.0,
-                "reb": 3.8,
+                "pts": 1.0,
+                "reb": 1.0,
                 "ast": 1.0
             },
             "fd_line_cat": "PRA",
-            "fd_line": 12.5,
-            "note": "IND #25 vs PG pts | O/U 227.5"
+            "fd_line": 12.0,
+            "note": "Bounce-back (8 PRA last game vs 12 avg) | High O/U 234.5 \u2014 shootout potential"
         },
         {
-            "name": "Derrick Jones Jr.",
-            "team": "LAC",
-            "opp": "IND",
+            "name": "Herbert Jones",
+            "team": "NOP",
+            "opp": "SAC",
             "pos": "SF",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 3,
-                    "reb": 5,
+                    "pts": 0,
+                    "reb": 0,
                     "ast": 1
+                },
+                {
+                    "pts": 10,
+                    "reb": 6,
+                    "ast": 5
                 },
                 {
                     "pts": 11,
+                    "reb": 4,
+                    "ast": 1
+                },
+                {
+                    "pts": 10,
                     "reb": 1,
-                    "ast": 0
+                    "ast": 6
                 },
                 {
                     "pts": 8,
-                    "reb": 3,
-                    "ast": 1
+                    "reb": 4,
+                    "ast": 4
                 },
                 {
                     "pts": 18,
-                    "reb": 2,
-                    "ast": 1
-                },
-                {
-                    "pts": 7,
                     "reb": 4,
-                    "ast": 1
+                    "ast": 5
                 },
                 {
-                    "pts": 8,
-                    "reb": 1,
-                    "ast": 0
+                    "pts": 4,
+                    "reb": 5,
+                    "ast": 3
                 },
                 {
-                    "pts": 3,
-                    "reb": 4,
-                    "ast": 1
-                },
-                {
-                    "pts": 5,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 15,
-                    "reb": 3,
-                    "ast": 2
-                },
-                {
-                    "pts": 6,
-                    "reb": 3,
-                    "ast": 0
-                }
-            ],
-            "min_avg": 24.3,
-            "min_l10": 22.7,
-            "edges": {
-                "pts": 0.5,
-                "reb": 1.5,
-                "ast": 0.0
-            },
-            "fd_line_cat": "PRA",
-            "fd_line": 11.5,
-            "note": "Bounce-back (9 PRA last game vs 12 avg) | O/U 227.5"
-        },
-        {
-            "name": "Kawhi Leonard",
-            "team": "LAC",
-            "opp": "IND",
-            "pos": "SG",
-            "role": "starter",
-            "inj": None,
-            "last10_games": [
-                {
-                    "pts": 33,
+                    "pts": 10,
                     "reb": 6,
                     "ast": 7
                 },
                 {
-                    "pts": 28,
-                    "reb": 7,
+                    "pts": 8,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 4
+                }
+            ],
+            "min_avg": 32.5,
+            "min_l10": 32.4,
+            "edges": {
+                "pts": 1.5,
+                "reb": 0.0,
+                "ast": 0.5
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 16.0,
+            "note": "Bounce-back (1 PRA last game vs 17 avg) | High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Trey Murphy",
+            "team": "NOP",
+            "opp": "SAC",
+            "pos": "PG",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
+                    "pts": 20,
+                    "reb": 6,
                     "ast": 3
                 },
                 {
-                    "pts": 22,
-                    "reb": 10,
-                    "ast": 4
+                    "pts": 17,
+                    "reb": 5,
+                    "ast": 2
                 },
                 {
+                    "pts": 21,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 27,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 13,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 26,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 19,
+                    "reb": 6,
+                    "ast": 5
+                },
+                {
+                    "pts": 20,
+                    "reb": 6,
+                    "ast": 6
+                },
+                {
+                    "pts": 10,
+                    "reb": 3,
+                    "ast": 8
+                },
+                {
+                    "pts": 18,
+                    "reb": 4,
+                    "ast": 1
+                }
+            ],
+            "min_avg": 35.7,
+            "min_l10": 35.4,
+            "edges": {
+                "pts": 3.8,
+                "reb": 2.2,
+                "ast": 3.8
+            },
+            "fd_line_cat": "P",
+            "fd_line": 18.5,
+            "note": "SAC #28 vs PG pts | High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Zion Williamson",
+            "team": "NOP",
+            "opp": "SAC",
+            "pos": "PF",
+            "role": "starter",
+            "inj": "GTD",
+            "last10_games": [
+                {
                     "pts": 29,
+                    "reb": 5,
+                    "ast": 8
+                },
+                {
+                    "pts": 30,
                     "reb": 6,
                     "ast": 3
                 },
                 {
                     "pts": 20,
-                    "reb": 6,
-                    "ast": 2
+                    "reb": 8,
+                    "ast": 5
                 },
                 {
-                    "pts": 28,
-                    "reb": 3,
+                    "pts": 22,
+                    "reb": 10,
+                    "ast": 12
+                },
+                {
+                    "pts": 20,
+                    "reb": 2,
                     "ast": 3
                 },
                 {
-                    "pts": 21,
-                    "reb": 8,
-                    "ast": 2
+                    "pts": 20,
+                    "reb": 10,
+                    "ast": 3
                 },
                 {
-                    "pts": 31,
+                    "pts": 37,
+                    "reb": 4,
+                    "ast": 6
+                },
+                {
+                    "pts": 24,
                     "reb": 6,
-                    "ast": 2
+                    "ast": 9
                 },
                 {
                     "pts": 27,
                     "reb": 10,
-                    "ast": 7
+                    "ast": 11
                 },
                 {
-                    "pts": 25,
-                    "reb": 10,
+                    "pts": 18,
+                    "reb": 6,
                     "ast": 3
                 }
             ],
-            "min_avg": 31.8,
-            "min_l10": 36.1,
+            "min_avg": 28.5,
+            "min_l10": 29.4,
             "edges": {
-                "pts": 0.5,
-                "reb": 3.8,
-                "ast": 0.5
+                "pts": 2.2,
+                "reb": 1.5,
+                "ast": 1.0
             },
             "fd_line_cat": "P",
-            "fd_line": 25.5,
-            "note": "IND #28 vs SG reb | O/U 227.5"
+            "fd_line": 23.5,
+            "note": "High O/U 234.5 \u2014 shootout potential"
         },
         {
-            "name": "Brook Lopez",
-            "team": "LAC",
-            "opp": "IND",
+            "name": "DeAndre Jordan",
+            "team": "NOP",
+            "opp": "SAC",
             "pos": "C",
             "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 15,
-                    "reb": 7,
+                    "pts": 4,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 0
+                },
+                {
+                    "pts": 6,
+                    "reb": 5,
+                    "ast": 0
+                },
+                {
+                    "pts": 0,
+                    "reb": 5,
+                    "ast": 2
+                },
+                {
+                    "pts": 10,
+                    "reb": 17,
                     "ast": 1
                 },
                 {
-                    "pts": 3,
+                    "pts": 2,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
                     "reb": 1,
                     "ast": 1
                 },
                 {
                     "pts": 10,
-                    "reb": 2,
-                    "ast": 1
+                    "reb": 17,
+                    "ast": 7
                 },
                 {
-                    "pts": 20,
-                    "reb": 12,
-                    "ast": 3
+                    "pts": 11,
+                    "reb": 15,
+                    "ast": 4
                 },
                 {
-                    "pts": 17,
+                    "pts": 1,
+                    "reb": 3,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 12.8,
+            "min_l10": 16.8,
+            "edges": {
+                "pts": 3.8,
+                "reb": 3.8,
+                "ast": 2.2
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 14.0,
+            "note": "Bounce-back (9 PRA last game vs 14 avg) | Minutes trending up (12.8->16.8) | SAC #30 vs C pts | High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Yves Missi",
+            "team": "NOP",
+            "opp": "SAC",
+            "pos": "C",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 9,
                     "reb": 5,
                     "ast": 0
                 },
                 {
-                    "pts": 17,
-                    "reb": 3,
-                    "ast": 1
+                    "pts": 18,
+                    "reb": 12,
+                    "ast": 3
                 },
                 {
-                    "pts": 22,
-                    "reb": 6,
-                    "ast": 6
+                    "pts": 13,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 6,
+                    "reb": 12,
+                    "ast": 4
+                },
+                {
+                    "pts": 8,
+                    "reb": 11,
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 10,
+                    "ast": 0
+                },
+                {
+                    "pts": 16,
+                    "reb": 9,
+                    "ast": 2
                 },
                 {
                     "pts": 5,
-                    "reb": 1,
-                    "ast": 1
+                    "reb": 10,
+                    "ast": 2
                 },
                 {
-                    "pts": 7,
-                    "reb": 5,
-                    "ast": 6
-                },
-                {
-                    "pts": 26,
+                    "pts": 13,
                     "reb": 7,
-                    "ast": 3
+                    "ast": 2
+                },
+                {
+                    "pts": 12,
+                    "reb": 10,
+                    "ast": 0
                 }
             ],
-            "min_avg": 31.8,
-            "min_l10": 31.1,
+            "min_avg": 26.8,
+            "min_l10": 25.8,
             "edges": {
-                "pts": 3.0,
-                "reb": 2.2,
-                "ast": 3.0
+                "pts": 3.8,
+                "reb": 3.8,
+                "ast": 2.2
             },
-            "fd_line_cat": "P",
-            "fd_line": 13.5,
-            "note": "IND #26 vs C pts | O/U 227.5"
+            "fd_line_cat": "R",
+            "fd_line": 9.5,
+            "note": "Bounce-back (14 PRA last game vs 23 avg) | SAC #30 vs C pts | High O/U 234.5 \u2014 shootout potential"
         },
         {
-            "name": "Darius Garland",
-            "team": "LAC",
-            "opp": "IND",
+            "name": "Jordan Poole",
+            "team": "NOP",
+            "opp": "SAC",
             "pos": "PG",
             "role": "bench",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 26,
-                    "reb": 2,
-                    "ast": 13
+                    "pts": 19,
+                    "reb": 1,
+                    "ast": 3
                 },
                 {
-                    "pts": 28,
+                    "pts": 15,
                     "reb": 2,
                     "ast": 5
                 },
                 {
-                    "pts": 9,
-                    "reb": 3,
-                    "ast": 7
+                    "pts": 23,
+                    "reb": 2,
+                    "ast": 2
                 },
                 {
-                    "pts": 19,
+                    "pts": 35,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 12,
+                    "reb": 2,
+                    "ast": 4
+                },
+                {
+                    "pts": 18,
+                    "reb": 0,
+                    "ast": 3
+                },
+                {
+                    "pts": 18,
                     "reb": 2,
                     "ast": 7
                 },
                 {
-                    "pts": 17,
-                    "reb": 4,
-                    "ast": 6
+                    "pts": 23,
+                    "reb": 1,
+                    "ast": 1
                 },
                 {
-                    "pts": 19,
-                    "reb": 4,
-                    "ast": 7
+                    "pts": 25,
+                    "reb": 3,
+                    "ast": 3
                 },
                 {
-                    "pts": 21,
-                    "reb": 5,
-                    "ast": 6
-                },
-                {
-                    "pts": 10,
-                    "reb": 4,
-                    "ast": 9
-                },
-                {
-                    "pts": 27,
-                    "reb": 5,
-                    "ast": 8
-                },
-                {
-                    "pts": 12,
-                    "reb": 7,
-                    "ast": 4
+                    "pts": 18,
+                    "reb": 2,
+                    "ast": 2
                 }
             ],
-            "min_avg": 30.7,
-            "min_l10": 31.5,
+            "min_avg": 29.5,
+            "min_l10": 24.3,
             "edges": {
-                "pts": 3.0,
-                "reb": 3.8,
-                "ast": 1.0
+                "pts": 3.8,
+                "reb": 2.2,
+                "ast": 3.8
             },
             "fd_line_cat": "P",
-            "fd_line": 18.0,
-            "note": "IND #25 vs PG pts | O/U 227.5"
+            "fd_line": 20.0,
+            "note": "SAC #28 vs PG pts | High O/U 234.5 \u2014 shootout potential"
         },
         {
-            "name": "Bennedict Mathurin",
-            "team": "LAC",
-            "opp": "IND",
+            "name": "Jordan Hawkins",
+            "team": "NOP",
+            "opp": "SAC",
             "pos": "SG",
             "role": "bench",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 20,
-                    "reb": 8,
-                    "ast": 3
-                },
-                {
-                    "pts": 13,
-                    "reb": 3,
+                    "pts": 8,
+                    "reb": 5,
                     "ast": 1
                 },
                 {
-                    "pts": 17,
-                    "reb": 4,
-                    "ast": 2
-                },
-                {
-                    "pts": 4,
+                    "pts": 9,
                     "reb": 5,
-                    "ast": 4
+                    "ast": 1
                 },
                 {
-                    "pts": 20,
+                    "pts": 25,
                     "reb": 3,
                     "ast": 2
                 },
                 {
                     "pts": 10,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 6,
                     "reb": 2,
                     "ast": 1
                 },
                 {
-                    "pts": 23,
-                    "reb": 5,
+                    "pts": 0,
+                    "reb": 1,
                     "ast": 2
                 },
                 {
                     "pts": 11,
-                    "reb": 6,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 11,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 12,
+                    "reb": 5,
+                    "ast": 0
+                }
+            ],
+            "min_avg": 23.6,
+            "min_l10": 24.8,
+            "edges": {
+                "pts": 2.2,
+                "reb": 1.5,
+                "ast": 3.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 10.0,
+            "note": "SAC #26 vs SG ast | High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Russell Westbrook",
+            "team": "SAC",
+            "opp": "NOP",
+            "pos": "PG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 17,
+                    "reb": 0,
+                    "ast": 6
+                },
+                {
+                    "pts": 14,
+                    "reb": 3,
+                    "ast": 4
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 16,
+                    "reb": 5,
+                    "ast": 4
+                },
+                {
+                    "pts": 5,
+                    "reb": 4,
                     "ast": 2
                 },
                 {
-                    "pts": 13,
+                    "pts": 30,
+                    "reb": 11,
+                    "ast": 6
+                },
+                {
+                    "pts": 12,
+                    "reb": 6,
+                    "ast": 7
+                },
+                {
+                    "pts": 17,
+                    "reb": 2,
+                    "ast": 7
+                },
+                {
+                    "pts": 6,
+                    "reb": 2,
+                    "ast": 6
+                },
+                {
+                    "pts": 14,
+                    "reb": 5,
+                    "ast": 10
+                }
+            ],
+            "min_avg": 27.9,
+            "min_l10": 26.3,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PA",
+            "fd_line": 18.5,
+            "note": "High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "DeMar DeRozan",
+            "team": "SAC",
+            "opp": "NOP",
+            "pos": "SG",
+            "role": "starter",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 8,
+                    "reb": 0,
+                    "ast": 5
+                },
+                {
+                    "pts": 16,
+                    "reb": 3,
+                    "ast": 8
+                },
+                {
+                    "pts": 22,
+                    "reb": 4,
+                    "ast": 4
+                },
+                {
+                    "pts": 37,
+                    "reb": 4,
+                    "ast": 2
+                },
+                {
+                    "pts": 28,
+                    "reb": 4,
+                    "ast": 7
+                },
+                {
+                    "pts": 22,
+                    "reb": 4,
+                    "ast": 3
+                },
+                {
+                    "pts": 29,
+                    "reb": 7,
+                    "ast": 8
+                },
+                {
+                    "pts": 31,
+                    "reb": 3,
+                    "ast": 8
+                },
+                {
+                    "pts": 21,
                     "reb": 4,
                     "ast": 1
                 },
                 {
-                    "pts": 28,
-                    "reb": 16,
-                    "ast": 3
+                    "pts": 21,
+                    "reb": 2,
+                    "ast": 10
                 }
             ],
-            "min_avg": 29.9,
-            "min_l10": 27.6,
+            "min_avg": 35.9,
+            "min_l10": 36.0,
             "edges": {
-                "pts": 0.5,
-                "reb": 3.8,
-                "ast": 0.5
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
             },
             "fd_line_cat": "P",
-            "fd_line": 15.5,
-            "note": "IND #28 vs SG reb | O/U 227.5"
+            "fd_line": 22.5,
+            "note": "Bounce-back (13 PRA last game vs 33 avg) | High O/U 234.5 \u2014 shootout potential"
         },
         {
-            "name": "Isaiah Jackson",
-            "team": "LAC",
-            "opp": "IND",
-            "pos": "C",
-            "role": "bench",
+            "name": "Precious Achiuwa",
+            "team": "SAC",
+            "opp": "NOP",
+            "pos": "PF",
+            "role": "starter",
             "inj": None,
             "last10_games": [
                 {
-                    "pts": 6,
-                    "reb": 8,
-                    "ast": 1
-                },
-                {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 0
-                },
-                {
-                    "pts": 7,
+                    "pts": 18,
                     "reb": 9,
                     "ast": 2
                 },
                 {
-                    "pts": 2,
-                    "reb": 1,
+                    "pts": 0,
+                    "reb": 6,
                     "ast": 0
                 },
                 {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
+                    "pts": 18,
+                    "reb": 10,
+                    "ast": 3
+                },
+                {
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 13,
+                    "reb": 6,
+                    "ast": 1
+                },
+                {
+                    "pts": 2,
+                    "reb": 9,
+                    "ast": 1
                 },
                 {
                     "pts": 10,
-                    "reb": 5,
-                    "ast": 2
+                    "reb": 2,
+                    "ast": 0
                 },
                 {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 0
                 },
                 {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
+                    "pts": 6,
+                    "reb": 3,
+                    "ast": 0
                 },
                 {
-                    "pts": 10,
-                    "reb": 5,
-                    "ast": 2
-                },
-                {
-                    "pts": 10,
-                    "reb": 5,
+                    "pts": 11,
+                    "reb": 2,
                     "ast": 2
                 }
             ],
-            "min_avg": 16.8,
-            "min_l10": 16.8,
+            "min_avg": 20.8,
+            "min_l10": 20.6,
             "edges": {
-                "pts": 3.0,
-                "reb": 2.2,
-                "ast": 3.0
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
             },
             "fd_line_cat": "PRA",
-            "fd_line": 14.5,
-            "note": "IND #26 vs C pts | O/U 227.5"
+            "fd_line": 14.0,
+            "note": "High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Malik Monk",
+            "team": "SAC",
+            "opp": "NOP",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 2,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 8,
+                    "reb": 7,
+                    "ast": 3
+                },
+                {
+                    "pts": 17,
+                    "reb": 1,
+                    "ast": 3
+                },
+                {
+                    "pts": 13,
+                    "reb": 3,
+                    "ast": 3
+                },
+                {
+                    "pts": 5,
+                    "reb": 7,
+                    "ast": 7
+                },
+                {
+                    "pts": 9,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 16,
+                    "reb": 3,
+                    "ast": 2
+                },
+                {
+                    "pts": 34,
+                    "reb": 1,
+                    "ast": 5
+                },
+                {
+                    "pts": 22,
+                    "reb": 6,
+                    "ast": 8
+                },
+                {
+                    "pts": 28,
+                    "reb": 3,
+                    "ast": 7
+                }
+            ],
+            "min_avg": 31.6,
+            "min_l10": 26.2,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "P",
+            "fd_line": 15.0,
+            "note": "Bounce-back (3 PRA last game vs 23 avg) | High O/U 234.5 \u2014 shootout potential"
+        },
+        {
+            "name": "Devin Carter",
+            "team": "SAC",
+            "opp": "NOP",
+            "pos": "PG",
+            "role": "bench",
+            "inj": None,
+            "last10_games": [
+                {
+                    "pts": 5,
+                    "reb": 5,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 1,
+                    "ast": 2
+                },
+                {
+                    "pts": 4,
+                    "reb": 3,
+                    "ast": 1
+                },
+                {
+                    "pts": 7,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 2,
+                    "ast": 1
+                },
+                {
+                    "pts": 0,
+                    "reb": 0,
+                    "ast": 1
+                },
+                {
+                    "pts": 1,
+                    "reb": 3,
+                    "ast": 0
+                },
+                {
+                    "pts": 4,
+                    "reb": 2,
+                    "ast": 2
+                },
+                {
+                    "pts": 16,
+                    "reb": 5,
+                    "ast": 3
+                },
+                {
+                    "pts": 2,
+                    "reb": 1,
+                    "ast": 2
+                }
+            ],
+            "min_avg": 13.0,
+            "min_l10": 17.2,
+            "edges": {
+                "pts": 1.0,
+                "reb": 1.0,
+                "ast": 1.0
+            },
+            "fd_line_cat": "PRA",
+            "fd_line": 8.0,
+            "note": "Minutes trending up (13.0->17.2) | High O/U 234.5 \u2014 shootout potential"
         }
     ]
 }
@@ -8587,14 +10813,13 @@ function buildGamePanel(g) {{
       "<div class='lineup-teams'>" + lineupHTML(pl, g.away) + lineupHTML(pl, g.home) + "</div>" +
     "</div>" +
     "<div class='ctrl-bar' id='ctrl-" + g.id + "'>" +
-      "<span class='ctrl-lbl'>Filter</span>" +
-      "<button class=\'ctrl-btn on\' data-gid=\'" + g.id + "\'  data-f=\'all\' onclick=\'filt(this.dataset.gid,this.dataset.f,this)\'>All (" + pl.length + ")</button>" +
-      "<button class=\'ctrl-btn\' data-gid=\'" + g.id + "\'  data-f=\'over\' onclick=\'filt(this.dataset.gid,this.dataset.f,this)\'>Overs (" + overs + ")</button>" +
-      "<button class=\'ctrl-btn\' data-gid=\'" + g.id + "\'  data-f=\'fade\' onclick=\'filt(this.dataset.gid,this.dataset.f,this)\'>Fades (" + fades + ")</button>" +
+      "<button class='ctrl-btn on' data-gid='" + g.id + "' data-f='all' onclick='filt(this.dataset.gid,this.dataset.f,this)'>All (" + pl.length + ")</button>" +
+      "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='over' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Overs (" + overs + ")</button>" +
+      "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='fade' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Fades (" + fades + ")</button>" +
       "<div class='ctrl-sep'></div>" +
-      "<span class='ctrl-lbl'>Sort</span>" +
-      "<button class=\'ctrl-btn on\' data-gid=\'" + g.id + "\'  data-s=\'score\' onclick=\'srt(this.dataset.gid,this.dataset.s,this)\'>Score</button>" +
-      "<button class=\'ctrl-btn\' data-gid=\'" + g.id + "\'  data-s=\'name\' onclick=\'srt(this.dataset.gid,this.dataset.s,this)\'>Name</button>" +
+      "<button class='ctrl-btn on' data-gid='" + g.id + "' data-s='score' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Score</button>" +
+      "<button class='ctrl-btn' data-gid='" + g.id + "' data-s='name' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Name</button>" +
+      "<button class='ctrl-btn' onclick='srt(\"" + g.id + "\",\"name\",this)'>Name</button>" +
       "<span class='ctrl-r'>" + pl.length + " players</span>" +
     "</div>" +
     "<div class='pgrid' id='grid-" + g.id + "'>" + pl.map((p,i) => pcardHTML(p, i)).join("") + "</div>" +

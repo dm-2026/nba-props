@@ -465,6 +465,74 @@ def _nba_cdn_get(url, delay=0.8):
         print(f"  ⚠️  NBA CDN error: {e}")
     return None
 
+
+def fetch_spreads():
+    """
+    Scrape spreads from RotoWire NBA lineups page.
+    Returns {game_id: spread} e.g. {"OKC_NYK": 4.5}
+    Spread = absolute value of the away team spread line.
+    """
+    print("  Fetching spreads from RotoWire...")
+    spreads = {}
+    try:
+        r = requests.get(
+            "https://www.rotowire.com/basketball/nba-lineups.php",
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                "Accept": "text/html,*/*",
+                "Accept-Language": "en-US,en;q=0.9",
+            },
+            timeout=20
+        )
+        if r.status_code != 200:
+            print(f"  RotoWire spread: HTTP {r.status_code}")
+            return spreads
+
+        soup = BeautifulSoup(r.text, "lxml")
+        import re as _re
+
+        # Each game is a .lineup container
+        for game in soup.find_all("div", {"class": lambda c: c and "lineup" in (c if isinstance(c, list) else c.split()) and "is-nba" in (c if isinstance(c, list) else c.split())}):
+            # Get team abbrs
+            team_els = game.find_all("a", {"class": lambda c: c and "lineup__team" in " ".join(c if isinstance(c, list) else [c])})
+            abbrs = []
+            for t in team_els:
+                abbr = t.find("div", {"class": lambda c: c and "lineup__abbr" in " ".join(c if isinstance(c, list) else [c])})
+                if abbr:
+                    abbrs.append(abbr.get_text(strip=True).upper())
+            if len(abbrs) < 2:
+                continue
+            away_abv, home_abv = abbrs[0], abbrs[1]
+            game_key = f"{away_abv}_{home_abv}"
+
+            # Find SPREAD odds item
+            for item in game.find_all("div", {"class": lambda c: c and "lineup__odds-item" in " ".join(c if isinstance(c, list) else [c])}):
+                label_el = item.find("b")
+                if not label_el or "SPREAD" not in label_el.get_text(strip=True).upper():
+                    continue
+                # Prefer draftkings is-selected, then fanduel, then composite
+                val_el = None
+                for cls in ("draftkings", "fanduel", "composite"):
+                    val_el = item.find("span", {"class": lambda c, b=cls: c and b in (c if isinstance(c, list) else c.split())})
+                    if val_el:
+                        break
+                if not val_el:
+                    continue
+                raw = val_el.get_text(strip=True)
+                nums = _re.findall(r"[-+]?\d+\.?\d*", raw)
+                if nums:
+                    spreads[game_key] = abs(float(nums[-1]))
+                    break
+
+        print(f"  RotoWire spreads: {len(spreads)} games")
+        for k, v in spreads.items():
+            print(f"    {k}: spread {v}")
+    except Exception as e:
+        print(f"  RotoWire spread error: {e}")
+    return spreads
+
+
+
 def fetch_lineups():
     """
     Scrape lineups + O/U totals from RotoGrinders.
@@ -559,7 +627,7 @@ def fetch_lineups():
     except Exception as e:
         print(f"  RotoGrinders error: {e}")
 
-    return lineups
+    return lineups, game_totals
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -892,7 +960,16 @@ def run_pipeline():
     dvp      = fetch_dvp()
     dvp      = fetch_pace(dvp)
     injuries = fetch_injuries()
-    lineups  = fetch_lineups()
+    lineups, game_totals = fetch_lineups()
+    spreads = fetch_spreads()
+    for g in games_meta:
+        gid = g["id"]
+        if gid in game_totals:
+            g["ou"] = game_totals[gid]
+        if gid in spreads:
+            g["spread"] = spreads[gid]
+        if g.get("ou") or g.get("spread"):
+            print(f"  Game meta: {gid} O/U={g.get('ou',0)} spread={g.get('spread',0)}")
 
     # ── Build RAW_PLAYERS per game ────────────────────────────────────────────
     RAW_PLAYERS = {}

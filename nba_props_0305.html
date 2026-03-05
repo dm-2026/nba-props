@@ -486,6 +486,7 @@ function buildGamePanel(g) {
       "<button class='ctrl-btn on' data-gid='" + g.id + "' data-f='all' onclick='filt(this.dataset.gid,this.dataset.f,this)'>All (" + pl.length + ")</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='over' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Overs (" + overs + ")</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='fade' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Fades (" + fades + ")</button>" +
+      "<button class='ctrl-btn' onclick='filt("" + g.id + "","fade",this)'>Fades (" + fades + ")</button>" +
       "<div class='ctrl-sep'></div>" +
       "<button class='ctrl-btn on' data-gid='" + g.id + "' data-s='score' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Score</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-s='name' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Name</button>" +
