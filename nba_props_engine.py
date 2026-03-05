@@ -883,13 +883,13 @@ function buildGamePanel(g) {{
       "<div class='lineup-teams'>" + lineupHTML(pl, g.away) + lineupHTML(pl, g.home) + "</div>" +
     "</div>" +
     "<div class='ctrl-bar' id='ctrl-" + g.id + "'>" +
-      "<span class='ctrl-lbl'>Filter</span>" +
-      "<button class='ctrl-btn on' onclick='filt(\"" + g.id + "\",\"all\",this)'>All (" + pl.length + ")</button>" +
-      "<button class='ctrl-btn' onclick='filt(\"" + g.id + "\",\"over\",this)'>▲ Overs (" + overs + ")</button>" +
-      "<button class='ctrl-btn' onclick='filt(\"" + g.id + "\",\"fade\",this)'>▼ Fades (" + fades + ")</button>" +
+      "<button class='ctrl-btn on' data-gid='" + g.id + "' data-f='all' onclick='filt(this.dataset.gid,this.dataset.f,this)'>All (" + pl.length + ")</button>" +
+      "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='over' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Overs (" + overs + ")</button>" +
+      "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='fade' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Fades (" + fades + ")</button>" +
+      "<button class='ctrl-btn' onclick='filt(\"" + g.id + "\",\"fade\",this)'>Fades (" + fades + ")</button>" +
       "<div class='ctrl-sep'></div>" +
-      "<span class='ctrl-lbl'>Sort</span>" +
-      "<button class='ctrl-btn on' onclick='srt(\"" + g.id + "\",\"score\",this)'>Score</button>" +
+      "<button class='ctrl-btn on' data-gid='" + g.id + "' data-s='score' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Score</button>" +
+      "<button class='ctrl-btn' data-gid='" + g.id + "' data-s='name' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Name</button>" +
       "<button class='ctrl-btn' onclick='srt(\"" + g.id + "\",\"name\",this)'>Name</button>" +
       "<span class='ctrl-r'>" + pl.length + " players</span>" +
     "</div>" +
