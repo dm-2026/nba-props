@@ -188,6 +188,7 @@ def analyze(game_id, p, all_teammates):
     opp    = p["opp"]
     edges  = p["edges"]
     role   = p.get("role", "starter")
+    pos    = p.get("pos", "SF")
     inj    = p.get("inj")
     dc     = DEF.get(opp, {"pts": 15, "reb": 15, "ast": 15, "pace": 111})
 
@@ -299,28 +300,52 @@ def analyze(game_id, p, all_teammates):
         flags.append(f"[PACE] High pace game ({dc['pace']} pace) — more possessions")
 
     # ── 7. CATEGORY TARGETING ────────────────────────────────────────────────
-    # Score each combo by: matchup edge + def rank bonus + floor safety
-    # Uses L10 avg as baseline — L10 low is the TRUE floor (actual minimum)
+    # Use POSITIONAL DVP to determine which stat the defense is vulnerable to
+    # e.g. team allows rank 28 pts to PGs but rank 3 ast -> target P not A
+    pos_key = pos if pos in ("PG","SG","SF","PF","C") else "SF"
+
+    def pos_dvp_rank(stat):
+        key = f"{pos_key}_{stat}"
+        return dc.get(key, dc.get(stat, 15))
+
+    def rank_to_edge(rank):
+        if rank >= 25: return 2.5
+        if rank >= 20: return 1.5
+        if rank >= 15: return 0.5
+        if rank >= 10: return -0.5
+        if rank >= 5:  return -1.5
+        return -2.5
+
+    # Blend positional DVP edge with BettingPros edges
+    edge_p = (edges.get("pts", 0) + rank_to_edge(pos_dvp_rank("pts"))) / 2
+    edge_r = (edges.get("reb", 0) + rank_to_edge(pos_dvp_rank("reb"))) / 2
+    edge_a = (edges.get("ast", 0) + rank_to_edge(pos_dvp_rank("ast"))) / 2
+
     cat_scores = {}
     for cat in CATS:
-        s = 0.0
-        if "P" in cat:
-            s += edges.get("pts", 0)
-            if dc["pts"] >= 22: s += 1.4
-        if "R" in cat:
-            s += edges.get("reb", 0)
-            if dc["reb"] >= 22: s += 1.4
-        if "A" in cat:
-            s += edges.get("ast", 0)
-            if dc["ast"] >= 20: s += 1.2
-        # Floor safety: how close is the true minimum to the L10 average?
-        # Higher = more consistent = safer bet
+        n = len(cat)
+        raw = 0.0
+        if "P" in cat: raw += edge_p
+        if "R" in cat: raw += edge_r
+        if "A" in cat: raw += edge_a
+        # Normalize by components so PRA can't win just by accumulating
+        s = raw / n
+        # Floor safety: consistency of this combo over L10
         if l10_combos[cat] > 0:
-            floor_pct = l10_lows[cat] / l10_combos[cat]
-            s += floor_pct * 1.0
+            s += (l10_lows[cat] / l10_combos[cat]) * 1.2
+        # Small bonus for single-stat (cleaner line)
+        if n == 1:
+            s += 0.3
         cat_scores[cat] = round(s, 2)
 
     best_cat = max(cat_scores, key=cat_scores.get)
+
+    # Flag strong positional mismatches
+    pos_edges = [("pts", pos_dvp_rank("pts")), ("reb", pos_dvp_rank("reb")), ("ast", pos_dvp_rank("ast"))]
+    top_stat, top_rank = max(pos_edges, key=lambda x: x[1])
+    if top_rank >= 24:
+        stat_label = {"pts": "Points", "reb": "Rebounds", "ast": "Assists"}[top_stat]
+        flags.append(f"[UP] {opp} rank {top_rank}/30 vs {pos_key} {stat_label} — positional mismatch")
 
     # ── FINAL OUTPUT ─────────────────────────────────────────────────────────
     direction  = "OVER" if score >= 0 else "FADE"

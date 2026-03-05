@@ -180,7 +180,19 @@ def fetch_games():
         team_id_map[away["id"]] = away_abv
 
         # Win probability — BDL doesn't provide this, default 50/50
-        game_time = g.get("status", "TBD")
+        # Parse game time from BDL datetime field into readable ET time
+        raw_dt = g.get("datetime") or g.get("date") or ""
+        game_time = "TBD"
+        if raw_dt and "T" in raw_dt:
+            try:
+                from datetime import timezone, timedelta
+                dt_utc = datetime.strptime(raw_dt[:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc)
+                dt_et  = dt_utc.astimezone(timezone(timedelta(hours=-5)))  # EST
+                game_time = dt_et.strftime("%-I:%M %p ET").replace("AM","am").replace("PM","pm")
+            except:
+                game_time = g.get("status", "TBD")
+        else:
+            game_time = g.get("status", "TBD")
 
         # Normalize status
         if status in ("Final", "final"):
