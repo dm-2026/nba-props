@@ -1288,6 +1288,14 @@ def inject_and_run(games_meta, dvp, raw_players):
         engine = ''.join(new_lines)
         # Fix JSON nulls/booleans to Python equivalents
 
+    # # SCRUB_BAD_ONCLICK_LINES
+    _lines = engine_code.split("\n")
+    _lines = [l for l in _lines if not (
+        'ctrl-btn' in l and 'onclick' in l and 'data-gid' not in l
+        and 'function filt' not in l and 'function srt' not in l
+    )]
+    engine_code = "\n".join(_lines)
+
     with open("nba_props_engine_today.py", "w", encoding="utf-8") as f:
         f.write(engine)
 

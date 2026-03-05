@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-03-05T14:39:14.644341",
+  "fetched_at": "2026-03-05T15:14:34.055956",
   "games_meta": [
     {
       "id": "DAL_ORL",
@@ -102,7 +102,7 @@
       "prob_home": 50,
       "status": "UPCOMING",
       "ou": 240.5,
-      "spread": 5.5
+      "spread": 4.5
     },
     {
       "id": "NOP_SAC",
@@ -115,7 +115,7 @@
       "prob_home": 50,
       "status": "UPCOMING",
       "ou": 234.5,
-      "spread": 6.5
+      "spread": 5.5
     }
   ],
   "dvp": {

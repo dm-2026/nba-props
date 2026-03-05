@@ -396,7 +396,54 @@ all_picks  = {}
 all_flat   = []
 
 for game_id, players in RAW_PLAYERS.items():
-    results = [analyze(game_id, p, players) for p in players]
+
+    # ── PLAYER ELIGIBILITY FILTERS ────────────────────────────────────────────
+    def is_eligible(p):
+        games = p.get("last10_games", [])
+        # Must have at least 5 games with actual stats (pts+reb+ast > 0)
+        games_played = sum(1 for g in games if (g.get("pts",0) + g.get("reb",0) + g.get("ast",0)) > 0)
+        if games_played < 5:
+            return False
+        # Use min_avg (season average) and min_l10 (L10 average) for minutes check
+        # Both must be >= 15 to filter out garbage time players
+        if p.get("min_avg", 0) < 15 and p.get("min_l10", 0) < 15:
+            return False
+        return True
+
+    # ── BENCH PLAYER RULES ────────────────────────────────────────────────────
+    # Only include bench if a starter on their team is OUT/DOUBTFUL
+    # Max 2 bench players per team (top 2 by min_avg)
+    teams_with_star_out = set()
+    for p in players:
+        if p.get("role") == "starter" and p.get("inj") in ("OUT", "DOUBTFUL"):
+            teams_with_star_out.add(p["team"])
+
+    # Pick top 2 bench players per team by min_avg
+    bench_by_team = {}
+    for p in players:
+        if p.get("role") == "bench" and p["team"] in teams_with_star_out and is_eligible(p):
+            team = p["team"]
+            bench_by_team.setdefault(team, []).append(p)
+    # Sort each team's bench by min_avg desc, keep top 2
+    allowed_bench = set()
+    for team, bench_players in bench_by_team.items():
+        bench_players.sort(key=lambda x: x.get("min_avg", 0), reverse=True)
+        for p in bench_players[:2]:
+            allowed_bench.add(p["name"])
+
+    # Apply all filters
+    filtered = []
+    for p in players:
+        if p.get("role") == "bench":
+            if p["name"] not in allowed_bench:
+                continue
+        else:
+            # Starters still need eligibility check
+            if not is_eligible(p):
+                continue
+        filtered.append(p)
+
+    results = [analyze(game_id, p, players) for p in filtered]
     results.sort(key=lambda x: x["score"], reverse=True)
     all_picks[game_id] = results
     all_flat.extend(results)
