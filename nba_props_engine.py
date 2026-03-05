@@ -403,7 +403,7 @@ def build_html():
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NBA Props · {TODAY}</title>
+<title>Trust Me Bro Props · {TODAY}</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{{
@@ -648,7 +648,7 @@ header::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;
 
 <header>
   <div>
-    <div class="logo">[NBA] NBA FD Props</div>
+    <div class="logo">Trust Me Bro Props</div>
     <div class="logo-sub" id="slug">{TODAY} · {total_games} Games · {total_players} Players</div>
   </div>
   <div class="hdr-r">
@@ -886,11 +886,9 @@ function buildGamePanel(g) {{
       "<button class='ctrl-btn on' data-gid='" + g.id + "' data-f='all' onclick='filt(this.dataset.gid,this.dataset.f,this)'>All (" + pl.length + ")</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='over' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Overs (" + overs + ")</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='fade' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Fades (" + fades + ")</button>" +
-      "<button class='ctrl-btn' onclick='filt(\"" + g.id + "\",\"fade\",this)'>Fades (" + fades + ")</button>" +
       "<div class='ctrl-sep'></div>" +
       "<button class='ctrl-btn on' data-gid='" + g.id + "' data-s='score' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Score</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-s='name' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Name</button>" +
-      "<button class='ctrl-btn' onclick='srt(\"" + g.id + "\",\"name\",this)'>Name</button>" +
       "<span class='ctrl-r'>" + pl.length + " players</span>" +
     "</div>" +
     "<div class='pgrid' id='grid-" + g.id + "'>" + pl.map((p,i) => pcardHTML(p, i)).join("") + "</div>" +
