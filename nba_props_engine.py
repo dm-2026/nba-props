@@ -203,9 +203,10 @@ def analyze(game_id, p, all_teammates):
     last2_pra  = combo(games[1], "PRA") if len(games) >= 2 else last1_pra
     avg_last2  = (last1_pra + last2_pra) / 2
 
-    # tcat/fd_line used as fallback — spark computed after best_cat is known
+    # Sparkline: oldest → newest for the target category
     tcat   = p.get("fd_line_cat", "PRA")
     fd_line= p.get("fd_line", l10_combos[tcat])
+    spark  = [combo(g, tcat) for g in reversed(games)]
 
     score  = 0.0
     flags  = []
@@ -338,10 +339,6 @@ def analyze(game_id, p, all_teammates):
         cat_scores[cat] = round(s, 2)
 
     best_cat = max(cat_scores, key=cat_scores.get)
-
-    # Spark uses best_cat so chart matches the recommended bet
-    spark   = [combo(g, best_cat) for g in reversed(games)]
-    fd_line = p.get("fd_line", l10_combos[best_cat])
 
     # Flag strong positional mismatches
     pos_edges = [("pts", pos_dvp_rank("pts")), ("reb", pos_dvp_rank("reb")), ("ast", pos_dvp_rank("ast"))]
@@ -477,8 +474,17 @@ def build_html():
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+    <meta property="og:title" content="Trust Me Bro Props">
+    <meta property="og:description" content="Daily NBA player prop analysis. Not gambling advice.">
+    <meta property="og:image" content="https://dm-2026.github.io/nba-props/preview.png">
+    <meta property="og:url" content="https://dm-2026.github.io/nba-props">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trust Me Bro Props">
+    <meta name="twitter:description" content="Daily NBA player prop analysis. Not gambling advice.">
+    <meta name="twitter:image" content="https://dm-2026.github.io/nba-props/preview.png">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trust Me Bro Props · {TODAY}</title>
+<title>NBA Props · {TODAY}</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{{
@@ -723,7 +729,7 @@ header::after{{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;
 
 <header>
   <div>
-    <div class="logo">Trust Me Bro Props</div>
+    <div class="logo">[NBA] NBA FD Props</div>
     <div class="logo-sub" id="slug">{TODAY} · {total_games} Games · {total_players} Players</div>
   </div>
   <div class="hdr-r">
@@ -961,9 +967,11 @@ function buildGamePanel(g) {{
       "<button class='ctrl-btn on' data-gid='" + g.id + "' data-f='all' onclick='filt(this.dataset.gid,this.dataset.f,this)'>All (" + pl.length + ")</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='over' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Overs (" + overs + ")</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-f='fade' onclick='filt(this.dataset.gid,this.dataset.f,this)'>Fades (" + fades + ")</button>" +
+      "<button class='ctrl-btn' onclick='filt(\"" + g.id + "\",\"fade\",this)'>Fades (" + fades + ")</button>" +
       "<div class='ctrl-sep'></div>" +
       "<button class='ctrl-btn on' data-gid='" + g.id + "' data-s='score' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Score</button>" +
       "<button class='ctrl-btn' data-gid='" + g.id + "' data-s='name' onclick='srt(this.dataset.gid,this.dataset.s,this)'>Name</button>" +
+      "<button class='ctrl-btn' onclick='srt(\"" + g.id + "\",\"name\",this)'>Name</button>" +
       "<span class='ctrl-r'>" + pl.length + " players</span>" +
     "</div>" +
     "<div class='pgrid' id='grid-" + g.id + "'>" + pl.map((p,i) => pcardHTML(p, i)).join("") + "</div>" +

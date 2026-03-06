@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-03-06T08:53:38.588557",
+  "fetched_at": "2026-03-06T11:12:15.527106",
   "games_meta": [
     {
       "id": "DAL_BOS",
@@ -12,7 +12,7 @@
       "prob_home": 50,
       "status": "UPCOMING",
       "ou": 224.5,
-      "spread": 13.5
+      "spread": 15.5
     },
     {
       "id": "MIA_CHA",
@@ -24,7 +24,7 @@
       "prob_away": 50,
       "prob_home": 50,
       "status": "UPCOMING",
-      "ou": 3.5,
+      "ou": 229.5,
       "spread": 7.5
     },
     {
@@ -37,7 +37,7 @@
       "prob_away": 50,
       "prob_home": 50,
       "status": "UPCOMING",
-      "ou": 1.5,
+      "ou": 218.5,
       "spread": 6.5
     },
     {
@@ -50,7 +50,7 @@
       "prob_away": 50,
       "prob_home": 50,
       "status": "UPCOMING",
-      "ou": 229.5,
+      "ou": 230.5,
       "spread": 1.5
     },
     {
@@ -75,7 +75,7 @@
       "prob_away": 50,
       "prob_home": 50,
       "status": "UPCOMING",
-      "ou": 223.5,
+      "ou": 222.5,
       "spread": 7.5
     },
     {
@@ -793,7 +793,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 12.5,
+        "fd_lines": {
+          "P": 12.5,
+          "R": 3.5,
+          "A": 1.5,
+          "PR": 13.0,
+          "PA": 11.0,
+          "RA": 4.5,
+          "PRA": 14.5
+        },
         "note": "O/U 224.5"
       },
       {
@@ -863,7 +872,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 11.5,
+        "fd_lines": {
+          "P": 11.5,
+          "R": 3.5,
+          "A": 3.0,
+          "PR": 13.5,
+          "PA": 13.0,
+          "RA": 6.0,
+          "PRA": 16.5
+        },
         "note": "Bounce-back (11 PRA last game vs 17 avg) | O/U 224.5"
       },
       {
@@ -933,7 +951,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
+        "fd_line": 8.5,
+        "fd_lines": {
+          "P": 8.5,
+          "R": 6.5,
+          "A": 1.5,
+          "PR": 16.5,
+          "PA": 11.5,
+          "RA": 8.5,
+          "PRA": 18.0
+        },
         "note": "O/U 224.5"
       },
       {
@@ -1003,7 +1030,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 14.5,
+        "fd_lines": {
+          "P": 14.5,
+          "R": 4.5,
+          "A": 3.5,
+          "PR": 18.0,
+          "PA": 17.5,
+          "RA": 7.5,
+          "PRA": 21.5
+        },
         "note": "Bounce-back (16 PRA last game vs 22 avg) | Minutes trending up (27.8->32.9) | O/U 224.5"
       },
       {
@@ -1072,8 +1108,17 @@
           "reb": 0.0,
           "ast": 0.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 10.5,
+        "fd_line_cat": "P",
+        "fd_line": 6.0,
+        "fd_lines": {
+          "P": 6.0,
+          "R": 3.0,
+          "A": 1.5,
+          "PR": 8.5,
+          "PA": 7.5,
+          "RA": 4.5,
+          "PRA": 10.5
+        },
         "note": "O/U 224.5"
       },
       {
@@ -1143,7 +1188,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 2.0,
+          "A": 1.0,
+          "PR": 12.0,
+          "PA": 11.5,
+          "RA": 3.5,
+          "PRA": 13.5
+        },
         "note": "Bounce-back (10 PRA last game vs 14 avg) | O/U 224.5"
       },
       {
@@ -1214,6 +1268,15 @@
         },
         "fd_line_cat": "P",
         "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 2.0,
+          "A": 3.0,
+          "PR": 12.5,
+          "PA": 13.0,
+          "RA": 5.0,
+          "PRA": 15.5
+        },
         "note": "Minutes trending up (28.2->34.9) | O/U 224.5"
       },
       {
@@ -1283,7 +1346,16 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
+        "fd_line": 16.5,
+        "fd_lines": {
+          "P": 16.5,
+          "R": 3.5,
+          "A": 5.5,
+          "PR": 21.0,
+          "PA": 23.0,
+          "RA": 13.0,
+          "PRA": 28.5
+        },
         "note": "Usage boost +8% (Tatum OUT) | DAL #30 vs PG reb | O/U 224.5"
       },
       {
@@ -1353,7 +1425,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 23.5,
+        "fd_line": 27.5,
+        "fd_lines": {
+          "P": 27.5,
+          "R": 6.5,
+          "A": 4.5,
+          "PR": 22.0,
+          "PA": 21.0,
+          "RA": 8.5,
+          "PRA": 25.5
+        },
         "note": "Usage boost +8% (Tatum OUT) | Bounce-back (12 PRA last game vs 27 avg) | DAL #29 vs SG reb | O/U 224.5"
       },
       {
@@ -1423,7 +1504,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
+        "fd_line": 6.5,
+        "fd_lines": {
+          "P": 6.5,
+          "R": 4.5,
+          "A": 2.0,
+          "PR": 10.0,
+          "PA": 8.5,
+          "RA": 6.0,
+          "PRA": 12.0
+        },
         "note": "Usage boost +8% (Tatum OUT) | Minutes trending up (14.3->21.1) | DAL #29 vs SG reb | O/U 224.5"
       },
       {
@@ -1493,7 +1583,16 @@
           "ast": 3.8
         },
         "fd_line_cat": "P",
-        "fd_line": 5.5,
+        "fd_line": 8.5,
+        "fd_lines": {
+          "P": 8.5,
+          "R": 7.5,
+          "A": 1.0,
+          "PR": 10.5,
+          "PA": 7.0,
+          "RA": 5.5,
+          "PRA": 11.5
+        },
         "note": "Usage boost +8% (Tatum OUT) | DAL #28 vs C pts | O/U 224.5"
       },
       {
@@ -1563,7 +1662,16 @@
           "ast": 3.8
         },
         "fd_line_cat": "P",
-        "fd_line": 5.5,
+        "fd_line": 11.0,
+        "fd_lines": {
+          "P": 11.0,
+          "R": 3.5,
+          "A": 1.0,
+          "PR": 14.5,
+          "PA": 12.0,
+          "RA": 4.5,
+          "PRA": 15.5
+        },
         "note": "Usage boost +4% (Tatum OUT) | DAL #28 vs SF ast | O/U 224.5"
       },
       {
@@ -1633,7 +1741,16 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 3.5,
+          "A": 5.5,
+          "PR": 20.0,
+          "PA": 19.5,
+          "RA": 9.0,
+          "PRA": 24.0
+        },
         "note": "Usage boost +4% (Tatum OUT) | DAL #30 vs PG reb | O/U 224.5"
       }
     ],
@@ -1705,8 +1822,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
-        "note": "Bounce-back (16 PRA last game vs 22 avg) | Minutes trending up (27.8->32.3)"
+        "fd_line": 7.5,
+        "fd_lines": {
+          "P": 7.5,
+          "R": 3.0,
+          "A": 5.5,
+          "PR": 14.5,
+          "PA": 18.0,
+          "RA": 9.5,
+          "PRA": 21.0
+        },
+        "note": "Bounce-back (16 PRA last game vs 22 avg) | Minutes trending up (27.8->32.3) | O/U 229.5"
       },
       {
         "name": "Tyler Herro",
@@ -1775,8 +1901,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
-        "note": "PG vs CHA"
+        "fd_line": 20.5,
+        "fd_lines": {
+          "P": 20.5,
+          "R": 3.5,
+          "A": 3.5,
+          "PR": 31.0,
+          "PA": 31.0,
+          "RA": 9.5,
+          "PRA": 35.5
+        },
+        "note": "O/U 229.5"
       },
       {
         "name": "Pelle Larsson",
@@ -1845,8 +1980,17 @@
           "ast": 1.5
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
-        "note": "Minutes trending up (17.5->22.9)"
+        "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 3.5,
+          "A": 3.5,
+          "PR": 10.5,
+          "PA": 9.5,
+          "RA": 5.5,
+          "PRA": 12.5
+        },
+        "note": "Minutes trending up (17.5->22.9) | O/U 229.5"
       },
       {
         "name": "Andrew Wiggins",
@@ -1915,8 +2059,17 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
-        "note": "Bounce-back (18 PRA last game vs 27 avg) | CHA #24 vs PF pts"
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 4.5,
+          "A": 3.5,
+          "PR": 22.5,
+          "PA": 22.0,
+          "RA": 7.0,
+          "PRA": 26.0
+        },
+        "note": "Bounce-back (18 PRA last game vs 27 avg) | CHA #24 vs PF pts | O/U 229.5"
       },
       {
         "name": "Bam Adebayo",
@@ -1985,8 +2138,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
-        "note": "C vs CHA"
+        "fd_line": 19.5,
+        "fd_lines": {
+          "P": 19.5,
+          "R": 9.5,
+          "A": 4.0,
+          "PR": 28.5,
+          "PA": 24.5,
+          "RA": 12.0,
+          "PRA": 32.5
+        },
+        "note": "O/U 229.5"
       },
       {
         "name": "Jaime Jaquez",
@@ -2055,8 +2217,17 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
-        "note": "SF vs CHA"
+        "fd_line": 11.0,
+        "fd_lines": {
+          "P": 11.0,
+          "R": 5.0,
+          "A": 3.5,
+          "PR": 16.0,
+          "PA": 14.0,
+          "RA": 8.5,
+          "PRA": 19.5
+        },
+        "note": "O/U 229.5"
       },
       {
         "name": "Kel'el Ware",
@@ -2125,8 +2296,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
-        "note": "C vs CHA"
+        "fd_line": 11.5,
+        "fd_lines": {
+          "P": 11.5,
+          "R": 9.5,
+          "A": 1.0,
+          "PR": 20.0,
+          "PA": 11.0,
+          "RA": 10.5,
+          "PRA": 21.0
+        },
+        "note": "O/U 229.5"
       },
       {
         "name": "Dru Smith",
@@ -2194,9 +2374,18 @@
           "reb": 0.0,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 13.0,
-        "note": "Bounce-back (2 PRA last game vs 13 avg)"
+        "fd_line_cat": "P",
+        "fd_line": 8.0,
+        "fd_lines": {
+          "P": 8.0,
+          "R": 3.0,
+          "A": 2.0,
+          "PR": 11.0,
+          "PA": 10.0,
+          "RA": 5.0,
+          "PRA": 13.0
+        },
+        "note": "Bounce-back (2 PRA last game vs 13 avg) | O/U 229.5"
       },
       {
         "name": "LaMelo Ball",
@@ -2265,8 +2454,17 @@
           "ast": 1.5
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
-        "note": "MIA #28 vs PG reb"
+        "fd_line": 19.5,
+        "fd_lines": {
+          "P": 19.5,
+          "R": 4.5,
+          "A": 7.5,
+          "PR": 25.0,
+          "PA": 29.0,
+          "RA": 12.5,
+          "PRA": 33.0
+        },
+        "note": "MIA #28 vs PG reb | O/U 229.5"
       },
       {
         "name": "Brandon Miller",
@@ -2335,8 +2533,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 17.5,
-        "note": "SF vs MIA"
+        "fd_line": 21.5,
+        "fd_lines": {
+          "P": 21.5,
+          "R": 4.5,
+          "A": 3.5,
+          "PR": 23.5,
+          "PA": 23.0,
+          "RA": 8.0,
+          "PRA": 27.5
+        },
+        "note": "O/U 229.5"
       },
       {
         "name": "Miles Bridges",
@@ -2405,8 +2612,17 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
-        "note": "MIA #27 vs PF pts"
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 5.5,
+          "A": 3.5,
+          "PR": 21.5,
+          "PA": 20.0,
+          "RA": 9.5,
+          "PRA": 25.5
+        },
+        "note": "MIA #27 vs PF pts | O/U 229.5"
       },
       {
         "name": "Coby White",
@@ -2475,8 +2691,17 @@
           "ast": 1.5
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
-        "note": "Bounce-back (10 PRA last game vs 32 avg) | MIA #28 vs PG reb"
+        "fd_line": 12.5,
+        "fd_lines": {
+          "P": 12.5,
+          "R": 4.5,
+          "A": 3.5,
+          "PR": 26.0,
+          "PA": 26.0,
+          "RA": 8.5,
+          "PRA": 30.5
+        },
+        "note": "Bounce-back (10 PRA last game vs 32 avg) | MIA #28 vs PG reb | O/U 229.5"
       },
       {
         "name": "Josh Green",
@@ -2544,9 +2769,18 @@
           "reb": 3.8,
           "ast": 1.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 11.0,
-        "note": "Bounce-back (5 PRA last game vs 11 avg) | MIA #30 vs SG reb"
+        "fd_line_cat": "P",
+        "fd_line": 8.0,
+        "fd_lines": {
+          "P": 8.0,
+          "R": 1.0,
+          "A": 1.5,
+          "PR": 9.5,
+          "PA": 9.5,
+          "RA": 3.0,
+          "PRA": 11.0
+        },
+        "note": "Bounce-back (5 PRA last game vs 11 avg) | MIA #30 vs SG reb | O/U 229.5"
       },
       {
         "name": "Grant Williams",
@@ -2616,7 +2850,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 11.0,
-        "note": "MIA #27 vs PF pts"
+        "fd_lines": {
+          "P": 11.0,
+          "R": 6.0,
+          "A": 2.0,
+          "PR": 16.5,
+          "PA": 13.0,
+          "RA": 7.5,
+          "PRA": 18.5
+        },
+        "note": "MIA #27 vs PF pts | O/U 229.5"
       },
       {
         "name": "Tre Mann",
@@ -2686,7 +2929,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 12.5,
-        "note": "Bounce-back (7 PRA last game vs 18 avg) | MIA #28 vs PG reb"
+        "fd_lines": {
+          "P": 12.5,
+          "R": 2.5,
+          "A": 3.0,
+          "PR": 14.5,
+          "PA": 15.0,
+          "RA": 5.0,
+          "PRA": 17.5
+        },
+        "note": "Bounce-back (7 PRA last game vs 18 avg) | MIA #28 vs PG reb | O/U 229.5"
       },
       {
         "name": "Pat Connaughton",
@@ -2754,9 +3006,18 @@
           "reb": 0.2,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 13.0,
-        "note": "SF vs MIA"
+        "fd_line_cat": "P",
+        "fd_line": 8.5,
+        "fd_lines": {
+          "P": 8.5,
+          "R": 2.5,
+          "A": 2.0,
+          "PR": 11.0,
+          "PA": 10.5,
+          "RA": 4.5,
+          "PRA": 13.0
+        },
+        "note": "O/U 229.5"
       }
     ],
     "POR_HOU": [
@@ -2827,7 +3088,16 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
+        "fd_line": 18.5,
+        "fd_lines": {
+          "P": 18.5,
+          "R": 4.5,
+          "A": 5.5,
+          "PR": 15.0,
+          "PA": 15.5,
+          "RA": 8.5,
+          "PRA": 19.5
+        },
         "note": "Bounce-back (8 PRA last game vs 20 avg)"
       },
       {
@@ -2896,8 +3166,17 @@
           "reb": 0.2,
           "ast": 0.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 9.5,
+        "fd_line_cat": "P",
+        "fd_line": 4.5,
+        "fd_lines": {
+          "P": 4.5,
+          "R": 3.5,
+          "A": 1.5,
+          "PR": 8.0,
+          "PA": 6.0,
+          "RA": 5.0,
+          "PRA": 9.5
+        },
         "note": "Minutes trending up (16.5->19.0)"
       },
       {
@@ -2967,7 +3246,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 12.5,
+        "fd_lines": {
+          "P": 12.5,
+          "R": 5.5,
+          "A": 2.5,
+          "PR": 18.5,
+          "PA": 15.5,
+          "RA": 7.5,
+          "PRA": 21.0
+        },
         "note": "SG vs HOU"
       },
       {
@@ -3037,7 +3325,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
+        "fd_line": 18.5,
+        "fd_lines": {
+          "P": 18.5,
+          "R": 3.5,
+          "A": 2.0,
+          "PR": 17.0,
+          "PA": 15.0,
+          "RA": 6.0,
+          "PRA": 18.5
+        },
         "note": "PF vs HOU"
       },
       {
@@ -3106,8 +3403,17 @@
           "reb": 0.0,
           "ast": 2.2
         },
-        "fd_line_cat": "R",
-        "fd_line": 8.5,
+        "fd_line_cat": "P",
+        "fd_line": 12.5,
+        "fd_lines": {
+          "P": 12.5,
+          "R": 11.5,
+          "A": 2.0,
+          "PR": 19.0,
+          "PA": 11.0,
+          "RA": 12.0,
+          "PRA": 21.0
+        },
         "note": "Minutes trending up (19.8->27.9)"
       },
       {
@@ -3177,7 +3483,16 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 13.5,
+        "fd_lines": {
+          "P": 13.5,
+          "R": 3.0,
+          "A": 4.5,
+          "PR": 15.0,
+          "PA": 16.5,
+          "RA": 7.0,
+          "PRA": 19.5
+        },
         "note": "Bounce-back (12 PRA last game vs 20 avg)"
       },
       {
@@ -3246,8 +3561,17 @@
           "reb": 0.0,
           "ast": 2.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 11.0,
+        "fd_line_cat": "P",
+        "fd_line": 4.0,
+        "fd_lines": {
+          "P": 4.0,
+          "R": 6.0,
+          "A": 1.0,
+          "PR": 10.0,
+          "PA": 5.0,
+          "RA": 7.0,
+          "PRA": 11.0
+        },
         "note": "C vs HOU"
       },
       {
@@ -3316,8 +3640,17 @@
           "reb": 0.0,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 10.0,
+        "fd_line_cat": "P",
+        "fd_line": 5.5,
+        "fd_lines": {
+          "P": 5.5,
+          "R": 2.0,
+          "A": 2.5,
+          "PR": 7.5,
+          "PA": 7.5,
+          "RA": 4.5,
+          "PRA": 10.0
+        },
         "note": "Minutes trending up (15.3->20.1)"
       },
       {
@@ -3386,8 +3719,17 @@
           "reb": 0.0,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 13.5,
+        "fd_line_cat": "P",
+        "fd_line": 8.0,
+        "fd_lines": {
+          "P": 8.0,
+          "R": 3.5,
+          "A": 2.0,
+          "PR": 11.5,
+          "PA": 10.5,
+          "RA": 5.5,
+          "PRA": 13.5
+        },
         "note": "SF vs HOU"
       },
       {
@@ -3457,7 +3799,16 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
+        "fd_line": 17.5,
+        "fd_lines": {
+          "P": 17.5,
+          "R": 7.5,
+          "A": 5.5,
+          "PR": 21.0,
+          "PA": 19.5,
+          "RA": 12.5,
+          "PRA": 26.5
+        },
         "note": "PG vs POR"
       },
       {
@@ -3526,8 +3877,17 @@
           "reb": 0.2,
           "ast": 1.0
         },
-        "fd_line_cat": "R",
-        "fd_line": 4.5,
+        "fd_line_cat": "P",
+        "fd_line": 12.5,
+        "fd_lines": {
+          "P": 12.5,
+          "R": 6.5,
+          "A": 1.5,
+          "PR": 15.5,
+          "PA": 11.0,
+          "RA": 7.5,
+          "PRA": 17.0
+        },
         "note": "SG vs POR"
       },
       {
@@ -3597,7 +3957,16 @@
           "ast": 2.2
         },
         "fd_line_cat": "P",
-        "fd_line": 22.5,
+        "fd_line": 26.5,
+        "fd_lines": {
+          "P": 26.5,
+          "R": 5.5,
+          "A": 4.5,
+          "PR": 29.0,
+          "PA": 27.0,
+          "RA": 9.0,
+          "PRA": 32.5
+        },
         "note": "Bounce-back (19 PRA last game vs 34 avg) | POR #28 vs SF reb"
       },
       {
@@ -3667,7 +4036,16 @@
           "ast": 1.5
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
+        "fd_line": 19.5,
+        "fd_lines": {
+          "P": 19.5,
+          "R": 8.5,
+          "A": 5.5,
+          "PR": 27.0,
+          "PA": 22.5,
+          "RA": 13.5,
+          "PRA": 31.5
+        },
         "note": "Bounce-back (23 PRA last game vs 33 avg) | POR #27 vs C pts"
       },
       {
@@ -3737,7 +4115,16 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 2.0,
+          "A": 4.5,
+          "PR": 11.0,
+          "PA": 12.0,
+          "RA": 5.0,
+          "PRA": 14.0
+        },
         "note": "Bounce-back (8 PRA last game vs 14 avg) | Minutes trending up (13.4->18.8)"
       },
       {
@@ -3806,8 +4193,17 @@
           "reb": 0.5,
           "ast": 1.5
         },
-        "fd_line_cat": "R",
-        "fd_line": 2.5,
+        "fd_line_cat": "P",
+        "fd_line": 6.0,
+        "fd_lines": {
+          "P": 6.0,
+          "R": 6.0,
+          "A": 1.0,
+          "PR": 12.5,
+          "PA": 7.0,
+          "RA": 7.0,
+          "PRA": 13.0
+        },
         "note": "POR #27 vs C pts"
       },
       {
@@ -3876,8 +4272,17 @@
           "reb": 0.2,
           "ast": 1.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 11.0,
+        "fd_line_cat": "P",
+        "fd_line": 7.5,
+        "fd_lines": {
+          "P": 7.5,
+          "R": 2.0,
+          "A": 1.0,
+          "PR": 9.5,
+          "PA": 8.5,
+          "RA": 3.0,
+          "PRA": 11.0
+        },
         "note": "SG vs POR"
       }
     ],
@@ -3949,8 +4354,17 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 19.5,
-        "note": "O/U 229.5"
+        "fd_line": 26.5,
+        "fd_lines": {
+          "P": 26.5,
+          "R": 3.5,
+          "A": 6.5,
+          "PR": 27.5,
+          "PA": 31.0,
+          "RA": 9.0,
+          "PRA": 33.5
+        },
+        "note": "High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Mikal Bridges",
@@ -4019,8 +4433,17 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
-        "note": "DEN #24 vs SF pts | O/U 229.5"
+        "fd_line": 14.5,
+        "fd_lines": {
+          "P": 14.5,
+          "R": 3.5,
+          "A": 3.5,
+          "PR": 20.5,
+          "PA": 23.0,
+          "RA": 8.5,
+          "PRA": 26.0
+        },
+        "note": "DEN #24 vs SF pts | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Josh Hart",
@@ -4089,8 +4512,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
-        "note": "O/U 229.5"
+        "fd_line": 11.5,
+        "fd_lines": {
+          "P": 11.5,
+          "R": 7.5,
+          "A": 5.5,
+          "PR": 20.0,
+          "PA": 18.5,
+          "RA": 15.5,
+          "PRA": 27.0
+        },
+        "note": "High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "OG Anunoby",
@@ -4159,8 +4591,17 @@
           "ast": 3.8
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
-        "note": "Bounce-back (23 PRA last game vs 33 avg) | DEN #29 vs PF ast | O/U 229.5"
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 4.5,
+          "A": 2.5,
+          "PR": 29.5,
+          "PA": 27.0,
+          "RA": 7.5,
+          "PRA": 32.0
+        },
+        "note": "Bounce-back (23 PRA last game vs 33 avg) | DEN #29 vs PF ast | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Karl-Anthony Towns",
@@ -4229,8 +4670,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
-        "note": "O/U 229.5"
+        "fd_line": 17.5,
+        "fd_lines": {
+          "P": 17.5,
+          "R": 11.5,
+          "A": 3.0,
+          "PR": 35.0,
+          "PA": 27.0,
+          "RA": 14.5,
+          "PRA": 38.0
+        },
+        "note": "High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Landry Shamet",
@@ -4299,8 +4749,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 5.5,
-        "note": "Minutes trending up (15.8->22.6) | O/U 229.5"
+        "fd_line": 9.5,
+        "fd_lines": {
+          "P": 9.5,
+          "R": 2.0,
+          "A": 0.5,
+          "PR": 13.5,
+          "PA": 12.5,
+          "RA": 2.5,
+          "PRA": 14.5
+        },
+        "note": "Minutes trending up (15.8->22.6) | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Mitchell Robinson",
@@ -4368,9 +4827,18 @@
           "reb": 0.0,
           "ast": 0.2
         },
-        "fd_line_cat": "R",
-        "fd_line": 5.5,
-        "note": "O/U 229.5"
+        "fd_line_cat": "P",
+        "fd_line": 4.5,
+        "fd_lines": {
+          "P": 4.5,
+          "R": 7.5,
+          "A": 1.0,
+          "PR": 12.5,
+          "PA": 6.5,
+          "RA": 8.0,
+          "PRA": 13.5
+        },
+        "note": "High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Jose Alvarado",
@@ -4440,7 +4908,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 13.0,
-        "note": "O/U 229.5"
+        "fd_lines": {
+          "P": 13.0,
+          "R": 3.0,
+          "A": 4.5,
+          "PR": 16.0,
+          "PA": 18.0,
+          "RA": 7.5,
+          "PRA": 20.5
+        },
+        "note": "High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Jeremy Sochan",
@@ -4510,7 +4987,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 11.5,
-        "note": "Bounce-back (5 PRA last game vs 19 avg) | DEN #24 vs SF pts | O/U 229.5"
+        "fd_lines": {
+          "P": 11.5,
+          "R": 5.0,
+          "A": 2.0,
+          "PR": 16.5,
+          "PA": 13.5,
+          "RA": 7.0,
+          "PRA": 18.5
+        },
+        "note": "Bounce-back (5 PRA last game vs 19 avg) | DEN #24 vs SF pts | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Jordan Clarkson",
@@ -4580,7 +5066,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 14.5,
-        "note": "Bounce-back (15 PRA last game vs 22 avg) | O/U 229.5"
+        "fd_lines": {
+          "P": 14.5,
+          "R": 3.0,
+          "A": 3.5,
+          "PR": 17.5,
+          "PA": 18.0,
+          "RA": 6.5,
+          "PRA": 21.0
+        },
+        "note": "Bounce-back (15 PRA last game vs 22 avg) | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Tyler Kolek",
@@ -4648,9 +5143,18 @@
           "reb": 0.5,
           "ast": 0.5
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 8.5,
-        "note": "Minutes trending up (12.3->15.3) | O/U 229.5"
+        "fd_line_cat": "P",
+        "fd_line": 2.5,
+        "fd_lines": {
+          "P": 2.5,
+          "R": 1.0,
+          "A": 5.0,
+          "PR": 3.5,
+          "PA": 7.5,
+          "RA": 6.0,
+          "PRA": 8.5
+        },
+        "note": "Minutes trending up (12.3->15.3) | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Jamal Murray",
@@ -4719,8 +5223,17 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 17.5,
-        "note": "Usage boost +6% (Johnson OUT) | O/U 229.5"
+        "fd_line": 23.5,
+        "fd_lines": {
+          "P": 23.5,
+          "R": 3.5,
+          "A": 6.5,
+          "PR": 27.5,
+          "PA": 28.5,
+          "RA": 11.0,
+          "PRA": 33.0
+        },
+        "note": "Usage boost +6% (Johnson OUT) | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Christian Braun",
@@ -4789,8 +5302,17 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
-        "note": "Usage boost +6% (Johnson OUT) | NYK #24 vs SG reb | O/U 229.5"
+        "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 4.5,
+          "A": 4.0,
+          "PR": 24.5,
+          "PA": 22.0,
+          "RA": 10.5,
+          "PRA": 28.0
+        },
+        "note": "Usage boost +6% (Johnson OUT) | NYK #24 vs SG reb | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Julian Strawther",
@@ -4859,8 +5381,17 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
-        "note": "Usage boost +6% (Johnson OUT) | NYK #24 vs SG reb | O/U 229.5"
+        "fd_line": 7.0,
+        "fd_lines": {
+          "P": 7.0,
+          "R": 2.0,
+          "A": 1.0,
+          "PR": 9.5,
+          "PA": 8.5,
+          "RA": 3.0,
+          "PRA": 10.5
+        },
+        "note": "Usage boost +6% (Johnson OUT) | NYK #24 vs SG reb | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Bruce Brown",
@@ -4929,8 +5460,17 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
-        "note": "Usage boost +0% (Johnson OUT) | Bounce-back (13 PRA last game vs 18 avg) | Minutes trending up (22.4->26.8) | O/U 229.5"
+        "fd_line": 7.5,
+        "fd_lines": {
+          "P": 7.5,
+          "R": 3.5,
+          "A": 2.5,
+          "PR": 15.0,
+          "PA": 12.5,
+          "RA": 7.0,
+          "PRA": 17.0
+        },
+        "note": "Usage boost +0% (Johnson OUT) | Bounce-back (13 PRA last game vs 18 avg) | Minutes trending up (22.4->26.8) | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Jalen Pickett",
@@ -4998,9 +5538,18 @@
           "reb": 0.0,
           "ast": 0.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 12.0,
-        "note": "Usage boost +0% (Johnson OUT) | Bounce-back (2 PRA last game vs 12 avg) | Minutes trending up (17.8->22.2) | O/U 229.5"
+        "fd_line_cat": "P",
+        "fd_line": 6.0,
+        "fd_lines": {
+          "P": 6.0,
+          "R": 2.5,
+          "A": 3.5,
+          "PR": 8.5,
+          "PA": 9.0,
+          "RA": 6.0,
+          "PRA": 12.0
+        },
+        "note": "Usage boost +0% (Johnson OUT) | Bounce-back (2 PRA last game vs 12 avg) | Minutes trending up (17.8->22.2) | High O/U 230.5 \u2014 shootout potential"
       },
       {
         "name": "Tyus Jones",
@@ -5068,12 +5617,100 @@
           "reb": 1.5,
           "ast": 0.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 14.0,
-        "note": "Usage boost +0% (Johnson OUT) | O/U 229.5"
+        "fd_line_cat": "P",
+        "fd_line": 8.5,
+        "fd_lines": {
+          "P": 8.5,
+          "R": 2.5,
+          "A": 3.0,
+          "PR": 11.0,
+          "PA": 11.5,
+          "RA": 5.5,
+          "PRA": 14.0
+        },
+        "note": "Usage boost +0% (Johnson OUT) | High O/U 230.5 \u2014 shootout potential"
       }
     ],
     "NOP_PHX": [
+      {
+        "name": "Dejounte Murray",
+        "team": "NOP",
+        "opp": "PHX",
+        "pos": "PG",
+        "role": "starter",
+        "inj": "GTD",
+        "last10_games": [
+          {
+            "pts": 4,
+            "reb": 5,
+            "ast": 0
+          },
+          {
+            "pts": 27,
+            "reb": 5,
+            "ast": 6
+          },
+          {
+            "pts": 21,
+            "reb": 7,
+            "ast": 8
+          },
+          {
+            "pts": 26,
+            "reb": 6,
+            "ast": 7
+          },
+          {
+            "pts": 26,
+            "reb": 9,
+            "ast": 11
+          },
+          {
+            "pts": 8,
+            "reb": 5,
+            "ast": 6
+          },
+          {
+            "pts": 30,
+            "reb": 7,
+            "ast": 7
+          },
+          {
+            "pts": 15,
+            "reb": 7,
+            "ast": 7
+          },
+          {
+            "pts": 26,
+            "reb": 9,
+            "ast": 8
+          },
+          {
+            "pts": 17,
+            "reb": 10,
+            "ast": 6
+          }
+        ],
+        "min_avg": 32.6,
+        "min_l10": 31.2,
+        "edges": {
+          "pts": 1.0,
+          "reb": 1.0,
+          "ast": 1.0
+        },
+        "fd_line_cat": "P",
+        "fd_line": 13.5,
+        "fd_lines": {
+          "P": 13.5,
+          "R": 4.5,
+          "A": 5.5,
+          "PR": 26.0,
+          "PA": 25.5,
+          "RA": 13.0,
+          "PRA": 32.5
+        },
+        "note": "Bounce-back (9 PRA last game vs 34 avg) | O/U 225.5"
+      },
       {
         "name": "Trey Murphy",
         "team": "NOP",
@@ -5083,52 +5720,52 @@
         "inj": null,
         "last10_games": [
           {
-            "pts": 22,
+            "pts": 20,
             "reb": 6,
             "ast": 3
           },
           {
-            "pts": 18,
+            "pts": 17,
             "reb": 5,
             "ast": 2
           },
           {
-            "pts": 23,
+            "pts": 21,
             "reb": 4,
             "ast": 3
           },
           {
-            "pts": 29,
+            "pts": 27,
             "reb": 5,
             "ast": 2
           },
           {
-            "pts": 14,
+            "pts": 13,
             "reb": 5,
             "ast": 2
           },
           {
-            "pts": 28,
+            "pts": 26,
             "reb": 5,
             "ast": 0
           },
           {
-            "pts": 21,
+            "pts": 19,
             "reb": 6,
             "ast": 5
           },
           {
-            "pts": 22,
+            "pts": 20,
             "reb": 6,
             "ast": 6
           },
           {
-            "pts": 11,
+            "pts": 10,
             "reb": 3,
-            "ast": 9
+            "ast": 8
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 4,
             "ast": 1
           }
@@ -5141,8 +5778,17 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 16.5,
-        "note": "Usage boost +8% (Murray OUT) | O/U 224.5"
+        "fd_line": 18.5,
+        "fd_lines": {
+          "P": 18.5,
+          "R": 4.5,
+          "A": 3.0,
+          "PR": 23.0,
+          "PA": 21.5,
+          "RA": 8.0,
+          "PRA": 26.0
+        },
+        "note": "O/U 225.5"
       },
       {
         "name": "Zion Williamson",
@@ -5153,52 +5799,52 @@
         "inj": null,
         "last10_games": [
           {
-            "pts": 31,
+            "pts": 29,
             "reb": 5,
-            "ast": 9
+            "ast": 8
           },
           {
-            "pts": 32,
+            "pts": 30,
             "reb": 6,
             "ast": 3
           },
           {
-            "pts": 22,
-            "reb": 9,
+            "pts": 20,
+            "reb": 8,
             "ast": 5
           },
           {
-            "pts": 24,
-            "reb": 11,
-            "ast": 13
+            "pts": 22,
+            "reb": 10,
+            "ast": 12
           },
           {
-            "pts": 22,
+            "pts": 20,
             "reb": 2,
             "ast": 3
           },
           {
-            "pts": 22,
-            "reb": 11,
+            "pts": 20,
+            "reb": 10,
             "ast": 3
           },
           {
-            "pts": 40,
+            "pts": 37,
             "reb": 4,
             "ast": 6
           },
           {
-            "pts": 26,
+            "pts": 24,
             "reb": 6,
-            "ast": 10
+            "ast": 9
           },
           {
-            "pts": 29,
-            "reb": 11,
-            "ast": 12
+            "pts": 27,
+            "reb": 10,
+            "ast": 11
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 6,
             "ast": 3
           }
@@ -5211,8 +5857,17 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 18.5,
-        "note": "Usage boost +8% (Murray OUT) | O/U 224.5"
+        "fd_line": 20.5,
+        "fd_lines": {
+          "P": 20.5,
+          "R": 5.5,
+          "A": 3.5,
+          "PR": 30.0,
+          "PA": 30.0,
+          "RA": 12.5,
+          "PRA": 36.0
+        },
+        "note": "O/U 225.5"
       },
       {
         "name": "Herbert Jones",
@@ -5228,27 +5883,27 @@
             "ast": 1
           },
           {
-            "pts": 11,
+            "pts": 10,
             "reb": 6,
             "ast": 5
           },
           {
-            "pts": 12,
+            "pts": 11,
             "reb": 4,
             "ast": 1
           },
           {
-            "pts": 11,
+            "pts": 10,
             "reb": 1,
             "ast": 6
           },
           {
-            "pts": 9,
+            "pts": 8,
             "reb": 4,
             "ast": 4
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 4,
             "ast": 5
           },
@@ -5258,12 +5913,12 @@
             "ast": 3
           },
           {
-            "pts": 11,
+            "pts": 10,
             "reb": 6,
-            "ast": 8
+            "ast": 7
           },
           {
-            "pts": 9,
+            "pts": 8,
             "reb": 6,
             "ast": 6
           },
@@ -5280,9 +5935,18 @@
           "reb": 1.0,
           "ast": 1.0
         },
-        "fd_line_cat": "A",
-        "fd_line": 1.5,
-        "note": "Usage boost +8% (Murray OUT) | Bounce-back (1 PRA last game vs 18 avg) | O/U 224.5"
+        "fd_line_cat": "P",
+        "fd_line": 8.0,
+        "fd_lines": {
+          "P": 8.0,
+          "R": 4.0,
+          "A": 4.0,
+          "PR": 12.0,
+          "PA": 12.0,
+          "RA": 8.0,
+          "PRA": 16.0
+        },
+        "note": "Bounce-back (1 PRA last game vs 17 avg) | O/U 225.5"
       },
       {
         "name": "DeAndre Jordan",
@@ -5314,7 +5978,7 @@
           },
           {
             "pts": 10,
-            "reb": 18,
+            "reb": 17,
             "ast": 1
           },
           {
@@ -5329,12 +5993,12 @@
           },
           {
             "pts": 10,
-            "reb": 18,
+            "reb": 17,
             "ast": 7
           },
           {
             "pts": 11,
-            "reb": 16,
+            "reb": 15,
             "ast": 4
           },
           {
@@ -5350,9 +6014,18 @@
           "reb": 1.0,
           "ast": 1.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 14.5,
-        "note": "Usage boost +4% (Murray OUT) | Bounce-back (9 PRA last game vs 15 avg) | Minutes trending up (12.8->16.8) | O/U 224.5"
+        "fd_line_cat": "P",
+        "fd_line": 5.5,
+        "fd_lines": {
+          "P": 5.5,
+          "R": 7.0,
+          "A": 1.5,
+          "PR": 12.5,
+          "PA": 7.0,
+          "RA": 8.5,
+          "PRA": 14.0
+        },
+        "note": "Bounce-back (9 PRA last game vs 14 avg) | Minutes trending up (12.8->16.8) | O/U 225.5"
       },
       {
         "name": "Yves Missi",
@@ -5368,12 +6041,12 @@
             "ast": 0
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 12,
             "ast": 3
           },
           {
-            "pts": 14,
+            "pts": 13,
             "reb": 11,
             "ast": 2
           },
@@ -5393,7 +6066,7 @@
             "ast": 0
           },
           {
-            "pts": 17,
+            "pts": 16,
             "reb": 9,
             "ast": 2
           },
@@ -5403,7 +6076,7 @@
             "ast": 2
           },
           {
-            "pts": 14,
+            "pts": 13,
             "reb": 7,
             "ast": 2
           },
@@ -5420,9 +6093,18 @@
           "reb": 1.0,
           "ast": 1.0
         },
-        "fd_line_cat": "R",
-        "fd_line": 9.5,
-        "note": "Usage boost +4% (Murray OUT) | Bounce-back (14 PRA last game vs 24 avg) | O/U 224.5"
+        "fd_line_cat": "P",
+        "fd_line": 11.0,
+        "fd_lines": {
+          "P": 11.0,
+          "R": 9.5,
+          "A": 1.5,
+          "PR": 20.0,
+          "PA": 12.5,
+          "RA": 11.0,
+          "PRA": 21.5
+        },
+        "note": "Bounce-back (14 PRA last game vs 23 avg) | O/U 225.5"
       },
       {
         "name": "Jordan Poole",
@@ -5433,22 +6115,22 @@
         "inj": null,
         "last10_games": [
           {
-            "pts": 20,
+            "pts": 19,
             "reb": 1,
             "ast": 3
           },
           {
-            "pts": 16,
+            "pts": 15,
             "reb": 2,
             "ast": 5
           },
           {
-            "pts": 24,
+            "pts": 23,
             "reb": 2,
             "ast": 2
           },
           {
-            "pts": 36,
+            "pts": 35,
             "reb": 3,
             "ast": 4
           },
@@ -5458,27 +6140,27 @@
             "ast": 4
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 0,
             "ast": 3
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 2,
             "ast": 7
           },
           {
-            "pts": 24,
+            "pts": 23,
             "reb": 1,
             "ast": 1
           },
           {
-            "pts": 26,
+            "pts": 25,
             "reb": 3,
             "ast": 3
           },
           {
-            "pts": 19,
+            "pts": 18,
             "reb": 2,
             "ast": 2
           }
@@ -5491,8 +6173,17 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 20.5,
-        "note": "Usage boost +4% (Murray OUT) | O/U 224.5"
+        "fd_line": 20.0,
+        "fd_lines": {
+          "P": 20.0,
+          "R": 1.5,
+          "A": 3.5,
+          "PR": 21.5,
+          "PA": 23.0,
+          "RA": 5.0,
+          "PRA": 25.0
+        },
+        "note": "O/U 225.5"
       },
       {
         "name": "Jordan Hawkins",
@@ -5513,7 +6204,7 @@
             "ast": 1
           },
           {
-            "pts": 26,
+            "pts": 25,
             "reb": 3,
             "ast": 2
           },
@@ -5523,7 +6214,7 @@
             "ast": 3
           },
           {
-            "pts": 14,
+            "pts": 13,
             "reb": 6,
             "ast": 1
           },
@@ -5561,8 +6252,17 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 10.5,
-        "note": "Usage boost +4% (Murray OUT) | O/U 224.5"
+        "fd_line": 10.0,
+        "fd_lines": {
+          "P": 10.0,
+          "R": 3.5,
+          "A": 1.0,
+          "PR": 13.5,
+          "PA": 11.5,
+          "RA": 4.5,
+          "PRA": 14.5
+        },
+        "note": "O/U 225.5"
       }
     ],
     "LAC_SAS": [
@@ -5633,8 +6333,17 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
-        "note": "O/U 223.5"
+        "fd_line": 7.5,
+        "fd_lines": {
+          "P": 7.5,
+          "R": 4.5,
+          "A": 4.5,
+          "PR": 11.0,
+          "PA": 9.5,
+          "RA": 5.0,
+          "PRA": 12.5
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Derrick Jones Jr.",
@@ -5702,9 +6411,18 @@
           "reb": 0.5,
           "ast": 1.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 11.5,
-        "note": "Bounce-back (9 PRA last game vs 12 avg) | O/U 223.5"
+        "fd_line_cat": "P",
+        "fd_line": 8.0,
+        "fd_lines": {
+          "P": 8.0,
+          "R": 3.0,
+          "A": 1.0,
+          "PR": 11.0,
+          "PA": 9.0,
+          "RA": 3.5,
+          "PRA": 11.5
+        },
+        "note": "Bounce-back (9 PRA last game vs 12 avg) | O/U 222.5"
       },
       {
         "name": "Kawhi Leonard",
@@ -5773,8 +6491,17 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 23.5,
-        "note": "O/U 223.5"
+        "fd_line": 27.5,
+        "fd_lines": {
+          "P": 27.5,
+          "R": 6.5,
+          "A": 3.5,
+          "PR": 32.5,
+          "PA": 29.0,
+          "RA": 10.5,
+          "PRA": 35.5
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Brook Lopez",
@@ -5843,8 +6570,17 @@
           "ast": 3.8
         },
         "fd_line_cat": "P",
-        "fd_line": 5.5,
-        "note": "SAS #30 vs C ast | O/U 223.5"
+        "fd_line": 9.5,
+        "fd_lines": {
+          "P": 9.5,
+          "R": 4.5,
+          "A": 2.0,
+          "PR": 18.5,
+          "PA": 16.0,
+          "RA": 7.0,
+          "PRA": 20.5
+        },
+        "note": "SAS #30 vs C ast | O/U 222.5"
       },
       {
         "name": "Bennedict Mathurin",
@@ -5913,8 +6649,17 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 14.5,
-        "note": "O/U 223.5"
+        "fd_line": 17.5,
+        "fd_lines": {
+          "P": 17.5,
+          "R": 5.5,
+          "A": 2.0,
+          "PR": 20.5,
+          "PA": 17.5,
+          "RA": 7.5,
+          "PRA": 22.5
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Isaiah Jackson",
@@ -5982,9 +6727,18 @@
           "reb": 1.0,
           "ast": 3.8
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 14.5,
-        "note": "SAS #30 vs C ast | O/U 223.5"
+        "fd_line_cat": "P",
+        "fd_line": 8.0,
+        "fd_lines": {
+          "P": 8.0,
+          "R": 5.0,
+          "A": 1.5,
+          "PR": 13.0,
+          "PA": 9.5,
+          "RA": 6.5,
+          "PRA": 14.5
+        },
+        "note": "SAS #30 vs C ast | O/U 222.5"
       },
       {
         "name": "De'Aaron Fox",
@@ -6053,8 +6807,17 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
-        "note": "LAC #25 vs PG reb | O/U 223.5"
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 3.5,
+          "A": 5.5,
+          "PR": 20.5,
+          "PA": 23.0,
+          "RA": 10.5,
+          "PRA": 27.0
+        },
+        "note": "LAC #25 vs PG reb | O/U 222.5"
       },
       {
         "name": "Stephon Castle",
@@ -6123,8 +6886,17 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 11.5,
-        "note": "Minutes trending up (26.7->31.9) | O/U 223.5"
+        "fd_line": 15.5,
+        "fd_lines": {
+          "P": 15.5,
+          "R": 4.5,
+          "A": 6.5,
+          "PR": 23.0,
+          "PA": 24.0,
+          "RA": 12.5,
+          "PRA": 30.0
+        },
+        "note": "Minutes trending up (26.7->31.9) | O/U 222.5"
       },
       {
         "name": "Devin Vassell",
@@ -6193,8 +6965,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
-        "note": "O/U 223.5"
+        "fd_line": 13.5,
+        "fd_lines": {
+          "P": 13.5,
+          "R": 3.5,
+          "A": 2.5,
+          "PR": 21.0,
+          "PA": 19.0,
+          "RA": 6.5,
+          "PRA": 23.0
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Julian Champagnie",
@@ -6263,8 +7044,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 5.5,
-        "note": "O/U 223.5"
+        "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 4.5,
+          "A": 1.5,
+          "PR": 15.5,
+          "PA": 13.0,
+          "RA": 5.5,
+          "PRA": 17.0
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Victor Wembanyama",
@@ -6333,8 +7123,17 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 19.5,
-        "note": "O/U 223.5"
+        "fd_line": 23.5,
+        "fd_lines": {
+          "P": 23.5,
+          "R": 11.5,
+          "A": 2.5,
+          "PR": 34.0,
+          "PA": 26.0,
+          "RA": 15.0,
+          "PRA": 37.5
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Keldon Johnson",
@@ -6403,8 +7202,17 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
-        "note": "O/U 223.5"
+        "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 4.5,
+          "A": 2.0,
+          "PR": 19.5,
+          "PA": 15.5,
+          "RA": 8.0,
+          "PRA": 21.5
+        },
+        "note": "O/U 222.5"
       },
       {
         "name": "Luke Kornet",
@@ -6474,7 +7282,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 10.0,
-        "note": "Minutes trending up (19.2->22.9) | O/U 223.5"
+        "fd_lines": {
+          "P": 10.0,
+          "R": 7.0,
+          "A": 1.5,
+          "PR": 17.0,
+          "PA": 11.5,
+          "RA": 8.5,
+          "PRA": 18.5
+        },
+        "note": "Minutes trending up (19.2->22.9) | O/U 222.5"
       },
       {
         "name": "Kelly Olynyk",
@@ -6544,7 +7361,16 @@
         },
         "fd_line_cat": "P",
         "fd_line": 10.5,
-        "note": "Bounce-back (12 PRA last game vs 19 avg) | Minutes trending up (20.3->25.0) | O/U 223.5"
+        "fd_lines": {
+          "P": 10.5,
+          "R": 4.5,
+          "A": 3.5,
+          "PR": 14.5,
+          "PA": 13.5,
+          "RA": 7.5,
+          "PRA": 18.0
+        },
+        "note": "Bounce-back (12 PRA last game vs 19 avg) | Minutes trending up (20.3->25.0) | O/U 222.5"
       },
       {
         "name": "Bismack Biyombo",
@@ -6612,9 +7438,18 @@
           "reb": 0.5,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 12.0,
-        "note": "Bounce-back (9 PRA last game vs 13 avg) | O/U 223.5"
+        "fd_line_cat": "P",
+        "fd_line": 4.5,
+        "fd_lines": {
+          "P": 4.5,
+          "R": 6.5,
+          "A": 1.0,
+          "PR": 11.0,
+          "PA": 5.5,
+          "RA": 7.5,
+          "PRA": 12.0
+        },
+        "note": "Bounce-back (9 PRA last game vs 13 avg) | O/U 222.5"
       }
     ],
     "IND_LAL": [
@@ -6684,8 +7519,17 @@
           "reb": 0.0,
           "ast": 3.8
         },
-        "fd_line_cat": "A",
-        "fd_line": 5.5,
+        "fd_line_cat": "P",
+        "fd_line": 14.5,
+        "fd_lines": {
+          "P": 14.5,
+          "R": 2.5,
+          "A": 6.5,
+          "PR": 13.0,
+          "PA": 13.0,
+          "RA": 8.5,
+          "PRA": 17.5
+        },
         "note": "Bounce-back (7 PRA last game vs 18 avg) | LAL #30 vs PG ast | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -6755,7 +7599,16 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
+        "fd_line": 10.5,
+        "fd_lines": {
+          "P": 10.5,
+          "R": 3.5,
+          "A": 0.5,
+          "PR": 17.5,
+          "PA": 14.0,
+          "RA": 4.5,
+          "PRA": 18.0
+        },
         "note": "High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -6825,7 +7678,16 @@
           "ast": 2.2
         },
         "fd_line_cat": "P",
-        "fd_line": 9.5,
+        "fd_line": 12.5,
+        "fd_lines": {
+          "P": 12.5,
+          "R": 5.5,
+          "A": 2.5,
+          "PR": 15.0,
+          "PA": 13.0,
+          "RA": 7.0,
+          "PRA": 17.5
+        },
         "note": "Minutes trending up (17.4->21.6) | LAL #30 vs SF pts | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -6895,7 +7757,16 @@
           "ast": 0.2
         },
         "fd_line_cat": "P",
-        "fd_line": 18.5,
+        "fd_line": 22.5,
+        "fd_lines": {
+          "P": 22.5,
+          "R": 6.5,
+          "A": 3.5,
+          "PR": 21.0,
+          "PA": 19.0,
+          "RA": 9.0,
+          "PRA": 24.5
+        },
         "note": "High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -6964,8 +7835,17 @@
           "reb": 0.0,
           "ast": 3.8
         },
-        "fd_line_cat": "A",
-        "fd_line": 2.5,
+        "fd_line_cat": "P",
+        "fd_line": 7.5,
+        "fd_lines": {
+          "P": 7.5,
+          "R": 2.5,
+          "A": 3.5,
+          "PR": 11.0,
+          "PA": 12.5,
+          "RA": 7.0,
+          "PRA": 15.5
+        },
         "note": "Bounce-back (9 PRA last game vs 16 avg) | LAL #30 vs PG ast | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7034,8 +7914,17 @@
           "reb": 0.0,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 9.5,
+        "fd_line_cat": "P",
+        "fd_line": 4.0,
+        "fd_lines": {
+          "P": 4.0,
+          "R": 4.5,
+          "A": 1.0,
+          "PR": 8.5,
+          "PA": 5.0,
+          "RA": 5.5,
+          "PRA": 9.5
+        },
         "note": "High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7105,7 +7994,16 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 4.5,
+        "fd_line": 6.5,
+        "fd_lines": {
+          "P": 6.5,
+          "R": 3.0,
+          "A": 1.5,
+          "PR": 6.0,
+          "PA": 4.0,
+          "RA": 4.5,
+          "PRA": 7.0
+        },
         "note": "High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7176,6 +8074,15 @@
         },
         "fd_line_cat": "P",
         "fd_line": 11.0,
+        "fd_lines": {
+          "P": 11.0,
+          "R": 4.0,
+          "A": 2.0,
+          "PR": 15.0,
+          "PA": 13.0,
+          "RA": 6.5,
+          "PRA": 17.5
+        },
         "note": "Bounce-back (10 PRA last game vs 18 avg) | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7245,7 +8152,16 @@
           "ast": 1.0
         },
         "fd_line_cat": "P",
-        "fd_line": 17.5,
+        "fd_line": 24.5,
+        "fd_lines": {
+          "P": 24.5,
+          "R": 4.5,
+          "A": 5.5,
+          "PR": 27.0,
+          "PA": 27.0,
+          "RA": 9.0,
+          "PRA": 31.5
+        },
         "note": "IND #29 vs PG reb | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7315,7 +8231,16 @@
           "ast": 0.5
         },
         "fd_line_cat": "P",
-        "fd_line": 5.5,
+        "fd_line": 9.5,
+        "fd_lines": {
+          "P": 9.5,
+          "R": 2.5,
+          "A": 3.5,
+          "PR": 11.0,
+          "PA": 12.0,
+          "RA": 5.0,
+          "PRA": 14.0
+        },
         "note": "IND #28 vs SG reb | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7386,6 +8311,15 @@
         },
         "fd_line_cat": "P",
         "fd_line": 21.0,
+        "fd_lines": {
+          "P": 21.0,
+          "R": 5.5,
+          "A": 6.5,
+          "PR": 26.5,
+          "PA": 27.5,
+          "RA": 12.0,
+          "PRA": 33.0
+        },
         "note": "Bounce-back (26 PRA last game vs 35 avg) | IND #28 vs PF pts | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7454,8 +8388,17 @@
           "reb": 2.2,
           "ast": 3.0
         },
-        "fd_line_cat": "R",
-        "fd_line": 10.5,
+        "fd_line_cat": "P",
+        "fd_line": 16.5,
+        "fd_lines": {
+          "P": 16.5,
+          "R": 10.5,
+          "A": 2.0,
+          "PR": 27.0,
+          "PA": 18.5,
+          "RA": 12.5,
+          "PRA": 29.0
+        },
         "note": "Bounce-back (10 PRA last game vs 30 avg) | IND #26 vs C pts | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7525,7 +8468,16 @@
           "ast": 0.0
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
+        "fd_line": 11.5,
+        "fd_lines": {
+          "P": 11.5,
+          "R": 3.5,
+          "A": 1.0,
+          "PR": 14.5,
+          "PA": 12.0,
+          "RA": 4.5,
+          "PRA": 15.5
+        },
         "note": "High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7594,8 +8546,17 @@
           "reb": 3.8,
           "ast": 1.0
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 10.5,
+        "fd_line_cat": "P",
+        "fd_line": 5.5,
+        "fd_lines": {
+          "P": 5.5,
+          "R": 3.0,
+          "A": 2.5,
+          "PR": 8.0,
+          "PA": 8.0,
+          "RA": 5.5,
+          "PRA": 10.5
+        },
         "note": "IND #29 vs PG reb | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7665,7 +8626,16 @@
           "ast": 3.0
         },
         "fd_line_cat": "P",
-        "fd_line": 7.5,
+        "fd_line": 9.5,
+        "fd_lines": {
+          "P": 9.5,
+          "R": 5.5,
+          "A": 0.5,
+          "PR": 11.5,
+          "PA": 7.0,
+          "RA": 5.5,
+          "PRA": 12.0
+        },
         "note": "Bounce-back (8 PRA last game vs 12 avg) | IND #26 vs C pts | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7734,8 +8704,17 @@
           "reb": 3.8,
           "ast": 0.5
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 13.0,
+        "fd_line_cat": "P",
+        "fd_line": 8.5,
+        "fd_lines": {
+          "P": 8.5,
+          "R": 3.0,
+          "A": 1.5,
+          "PR": 11.5,
+          "PA": 10.0,
+          "RA": 4.5,
+          "PRA": 13.0
+        },
         "note": "IND #28 vs SG reb | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7804,8 +8783,17 @@
           "reb": 3.8,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 8.0,
+        "fd_line_cat": "P",
+        "fd_line": 4.0,
+        "fd_lines": {
+          "P": 4.0,
+          "R": 2.0,
+          "A": 2.0,
+          "PR": 6.0,
+          "PA": 6.5,
+          "RA": 4.0,
+          "PRA": 8.0
+        },
         "note": "Bounce-back (3 PRA last game vs 8 avg) | IND #28 vs PF pts | High O/U 235.5 \u2014 shootout potential"
       },
       {
@@ -7874,8 +8862,17 @@
           "reb": 3.8,
           "ast": 0.2
         },
-        "fd_line_cat": "PRA",
-        "fd_line": 10.0,
+        "fd_line_cat": "P",
+        "fd_line": 4.0,
+        "fd_lines": {
+          "P": 4.0,
+          "R": 5.0,
+          "A": 1.0,
+          "PR": 9.0,
+          "PA": 4.5,
+          "RA": 6.0,
+          "PRA": 10.0
+        },
         "note": "IND #28 vs PF pts | High O/U 235.5 \u2014 shootout potential"
       }
     ]

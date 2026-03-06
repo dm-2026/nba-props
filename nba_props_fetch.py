@@ -478,55 +478,84 @@ def _nba_cdn_get(url, delay=0.8):
     return None
 
 
-def fetch_prizepicks():
+ODDS_API_KEY = "155b5429de19953f629634ef23a481d4"
+ODDS_CACHE_FILE = "odds_cache.json"
+
+def fetch_odds_api():
     """
-    Fetch real player prop lines from PrizePicks public API.
-    Returns dict: { "Player Name": {"Points": 15.5, "Rebounds": 4.5, "Assists": 3.5} }
-    Stat types: "Points", "Rebounds", "Assists"
+    Fetch real FanDuel player prop lines. Caches to odds_cache.json —
+    reuses cache if it was fetched today (saves API requests).
+    Returns {name: {pts, reb, ast}}
     """
-    print("Fetching lines from PrizePicks...")
+    import json as _json, os
+    from datetime import datetime, timezone
+
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    # Check cache first
+    if os.path.exists(ODDS_CACHE_FILE):
+        try:
+            with open(ODDS_CACHE_FILE, encoding="utf-8") as f:
+                cache = _json.load(f)
+            if cache.get("date") == today:
+                lines = cache.get("lines", {})
+                print(f"  Odds API: using cached lines from today ({len(lines)} players)")
+                return lines
+        except Exception:
+            pass
+
+    # Cache miss — fetch from API
+    print("Fetching lines from The Odds API (FanDuel)...")
     lines = {}
+    remaining = "?"
     try:
-        import urllib.request, json as _json
-        url = "https://api.prizepicks.com/projections?league_id=7&per_page=500&single_stat=true"
-        req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "Accept": "application/json",
-            "Referer": "https://app.prizepicks.com/",
-        })
-        with urllib.request.urlopen(req, timeout=15) as r:
-            data = _json.loads(r.read())
+        import urllib.request as _ur, time
+        stat_map = {"player_points":"pts","player_rebounds":"reb","player_assists":"ast"}
 
-        # Build player id -> name map from included
-        player_map = {}
-        for item in data.get("included", []):
-            if item.get("type") == "new_player":
-                pid = item["id"]
-                name = item["attributes"].get("display_name") or item["attributes"].get("name", "")
-                player_map[pid] = name
+        req = _ur.Request(
+            f"https://api.the-odds-api.com/v4/sports/basketball_nba/events?apiKey={ODDS_API_KEY}",
+            headers={"User-Agent":"Mozilla/5.0"})
+        with _ur.urlopen(req, timeout=15) as r:
+            remaining = r.headers.get("x-requests-remaining","?")
+            events = _json.loads(r.read())
+        print(f"  {len(events)} events, {remaining} requests remaining")
 
-        # Extract projections
-        for proj in data.get("data", []):
-            attrs = proj.get("attributes", {})
-            stat_type = attrs.get("stat_type", "")
-            line_score = attrs.get("line_score")
-            if stat_type not in ("Points", "Rebounds", "Assists") or line_score is None:
-                continue
-            # Get player name
-            pid = proj.get("relationships", {}).get("new_player", {}).get("data", {}).get("id")
-            name = player_map.get(pid, "")
-            if not name:
-                continue
-            if name not in lines:
-                lines[name] = {}
-            lines[name][stat_type] = float(line_score)
+        for ev in events:
+            eid = ev.get("id")
+            if not eid: continue
+            time.sleep(0.5)  # avoid 429
+            url = (f"https://api.the-odds-api.com/v4/sports/basketball_nba/events/{eid}/odds"
+                   f"?apiKey={ODDS_API_KEY}&regions=us"
+                   f"&markets=player_points,player_rebounds,player_assists"
+                   f"&oddsFormat=american&bookmakers=fanduel")
+            try:
+                req2 = _ur.Request(url, headers={"User-Agent":"Mozilla/5.0"})
+                with _ur.urlopen(req2, timeout=15) as r2:
+                    remaining = r2.headers.get("x-requests-remaining","?")
+                    edata = _json.loads(r2.read())
+                for bm in edata.get("bookmakers",[]):
+                    if bm["key"] != "fanduel": continue
+                    for mkt in bm.get("markets",[]):
+                        stat = stat_map.get(mkt["key"])
+                        if not stat: continue
+                        for oc in mkt.get("outcomes",[]):
+                            if oc.get("name")=="Over" and oc.get("description") and oc.get("point") is not None:
+                                p = oc["description"]
+                                if p not in lines: lines[p] = {}
+                                lines[p][stat] = float(oc["point"])
+            except Exception as e2:
+                print(f"    Event {eid} failed: {e2}")
 
-        print(f"  PrizePicks: {len(lines)} players with lines")
-        # Show sample
-        for n, v in list(lines.items())[:3]:
-            print(f"    {n}: {v}")
+        print(f"  Odds API: {len(lines)} players, {remaining} requests left")
+        for n,v in list(lines.items())[:3]: print(f"    {n}: {v}")
+
+        # Save to cache
+        with open(ODDS_CACHE_FILE, "w", encoding="utf-8") as f:
+            _json.dump({"date": today, "lines": lines}, f)
+        print(f"  Odds cached to {ODDS_CACHE_FILE}")
+
     except Exception as e:
-        print(f"  PrizePicks fetch failed: {e}")
+        print(f"  Odds API failed: {e} — using estimates")
     return lines
 
 
@@ -1026,7 +1055,7 @@ def run_pipeline():
     injuries = fetch_injuries()
     lineups, game_totals = fetch_lineups()
     spreads = fetch_spreads()
-    pp_lines = fetch_prizepicks()
+    odds_lines = fetch_odds_api()
     for g in games_meta:
         gid = g["id"]
         if gid in game_totals:
@@ -1211,33 +1240,21 @@ def run_pipeline():
                 "ast":  opp_dvp_full.get(f"{pos}_ast", opp_dvp_full.get("ast", 15)),
                 "pace": opp_dvp_full.get("pace", 112.0),
             }
-            # Use real PrizePicks lines if available, else estimate
-            pp = pp_lines.get(name, {})
-            if pp:
-                # Pick the stat with highest line value matching player profile
-                # Prefer the category that best matches their strength
-                pts_line = pp.get("Points")
-                reb_line = pp.get("Rebounds")
-                ast_line = pp.get("Assists")
-                # Determine best cat from available PP lines + player profile
-                if pts_line and l10_avg["pts"] >= 10:
-                    fd_cat, fd_line = "P", pts_line
-                elif reb_line and l10_avg["reb"] >= 6:
-                    fd_cat, fd_line = "R", reb_line
-                elif ast_line and l10_avg["ast"] >= 4:
-                    fd_cat, fd_line = "A", ast_line
-                elif pts_line:
-                    fd_cat, fd_line = "P", pts_line
-                elif reb_line:
-                    fd_cat, fd_line = "R", reb_line
-                elif ast_line:
-                    fd_cat, fd_line = "A", ast_line
-                else:
-                    fd_cat, fd_line = estimate_fd_lines(l10_avg, opp_dvp=pos_dvp)
-                print(f"        -> {name}: PP line {fd_cat}={fd_line} (real)")
-            else:
-                fd_cat, fd_line = estimate_fd_lines(l10_avg, opp_dvp=pos_dvp)
-                print(f"        -> {name}: pts={l10_avg['pts']} reb={l10_avg['reb']} ast={l10_avg['ast']} => {fd_cat} (estimated)")
+            est_lines = estimate_fd_lines(l10_avg, opp_dvp=pos_dvp)
+            real = odds_lines.get(name, {})
+            final_lines = {
+                "P":   real.get("pts",  est_lines["P"]),
+                "R":   real.get("reb",  est_lines["R"]),
+                "A":   real.get("ast",  est_lines["A"]),
+                "PR":  est_lines["PR"],
+                "PA":  est_lines["PA"],
+                "RA":  est_lines["RA"],
+                "PRA": est_lines["PRA"],
+            }
+            fd_cat  = "P"
+            fd_line = final_lines["P"]
+            src = "FD" if real else "est"
+            print(f"        -> {name}: P={final_lines['P']} R={final_lines['R']} A={final_lines['A']} ({src})")
 
             # Build note
             note_parts = []
@@ -1291,6 +1308,7 @@ def run_pipeline():
                 "edges":        edges,
                 "fd_line_cat":  fd_cat,
                 "fd_line":      fd_line,
+                "fd_lines":     final_lines,
                 "note":         note,
             })
 
