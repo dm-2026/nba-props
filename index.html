@@ -381,7 +381,7 @@ function pcardHTML(p, i) {
       "<div class='psub'>" + p.pos + " · <b>" + p.team + "</b> vs " + p.opp + "</div>" +
     "</div><div class='ct-r'>" +
       "<div class='score-n' style='color:" + bc + "'>" + (p.score > 0 ? "+" : "") + p.score.toFixed(1) + "</div>" +
-      "<div class='conf-b' style='color:" + cc + ";border-color:" + cc + "'>" + p.conf + "</div>" +
+      "<div class='conf-b' style='color:" + cc + ";border-color:" + cc + "'>" + (p.conf === "PRIME" ? "🟣 PRIME" : p.conf) + "</div>" +
       "<div class='min-b' style='color:" + mc + "'>" + p.min_avg + "→" + p.min_l10 + " min</div>" +
     "</div></div>" +
     "<div class='cat-row'><span class='cat-lbl'>Bet</span>" + catChipsHTML(p.cat_scores, cat) + "</div>" +
@@ -419,8 +419,9 @@ function pcardHTML(p, i) {
 function sumRowHTML(p, rank) {
   const isO = p.direction === "OVER", inj = p.inj;
   let bc = isO ? "#22c55e" : "#f43f5e";
+  if (p.conf === "PRIME") bc = "#a855f7";
   if (inj) bc = INJ_C[inj] || "#fbbf24";
-  const cc = {HIGH:"#22c55e", MED:"#fbbf24", LOW:"#6b7280"}[p.conf];
+  const cc = {PRIME:"#a855f7", HIGH:"#22c55e", MED:"#fbbf24", LOW:"#6b7280"}[p.conf];
   const cat = p.target_cat, m = CAT[cat];
   const vals = p.spark || [], fdLine = p.fd_line;
   const mn = Math.min(...vals, fdLine * 0.88);
