@@ -10203,10 +10203,8 @@ def analyze(game_id, p, all_teammates):
     last2_pra  = combo(games[1], "PRA") if len(games) >= 2 else last1_pra
     avg_last2  = (last1_pra + last2_pra) / 2
 
-    # Sparkline: oldest → newest for the target category
     tcat   = p.get("fd_line_cat", "PRA")
     fd_line= p.get("fd_line", l10_combos[tcat])
-    spark  = [combo(g, tcat) for g in reversed(games)]
 
     score  = 0.0
     flags  = []
@@ -10339,6 +10337,10 @@ def analyze(game_id, p, all_teammates):
         cat_scores[cat] = round(s, 2)
 
     best_cat = max(cat_scores, key=cat_scores.get)
+
+    # Spark uses best_cat so chart matches the recommended bet
+    spark   = [combo(g, best_cat) for g in reversed(games)]
+    fd_line = p.get("fd_line", l10_combos[best_cat])
 
     # Flag strong positional mismatches
     pos_edges = [("pts", pos_dvp_rank("pts")), ("reb", pos_dvp_rank("reb")), ("ast", pos_dvp_rank("ast"))]

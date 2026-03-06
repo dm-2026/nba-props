@@ -478,6 +478,58 @@ def _nba_cdn_get(url, delay=0.8):
     return None
 
 
+def fetch_prizepicks():
+    """
+    Fetch real player prop lines from PrizePicks public API.
+    Returns dict: { "Player Name": {"Points": 15.5, "Rebounds": 4.5, "Assists": 3.5} }
+    Stat types: "Points", "Rebounds", "Assists"
+    """
+    print("Fetching lines from PrizePicks...")
+    lines = {}
+    try:
+        import urllib.request, json as _json
+        url = "https://api.prizepicks.com/projections?league_id=7&per_page=500&single_stat=true"
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "application/json",
+            "Referer": "https://app.prizepicks.com/",
+        })
+        with urllib.request.urlopen(req, timeout=15) as r:
+            data = _json.loads(r.read())
+
+        # Build player id -> name map from included
+        player_map = {}
+        for item in data.get("included", []):
+            if item.get("type") == "new_player":
+                pid = item["id"]
+                name = item["attributes"].get("display_name") or item["attributes"].get("name", "")
+                player_map[pid] = name
+
+        # Extract projections
+        for proj in data.get("data", []):
+            attrs = proj.get("attributes", {})
+            stat_type = attrs.get("stat_type", "")
+            line_score = attrs.get("line_score")
+            if stat_type not in ("Points", "Rebounds", "Assists") or line_score is None:
+                continue
+            # Get player name
+            pid = proj.get("relationships", {}).get("new_player", {}).get("data", {}).get("id")
+            name = player_map.get(pid, "")
+            if not name:
+                continue
+            if name not in lines:
+                lines[name] = {}
+            lines[name][stat_type] = float(line_score)
+
+        print(f"  PrizePicks: {len(lines)} players with lines")
+        # Show sample
+        for n, v in list(lines.items())[:3]:
+            print(f"    {n}: {v}")
+    except Exception as e:
+        print(f"  PrizePicks fetch failed: {e}")
+    return lines
+
+
 def fetch_spreads():
     """
     Scrape spreads from RotoWire NBA lineups page.
@@ -974,6 +1026,7 @@ def run_pipeline():
     injuries = fetch_injuries()
     lineups, game_totals = fetch_lineups()
     spreads = fetch_spreads()
+    pp_lines = fetch_prizepicks()
     for g in games_meta:
         gid = g["id"]
         if gid in game_totals:
@@ -1158,8 +1211,33 @@ def run_pipeline():
                 "ast":  opp_dvp_full.get(f"{pos}_ast", opp_dvp_full.get("ast", 15)),
                 "pace": opp_dvp_full.get("pace", 112.0),
             }
-            fd_cat, fd_line = estimate_fd_lines(l10_avg, opp_dvp=pos_dvp)
-            print(f"        -> {name}: pts={l10_avg['pts']} reb={l10_avg['reb']} ast={l10_avg['ast']} => {fd_cat}")
+            # Use real PrizePicks lines if available, else estimate
+            pp = pp_lines.get(name, {})
+            if pp:
+                # Pick the stat with highest line value matching player profile
+                # Prefer the category that best matches their strength
+                pts_line = pp.get("Points")
+                reb_line = pp.get("Rebounds")
+                ast_line = pp.get("Assists")
+                # Determine best cat from available PP lines + player profile
+                if pts_line and l10_avg["pts"] >= 10:
+                    fd_cat, fd_line = "P", pts_line
+                elif reb_line and l10_avg["reb"] >= 6:
+                    fd_cat, fd_line = "R", reb_line
+                elif ast_line and l10_avg["ast"] >= 4:
+                    fd_cat, fd_line = "A", ast_line
+                elif pts_line:
+                    fd_cat, fd_line = "P", pts_line
+                elif reb_line:
+                    fd_cat, fd_line = "R", reb_line
+                elif ast_line:
+                    fd_cat, fd_line = "A", ast_line
+                else:
+                    fd_cat, fd_line = estimate_fd_lines(l10_avg, opp_dvp=pos_dvp)
+                print(f"        -> {name}: PP line {fd_cat}={fd_line} (real)")
+            else:
+                fd_cat, fd_line = estimate_fd_lines(l10_avg, opp_dvp=pos_dvp)
+                print(f"        -> {name}: pts={l10_avg['pts']} reb={l10_avg['reb']} ast={l10_avg['ast']} => {fd_cat} (estimated)")
 
             # Build note
             note_parts = []
@@ -1287,14 +1365,6 @@ def inject_and_run(games_meta, dvp, raw_players):
         )
         engine = ''.join(new_lines)
         # Fix JSON nulls/booleans to Python equivalents
-
-    # # SCRUB_BAD_ONCLICK_LINES
-    _lines = engine_code.split("\n")
-    _lines = [l for l in _lines if not (
-        'ctrl-btn' in l and 'onclick' in l and 'data-gid' not in l
-        and 'function filt' not in l and 'function srt' not in l
-    )]
-    engine_code = "\n".join(_lines)
 
     with open("nba_props_engine_today.py", "w", encoding="utf-8") as f:
         f.write(engine)
