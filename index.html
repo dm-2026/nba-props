@@ -552,15 +552,15 @@ function buildSummary() {
       "<div class='kpi'><div class='kpi-v'>" + ALL.length + "</div><div class='kpi-l'>Total</div></div>" +
     "</div></div>" +
     "<div style='display:flex;gap:6px;padding:8px 0 4px;flex-wrap:wrap'>" +
-      "<button class='ctrl-btn on' id='sum-f-all'    onclick='sumFilt("all",this)'>All (" + ALL.length + ")</button>" +
-      "<button class='ctrl-btn'    id='sum-f-over'   onclick='sumFilt("over",this)'>Overs (" + overs + ")</button>" +
-      "<button class='ctrl-btn'    id='sum-f-fade'   onclick='sumFilt("fade",this)'>Fades (" + fades + ")</button>" +
-      "<button class='ctrl-btn'    id='sum-f-scheme' onclick='sumFilt("scheme",this)' style='color:#a855f7;border-color:#a855f7'>🔬 Scheme Edge (" + scheme + ")</button>" +
+      "<button class='ctrl-btn on sum-f-btn'  onclick='sumFilt("all",this)'>All (" + ALL.length + ")</button>" +
+      "<button class='ctrl-btn sum-f-btn'     onclick='sumFilt("over",this)'>Overs (" + overs + ")</button>" +
+      "<button class='ctrl-btn sum-f-btn'     onclick='sumFilt("fade",this)'>Fades (" + fades + ")</button>" +
+      "<button class='ctrl-btn sum-f-btn'     onclick='sumFilt("scheme",this)' style='color:#a855f7;border-color:#a855f7'>🔬 Scheme Edge (" + scheme + ")</button>" +
       "<div class='ctrl-sep'></div>" +
-      "<button class='ctrl-btn on' id='sum-s-score'  onclick='sumSort("score",this)'>Score</button>" +
-      "<button class='ctrl-btn'    id='sum-s-scheme' onclick='sumSort("scheme",this)'>Scheme</button>" +
-      "<button class='ctrl-btn'    id='sum-s-hit'    onclick='sumSort("hit",this)'>Hit %</button>" +
-      "<button class='ctrl-btn'    id='sum-s-name'   onclick='sumSort("name",this)'>Name</button>" +
+      "<button class='ctrl-btn on sum-s-btn'  onclick='sumSort("score",this)'>Score</button>" +
+      "<button class='ctrl-btn sum-s-btn'     onclick='sumSort("scheme",this)'>Scheme</button>" +
+      "<button class='ctrl-btn sum-s-btn'     onclick='sumSort("hit",this)'>Hit %</button>" +
+      "<button class='ctrl-btn sum-s-btn'     onclick='sumSort("name",this)'>Name</button>" +
     "</div>" +
     "<div class='sum-table-wrap'><div class='sum-table'>" + thead + "<div id='sum-rows'>" + rows + "</div></div></div>" +
     "<div class='disc'>Sparklines: oldest→newest · Green = over FD line · Red = under · For entertainment only</div>" +
@@ -595,14 +595,25 @@ function rerender(gid) {
 let SUM_FILTER = "all";
 let SUM_SORT   = "score";
 function sumFilt(f, btn) {
-  document.querySelectorAll("[id^='sum-f-']").forEach(b => b.classList.remove("on"));
+  document.querySelectorAll(".sum-f-btn").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
   SUM_FILTER = f; rerenderSum();
 }
 function sumSort(s, btn) {
-  document.querySelectorAll("[id^='sum-s-']").forEach(b => b.classList.remove("on"));
+  document.querySelectorAll(".sum-s-btn").forEach(b => b.classList.remove("on"));
   btn.classList.add("on");
   SUM_SORT = s; rerenderSum();
+}
+function rerenderSum() {
+  let pl = [...ALL];
+  if      (SUM_FILTER === "over")   pl = pl.filter(p => p.direction === "OVER");
+  else if (SUM_FILTER === "fade")   pl = pl.filter(p => p.direction === "FADE");
+  else if (SUM_FILTER === "scheme") pl = pl.filter(p => (p.scheme_edge || 0) >= 1.0);
+  if      (SUM_SORT === "name")     pl.sort((a,b) => a.name.localeCompare(b.name));
+  else if (SUM_SORT === "scheme")   pl.sort((a,b) => (b.scheme_edge||0) - (a.scheme_edge||0));
+  else if (SUM_SORT === "hit")      pl.sort((a,b) => (b.hit_pct||0) - (a.hit_pct||0));
+  else                              pl.sort((a,b) => b.score - a.score);
+  document.getElementById("sum-rows").innerHTML = pl.map((p,i) => sumRowHTML(p,i)).join("");
 }
 function rerenderSum() {
   let pl = [...ALL];
